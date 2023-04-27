@@ -19,7 +19,7 @@ $(function() {
       }
     },
     xAxis: {
-      categories: ['2016', '2017', '2018', '2019']
+      categories: ['2015', '2017', '2018', '2019']
     },
     tooltip: {
       formatter: percentageToolTipFormatter
