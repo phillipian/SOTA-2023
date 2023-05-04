@@ -159,24 +159,7 @@ window.onload = () => {
     // 2023!!
   });
 
-  sota.barChart({
-    section: "general",
-    dataFile: "assets/data/general/time-at-andover-general",
-    totalResp: 930,
-    displayPercentage: true,
-    title: "Time at Andover",
-    subtitle:
-      "How long have you attended Andover? (e.g. if you are currently a two-year lower, answer “2 years”) If at any point you took a leave of absence, round to the nearest whole year.",
-      // 2022!!
-  });
 
-  sota.pieChart({
-    section: "general",
-    dataFile: "assets/data/general/repeat-grade",
-    title: "Repeat Grade",
-    subtitle: "Have you repeated a grade at Andover?",
-    // 2023!!
-  });
 
   sota.pieChart({
     section: "general",
@@ -215,6 +198,28 @@ window.onload = () => {
     subtitle: "students responded from the class of 2023.",
     // 2023
   });
+
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/time-at-andover-general",
+    totalResp: 930,
+    displayPercentage: true,
+    title: "Time at Andover",
+    subtitle:
+      "How long have you attended Andover? (e.g. if you are currently a two-year lower, answer “2 years”) If at any point you took a leave of absence, round to the nearest whole year.",
+      // 2022!!
+  });
+
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/repeat-grade",
+    totalResp: 930,
+    displayPercentage: true,
+    title: "Repeat Grade",
+    subtitle: "Have you repeated a grade at Andover?",
+    // 2023!!
+  });
+  
   sota.barChart({
     section: "general",
     dataFile: "assets/data/general/12-sex",
