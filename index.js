@@ -215,7 +215,7 @@ window.onload = () => {
     title: "Time at Andover",
     subtitle:
       "How long have you attended Andover? (e.g. if you are currently a two-year lower, answer “2 years”) If at any point you took a leave of absence, round to the nearest whole year.",
-      // 2022!!
+      // 2023!!
   });
 
   sota.barChart({
@@ -227,14 +227,21 @@ window.onload = () => {
     subtitle: "Have you repeated a grade at Andover?",
     // 2023!!
   });
-  
-  sota.barChart({
+
+  sota.pieChart({
     section: "general",
-    dataFile: "assets/data/general/12-sex",
-    totalResp: 947,
-    displayPercentage: true,
-    title: "WHAT IS YOUR SEX?",
-    // 2022!!
+    dataFile: "assets/data/general/region",
+    title: "Region",
+    subtitle: "What region are you from?"
+    // 2023
+  });
+
+  sota.pieChart({
+    section: "general",
+    dataFile: "assets/data/general/international-continent",
+    title: "Continents",
+    subtitle: "If you are an international student, what continent are you from?"
+    // 2023
   });
 
   sota.pieChart({
@@ -242,6 +249,15 @@ window.onload = () => {
     dataFile: "assets/data/general/6-community_type",
     title: "Geographic Distribution",
     subtitle: "What type of community do you live in?",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/12-sex",
+    totalResp: 947,
+    displayPercentage: true,
+    title: "WHAT IS YOUR SEX?",
     // 2022!!
   });
 
@@ -254,12 +270,7 @@ window.onload = () => {
     // 2022!!
   });
 
-  // sota.pieChart({
-  //   section: "general",
-  //   dataFile: "assets/data/general/region",
-  //   title: "Region",
-  //   subtitle: "What region are you from?"
-  // });
+
 
   sota.barChart({
     section: "general",
