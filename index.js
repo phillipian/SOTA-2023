@@ -136,14 +136,15 @@ window.onload = () => {
 
   sota.bigNumber({
     section: "general",
-    number: "956",
+    number: "931",
     title: "",
     subtitle: "total students responded.",
+    // 2023
   });
 
   sota.bigNumber({
     section: "general",
-    number: "80.5%",
+    number: "81.0%",
     title: "",
     subtitle: "of the student body participated in this survey.",
   });
@@ -151,45 +152,68 @@ window.onload = () => {
   sota.barChart({
     section: "general",
     dataFile: "assets/data/general/1-class",
-    totalResp: 945,
+    totalResp: 929,
     displayPercentage: true,
     title: "WHAT CLASS ARE YOU IN?",
-    subtitle: "Editor’s note: four students did not select a class year.",
-    // 2022!!
+    subtitle: "Editor’s note: two students did not select a class year.",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/time-at-andover-general",
+    totalResp: 930,
+    displayPercentage: true,
+    title: "Time at Andover",
+    subtitle:
+      "How long have you attended Andover? (e.g. if you are currently a two-year lower, answer “2 years”) If at any point you took a leave of absence, round to the nearest whole year.",
+      // 2022!!
+  });
+
+  sota.pieChart({
+    section: "general",
+    dataFile: "assets/data/general/repeat-grade",
+    title: "Repeat Grade",
+    subtitle: "Have you repeated a grade at Andover?",
+    // 2023!!
   });
 
   sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/3-boarding",
     title: "Boarding vs. Day Students",
-    subtitle: "In a normal year, what would you be enrolled as?",
-    // 2022!!
+    subtitle: "What are you enrolled as?",
+    // 2023!!
   });
 
   sota.bigNumber({
     section: "general",
     number: "184",
     title: "",
-    subtitle: "students responded from the class of 2025.",
+    subtitle: "students responded from the class of 2026.",
+    // 2023
   });
   sota.bigNumber({
     section: "general",
-    number: "265",
+    number: "226",
+    title: "",
+    subtitle: "students responded from the class of 2025.",
+    // 2023
+  });
+  sota.bigNumber({
+    section: "general",
+    number: "270",
     title: "",
     subtitle: "students responded from the class of 2024.",
-  });
-  sota.bigNumber({
-    section: "general",
-    number: "265",
-    title: "",
-    subtitle: "students responded from the class of 2023.",
+    // 2023
   });
 
   sota.bigNumber({
     section: "general",
-    number: "238",
+    number: "249",
     title: "",
-    subtitle: "students responded from the class of 2022.",
+    subtitle: "students responded from the class of 2023.",
+    // 2023
   });
   sota.barChart({
     section: "general",
