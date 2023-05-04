@@ -199,6 +199,14 @@ window.onload = () => {
     // 2023
   });
 
+  sota.pieChart({
+    section: "general",
+    dataFile: "assets/data/general/cluster",
+    title: "Student Clusters",
+    subtitle: "What cluster are you affiliated with?",
+    // 2023!!
+  });
+
   sota.barChart({
     section: "general",
     dataFile: "assets/data/general/time-at-andover-general",
