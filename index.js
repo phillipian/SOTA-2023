@@ -252,6 +252,42 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.pieChart({
+    section: "general",
+    dataFile: "assets/data/general/US-residential",
+    title: "US Residence",
+    subtitle: "If you live in the United States of America, are you a citizen and/or permanent resident of the U.S.?",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/guardian-residence",
+    totalResp: 928,
+    displayPercentage: true,
+    title: "Parents and Guardians Residence",
+    subtitle: "If you live in the United States of America, how many of your guardian(s) are citizens and/or permanent residents of the U.S.?"
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/9-parents_college",
+    totalResp: 927,
+    displayPercentage: true,
+    title: "HOW MANY OF YOUR PARENTS GRADUATED FROM COLLEGE?",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "general",
+    number: "34.9%",
+    title: "Legacy",
+    subtitle:
+      "of respondents have at least one immediate family member who is currently attending or has previously attended Andover.",
+    // 2023!!
+  });
+
   sota.barChart({
     section: "general",
     dataFile: "assets/data/general/12-sex",
@@ -358,14 +394,7 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.barChart({
-    section: "general",
-    dataFile: "assets/data/general/9-parents_college",
-    totalResp: 946,
-    displayPercentage: true,
-    title: "HOW MANY OF YOUR PARENTS GRADUATED FROM COLLEGE?",
-    // 2022!!
-  });
+
 
   sota.stackedBarChart({
     section: "general",
@@ -378,14 +407,7 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.bigNumber({
-    section: "general",
-    number: "35.0",
-    title: "Legacy",
-    subtitle:
-      "of respondents have at least one immediate family member who is currently attending or has previously attended Andover.",
-    // 2022!!
-  });
+
 
   sota.stackedBarChart({
     section: "general",
