@@ -202,6 +202,7 @@ window.onload = () => {
   sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/cluster",
+    sorted: false,
     title: "Student Clusters",
     subtitle: "What cluster are you affiliated with?",
     // 2023!!
@@ -231,6 +232,7 @@ window.onload = () => {
   sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/region",
+    sorted: false,
     title: "Region",
     subtitle: "What region are you from?"
     // 2023
@@ -239,6 +241,7 @@ window.onload = () => {
   sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/international-continent",
+    sorted: false,
     title: "Continents",
     subtitle: "If you are an international student, what continent are you from?"
     // 2023
@@ -247,6 +250,7 @@ window.onload = () => {
   sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/6-community_type",
+    sorted: false,
     title: "Geographic Distribution",
     subtitle: "What type of community do you live in?",
     // 2023!!
@@ -255,6 +259,7 @@ window.onload = () => {
   sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/US-residential",
+    sorted: false,
     title: "US Residence",
     subtitle: "If you live in the United States of America, are you a citizen and/or permanent resident of the U.S.?",
     // 2023!!
