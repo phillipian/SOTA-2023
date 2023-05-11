@@ -202,6 +202,7 @@ window.onload = () => {
   sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/cluster",
+    sorted: false,
     title: "Student Clusters",
     subtitle: "What cluster are you affiliated with?",
     // 2023!!
@@ -231,6 +232,7 @@ window.onload = () => {
   sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/region",
+    sorted: false,
     title: "Region",
     subtitle: "What region are you from?"
     // 2023
@@ -239,6 +241,7 @@ window.onload = () => {
   sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/international-continent",
+    sorted: false,
     title: "Continents",
     subtitle: "If you are an international student, what continent are you from?"
     // 2023
@@ -247,18 +250,56 @@ window.onload = () => {
   sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/6-community_type",
+    sorted: false,
     title: "Geographic Distribution",
     subtitle: "What type of community do you live in?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "general",
+    dataFile: "assets/data/general/US-residential",
+    sorted: false,
+    title: "US Residence",
+    subtitle: "If you live in the United States of America, are you a citizen and/or permanent resident of the U.S.?",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/guardian-residence",
+    totalResp: 928,
+    displayPercentage: true,
+    title: "Parents and Guardians Residence",
+    subtitle: "If you live in the United States of America, how many of your guardian(s) are citizens and/or permanent residents of the U.S.?"
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/9-parents_college",
+    totalResp: 927,
+    displayPercentage: true,
+    title: "HOW MANY OF YOUR PARENTS GRADUATED FROM COLLEGE?",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "general",
+    number: "34.9%",
+    title: "Legacy",
+    subtitle:
+      "of respondents have at least one immediate family member who is currently attending or has previously attended Andover.",
     // 2023!!
   });
 
   sota.barChart({
     section: "general",
     dataFile: "assets/data/general/12-sex",
-    totalResp: 947,
+    totalResp: 929,
     displayPercentage: true,
     title: "WHAT IS YOUR SEX?",
-    // 2022!!
+    // 2023!!
   });
 
   sota.barChart({
@@ -267,7 +308,7 @@ window.onload = () => {
     totalResp: 944,
     displayPercentage: true,
     title: "WHAT IS YOUR GENDER IDENTITY?",
-    // 2022!!
+    // 2023!!
   });
 
 
@@ -275,12 +316,12 @@ window.onload = () => {
   sota.barChart({
     section: "general",
     dataFile: "assets/data/general/14-pronoun",
-    totalResp: 982,
+    totalResp: 924,
     displayPercentage: true,
     title: "What are your preferred gender pronouns?",
     subtitle:
       "Editor’s note: Respondents were able to select multiple responses.",
-    // 2022!!
+    // 2023!!
   });
 
   sota.columnChart({
@@ -303,6 +344,24 @@ window.onload = () => {
     // 2022!!
   });
 
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/15-sexual_orientation",
+    totalResp: 924,
+    displayPercentage: true,
+    title: "What is your sexual orientation?",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/16-romantic_orientation",
+    totalResp: 922,
+    displayPercentage: true,
+    title: "What is your romantic orientation?",
+    // 2023!!
+  });
+
   // sota.stackedBarChart({
   //     section: "general",
   //     dataFile: "assets/data/general/sexual_orientationXgender",
@@ -313,23 +372,7 @@ window.onload = () => {
   //     subtitle: "Editor’s Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents."
   // })
 
-  sota.barChart({
-    section: "general",
-    dataFile: "assets/data/general/15-sexual_orientation",
-    totalResp: 1028,
-    displayPercentage: true,
-    title: "What is your sexual orientation?",
-    // 2022!!
-  });
 
-  sota.barChart({
-    section: "general",
-    dataFile: "assets/data/general/16-romantic_orientation",
-    totalResp: 1001,
-    displayPercentage: true,
-    title: "What is your romantic orientation?",
-    // 2022!!
-  });
 
   sota.pieChart({
     section: "general",
@@ -358,14 +401,7 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.barChart({
-    section: "general",
-    dataFile: "assets/data/general/9-parents_college",
-    totalResp: 946,
-    displayPercentage: true,
-    title: "HOW MANY OF YOUR PARENTS GRADUATED FROM COLLEGE?",
-    // 2022!!
-  });
+
 
   sota.stackedBarChart({
     section: "general",
@@ -378,14 +414,7 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.bigNumber({
-    section: "general",
-    number: "35.0",
-    title: "Legacy",
-    subtitle:
-      "of respondents have at least one immediate family member who is currently attending or has previously attended Andover.",
-    // 2022!!
-  });
+
 
   sota.stackedBarChart({
     section: "general",
