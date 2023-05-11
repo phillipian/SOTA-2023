@@ -1195,11 +1195,11 @@ window.onload = () => {
   sota.barChart({
     section: "discipline",
     dataFile: "assets/data/discipline/147-understand_processes",
-    totalResp: 880,
+    totalResp: 763,
     displayPercentage: true,
-    title: "DC Understanding",
-    subtitle: "Do you understand the CCC and DC processes?",
-    // 2022!!
+    title: "Student Behavior Understanding",
+    subtitle: "Do you understand the new Response to Student Behavior process?",
+    // 2023!!
   });
 
 
