@@ -1123,7 +1123,7 @@ window.onload = () => {
     totalResp: 759,
     title:
       "Which of the following disciplinary consequences have you recieved?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.stackedBarChart({
@@ -1190,6 +1190,7 @@ window.onload = () => {
     title: "Cheating & Class",
     subtitle:
       "Have you ever cheated on any tests, quizzes, or in-class assessments while at Andover?",
+      // 2022!!
   });
 
   sota.barChart({
@@ -1197,7 +1198,7 @@ window.onload = () => {
     dataFile: "assets/data/discipline/147-understand_processes",
     totalResp: 763,
     displayPercentage: true,
-    title: "Student Behavior Understanding",
+    title: "Student Understanding",
     subtitle: "Do you understand the new Response to Student Behavior process?",
     // 2023!!
   });
