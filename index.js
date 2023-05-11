@@ -1120,7 +1120,7 @@ window.onload = () => {
   sota.columnChart({
     section: "discipline",
     dataFile: "assets/data/discipline/149-consequences",
-    totalResp: 895,
+    totalResp: 759,
     title:
       "Which of the following disciplinary consequences have you recieved?",
       // 2022!!
@@ -1163,7 +1163,7 @@ window.onload = () => {
     title: "Cheating",
     subtitle:
       "Have you ever cheated on any tests, quizzes, or in-class assessments while at Andover?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.bigNumber({
