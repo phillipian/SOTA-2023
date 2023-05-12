@@ -1161,10 +1161,10 @@ window.onload = () => {
     labelStyle: "onBar",
     groupLabelStyle: "onBar",
     showLegend: true,
-    title: "DC System Effectiveness",
+    title: "Disciplinary System Effectiveness",
     subtitle:
-      "Do you think that the DC system effectively disciplines students who are caught breaking school rules?",
-      // 2022!!
+      "Do you think that the new disciplinary system effectively responds to students who are caught breaking school rules?",
+      // 2023!!
   });
 
   sota.stackedBarChart({
