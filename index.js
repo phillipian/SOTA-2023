@@ -324,26 +324,6 @@ window.onload = () => {
     // 2023!!
   });
 
-  sota.columnChart({
-    section: "general",
-    dataFile: "assets/data/general/17-race",
-    totalResp: 1057,
-    title: "What is your race?",
-    subtitle:
-      "Editor’s Note: Respondents were given the option to select more than one answer if applicable.",
-    // 2022!!
-  });
-
-  sota.barChart({
-    section: "general",
-    dataFile: "assets/data/general/18-ethnicity",
-    totalResp: 1349,
-    title: "What is your ethnicity?",
-    subtitle:
-      "Editor’s Note: Respondents were given the option to select more than one answer if applicable.",
-    // 2022!!
-  });
-
   sota.barChart({
     section: "general",
     dataFile: "assets/data/general/15-sexual_orientation",
@@ -362,6 +342,27 @@ window.onload = () => {
     // 2023!!
   });
 
+
+  sota.columnChart({
+    section: "general",
+    dataFile: "assets/data/general/17-race",
+    totalResp: 926,
+    title: "What is your race?",
+    subtitle:
+      "Editor’s Note: Respondents were given the option to select more than one answer if applicable.",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/18-ethnicity",
+    totalResp: 922,
+    title: "What is your ethnicity?",
+    subtitle:
+      "Editor’s Note: Respondents were given the option to select more than one answer if applicable.",
+    // 2023!!
+  });
+
   // sota.stackedBarChart({
   //     section: "general",
   //     dataFile: "assets/data/general/sexual_orientationXgender",
@@ -372,102 +373,113 @@ window.onload = () => {
   //     subtitle: "Editor’s Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents."
   // })
 
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/19-religion",
+    totalResp: 924,
+    displayPercentage: true,
+    title: "With which religion/faith system do you currently identify with?",
+    subtitle:
+      "Editor's Note: Respondents were given the option to select more than one answer if applicable.",
+    // 2023!!
+  });
 
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/perceived-socioeconomic",
+    totalResp: 923,
+    displayPercentage: true,
+    title: "Socioeconomic Status",
+    subtitle:
+      "What is your perceived socioeconomic status?",
+    // 2023!!
+  });
 
   sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/21-income",
-    totalResp: 945,
+    totalResp: 921,
     sorted: false,
-    title: "NET INCOME",
+    title: "Net Income",
     subtitle: "What is your net family income?",
-    // 2022!!
+    // 2023!!
   });
 
   sota.columnChart({
     section: "general",
     dataFile: "assets/data/general/22-financial_aid",
-    totalResp: 967,
+    totalResp: 928,
     title: "Financial Aid",
     subtitle: "Are you on any form of financial aid?",
-    // 2022!!
+    // 2023!!
   }); 
 
   sota.bigNumber({
     section: "general",
-    number: "40.5%",
+    number: "42.0%",
     title: "Financial aid",
     subtitle: "of respondents are on financial aid provided by Andover.",
-    // 2022!!
+    // 2023!!
   });
 
 
 
-  sota.stackedBarChart({
-    section: "general",
-    dataFile: "assets/data/general/38-incarcerated",
-    totalResp: 930,
-    sorted: false,
-    title: "INCARCERATION",
-    subtitle: "Do you personally know someone who has been incarcerated?",
-    // shapeFile: "assets/svgs/handcuff"
-    // 2022!!
-  });
+  // sota.stackedBarChart({
+  //   section: "general",
+  //   dataFile: "assets/data/general/38-incarcerated",
+  //   totalResp: 930,
+  //   sorted: false,
+  //   title: "INCARCERATION",
+  //   subtitle: "Do you personally know someone who has been incarcerated?",
+  //   // shapeFile: "assets/svgs/handcuff"
+  //   // 2022!!
+  // });
 
 
 
-  sota.stackedBarChart({
-    section: "general",
-    dataFile: "assets/data/general/legacyXincome",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    displayPercentage: true,
-    showLegend: false,
-    title: "Legacy and Income",
-    subtitle:
-      "Whether or not respondents had at least one immediate family member who was attending or has previously attended Andover, and their income.",
-    // 2022!
-  });
+  // sota.stackedBarChart({
+  //   section: "general",
+  //   dataFile: "assets/data/general/legacyXincome",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   displayPercentage: true,
+  //   showLegend: false,
+  //   title: "Legacy and Income",
+  //   subtitle:
+  //     "Whether or not respondents had at least one immediate family member who was attending or has previously attended Andover, and their income.",
+  //   // 2022!
+  // });
 
-  sota.stackedBarChart({
-    section: "general",
-    dataFile: "assets/data/general/socioeconomicXincome0",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    showLegend: false,
-    title: "Perceived SEC & Income",
-    subtitle: "Perceived socioeconmic class compared to income of respondents.",
-    // 2022!!
-  }); //better if 2 pie charts
+  // sota.stackedBarChart({
+  //   section: "general",
+  //   dataFile: "assets/data/general/socioeconomicXincome0",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   showLegend: false,
+  //   title: "Perceived SEC & Income",
+  //   subtitle: "Perceived socioeconmic class compared to income of respondents.",
+  //   // 2022!!
+  // }); //better if 2 pie charts
 
-  sota.pieChart({
-    section: "general",
-    dataFile: "assets/data/general/23-varsity",
-    sorted: false,
-    title: "Varsity Athletics",
-    subtitle: "Are you a varsity athlete?",
-    // 2022!!
-  });
+  // sota.pieChart({
+  //   section: "general",
+  //   dataFile: "assets/data/general/23-varsity",
+  //   sorted: false,
+  //   title: "Varsity Athletics",
+  //   subtitle: "Are you a varsity athlete?",
+  //   // 2022!!
+  // });
 
-  sota.barChart({
-    section: "general",
-    dataFile: "assets/data/general/19-religion",
-    totalResp: 1075,
-    displayPercentage: true,
-    title: "Religious Affiliation",
-    subtitle:
-      "With which religion/faith system do you currently identify, if any?",
-  });
 
   // --- POLITICS!! --
 
   sota.pieChart({
     section: "politics",
     dataFile: "assets/data/politics/24-political_affiliation",
-    totalResp: 931,
+    totalResp: 883,
     title: "Political Affiliation",
     subtitle: "What is your political affiliation?",
-    // 2022!!
+    // 2023!!
   });
 
   sota.stackedBarChart({
