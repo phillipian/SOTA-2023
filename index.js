@@ -482,6 +482,34 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/changing-beliefs",
+    totalResp: 879,
+    title: "Changing Beliefs",
+    subtitle: "Have your political beliefs changed in the past year?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/andover-leaning",
+    totalResp: 878,
+    title: "Andover's Politics",
+    subtitle: "Do you think the Andover community has a political leaning?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/27-censorship",
+    title: "Self-Censorship",
+    totalResp: 882,
+    subtitle:
+      "While at Andover, have you ever felt the need to censor yourself due to your political leaning?",
+    // 2023!!
+  });
+
   sota.stackedBarChart({
     section: "politics",
     dataFile: "assets/data/politics/politicsXgender",
@@ -493,14 +521,7 @@ window.onload = () => {
       // 2022!!
   });
 
-  sota.pieChart({
-    section: "politics",
-    dataFile: "assets/data/politics/27-censorship",
-    title: "Self-Censorship",
-    subtitle:
-      "While at Andover, have you ever felt the need to censor yourself due to your political leaning?",
-    // 2022!!
-  });
+
 
   sota.stackedBarChart({
     section: "politics",
@@ -519,7 +540,7 @@ window.onload = () => {
     dataFile: "assets/data/politics/25-shifting_perspectives",
     title: "Shifting Perspectives",
     subtitle:
-      "Have your political beliefs  d after the increase in media coverage of societal and systemic injustices this past year?",
+      "Have your political beliefs d after the increase in media coverage of societal and systemic injustices this past year?",
     // 2022!!
   });
 
