@@ -510,6 +510,61 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/28-informed",
+    sorted: true,
+    title:
+      "How informed do you believe you are about politics and/or current events?",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "politics",
+    dataFile: "assets/data/politics/30-news_sources",
+    totalResp: 879,
+    displayPercentage: true,
+    title: "Staying Informed",
+    subtitle: "How do you get your news?",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "politics",
+    dataFile: "assets/data/politics/29-news",
+    totalResp: 876,
+    displayPercentage: true,
+    title: "Getting Information",
+    subtitle: "Where do you get your news?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/31-affirmative_action",
+    title: "Affirmative Action",
+    subtitle: "Do you support affirmative action in academic institutions?",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "politics",
+    number: "34.4%",
+    title: '"Reverse Racism"',
+    subtitle:
+      "of respondents believe that white people can experience racism, an increase from 2022's 31%.",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "politics",
+    dataFile: "assets/data/politics/32-reverse_racism",
+    title: '"Reverse Racism"',
+    subtitle:
+      "Do you believe that white people can experience racism (colloquially known as reverse racism)? ",
+      // 2023!!
+  });
+
   sota.stackedBarChart({
     section: "politics",
     dataFile: "assets/data/politics/politicsXgender",
@@ -535,24 +590,7 @@ window.onload = () => {
       // 2022!!
   });
 
-  sota.pieChart({
-    section: "politics",
-    dataFile: "assets/data/politics/25-shifting_perspectives",
-    title: "Shifting Perspectives",
-    subtitle:
-      "Have your political beliefs d after the increase in media coverage of societal and systemic injustices this past year?",
-    // 2022!!
-  });
 
-  sota.barChart({
-    section: "politics",
-    dataFile: "assets/data/politics/30-news_sources",
-    totalResp: 926,
-    displayPercentage: true,
-    title: "Staying Informed",
-    subtitle: "How do you get your news?",
-    // 2022!!
-  });
 
   sota.bigNumber({
     section: "politics",
@@ -591,14 +629,6 @@ window.onload = () => {
 
   // });
 
-  sota.pieChart({
-    section: "politics",
-    dataFile: "assets/data/politics/28-informed",
-    sorted: false,
-    title:
-      "How informed do you believe you are about politics and/or current events?",
-    // 2022!!
-  });
 
   sota.columnChart({
     section: "politics",
@@ -609,13 +639,7 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.pieChart({
-    section: "politics",
-    dataFile: "assets/data/politics/31-affirmative_action",
-    title: "Affirmative Action",
-    subtitle: "Do you support affirmative action in academic institutions?",
-    // 2022!!
-  });
+
 
   sota.stackedColumnChart({
     section: "politics",
