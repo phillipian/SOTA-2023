@@ -423,20 +423,6 @@ window.onload = () => {
   });
 
 
-
-  // sota.stackedBarChart({
-  //   section: "general",
-  //   dataFile: "assets/data/general/38-incarcerated",
-  //   totalResp: 930,
-  //   sorted: false,
-  //   title: "INCARCERATION",
-  //   subtitle: "Do you personally know someone who has been incarcerated?",
-  //   // shapeFile: "assets/svgs/handcuff"
-  //   // 2022!!
-  // });
-
-
-
   // sota.stackedBarChart({
   //   section: "general",
   //   dataFile: "assets/data/general/legacyXincome",
@@ -556,12 +542,100 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.bigNumber({
+    section: "politics",
+    number: "34.4%",
+    title: '"Reverse Racism"',
+    subtitle:
+      "of respondents believe that white people can experience racism, a decrease from 2021's 33.3%.",
+    // 2023!!
+  });
+
   sota.barChart({
     section: "politics",
     dataFile: "assets/data/politics/32-reverse_racism",
     title: '"Reverse Racism"',
     subtitle:
       "Do you believe that white people can experience racism (colloquially known as reverse racism)? ",
+      // 2023!!
+  });
+
+  sota.columnChart({
+    section: "politics",
+    dataFile: "assets/data/politics/33-blm",
+    showPercentage: true,
+    title: "Black Lives Matter",
+    subtitle: "Do you support the Black Lives Matter movement?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/advocacy-women",
+    title: "Women's Rights",
+    subtitle: "Do you support “the advocacy of women’s rights on the grounds of the equality of the sexes” (Oxford English Dictionary)?",
+    // 2023!!
+  });
+
+
+  sota.bigNumber({
+    section: "politics",
+    number: "70.8%",
+    title: "Feminism",
+    subtitle: "of respondents consider themselves feminists. ",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/35-feminist",
+    labelStyle: "onBar",
+    showLegend: true,
+    title: "Feminism",
+    subtitle: "Do you consider yourself a feminist?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/36-immigration",
+    title: "Immigration & Border Security",
+    subtitle:
+      "Do you believe that the United States should increase border security?",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/37-abortion",
+    labelStyle: "onBar",
+    showLegend: true,
+    title: "Abortion",
+    subtitle:
+      "Do you think that people should have the right to have an abortion?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "general",
+    dataFile: "assets/data/politics/incarcerated",
+    totalResp: 882,
+    title: "INCARCERATION",
+    subtitle: "Do you personally know someone who has been incarcerated?",
+    // shapeFile: "assets/svgs/handcuff"
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/prison_reformXincarceration",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage:true,
+    showLegend: true,
+    title: "Prison System",
+    subtitle:
+      "Do you believe that the current prison system in the United States should be altered?",
       // 2023!!
   });
 
@@ -592,22 +666,6 @@ window.onload = () => {
 
 
 
-  sota.bigNumber({
-    section: "politics",
-    number: "70.4%",
-    title: "Feminism",
-    subtitle: "of respondents consider themselves feminists. ",
-    // 2022!!
-  });
-
-  sota.stackedBarChart({
-    section: "politics",
-    dataFile: "assets/data/politics/35-feminist",
-    labelStyle: "onBar",
-    showLegend: true,
-    title: "Feminism",
-    subtitle: "Do you consider yourself a feminist?",
-  });
 
   sota.stackedBarChart({
     section: "politics",
@@ -630,14 +688,7 @@ window.onload = () => {
   // });
 
 
-  sota.columnChart({
-    section: "politics",
-    dataFile: "assets/data/politics/33-blm",
-    showPercentage: true,
-    title: "Black Lives Matter",
-    subtitle: "Do you support the Black Lives Matter movement?",
-    // 2022!!
-  });
+
 
 
 
@@ -669,45 +720,7 @@ window.onload = () => {
       // 2022!!
   });
 
-  sota.stackedBarChart({
-    section: "politics",
-    dataFile: "assets/data/politics/prison_reformXincarceration",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    displayPercentage:true,
-    showLegend: true,
-    title: "Prison System",
-    subtitle:
-      "Do you believe that the current prison system in the United States should be altered?",
-      // 2022!!
-  });
 
-  sota.pieChart({
-    section: "politics",
-    dataFile: "assets/data/politics/36-immigration",
-    title: "Immigration & Border Security",
-    subtitle:
-      "Do you believe that the United States should increase border security?",
-    // 2022!!
-  });
-
-  sota.bigNumber({
-    section: "politics",
-    number: "31.3%",
-    title: '"Reverse Racism"',
-    subtitle:
-      "of respondents believe that white people can experience racism, a decrease from 2021's 33.3%.",
-    // 2022!!
-  });
-
-  sota.barChart({
-    section: "politics",
-    dataFile: "assets/data/politics/32-reverse_racism",
-    title: '"Reverse Racism"',
-    subtitle:
-      "Do you believe that white people can experience racism (colloquially known as reverse racism)? ",
-      // 2022!!
-  });
 
   sota.stackedColumnChart({
     section: "campus",
@@ -719,16 +732,7 @@ window.onload = () => {
     subtitle: "Whether or not respondents believe that white people can experience racism (colloquially known as reverse racism) by race.",
   });
 
-  sota.stackedBarChart({
-    section: "politics",
-    dataFile: "assets/data/politics/37-abortion",
-    labelStyle: "onBar",
-    showLegend: true,
-    title: "Abortion",
-    subtitle:
-      "Do you think that people should have the right to have an abortion?",
-    // 2022!!
-  });
+
 
   sota.stackedColumnChart({
     section: "politics",
