@@ -1827,17 +1827,27 @@ window.onload = () => {
     groupLabelStyle: "onBar",
     title: "Alcohol",
     subtitle: "Have you ever consumed alcohol recreationally?",
-    // 2022!!
+    // 2023!!
   });
 
+  sota.pieChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/112-nicotine-product",
+    displayPercentage: true,
+    sorted: false,
+    title: "e-cigarette",
+    subtitle:
+      "Have you ever used an e-cigarette or vaped a nicotine-based product?",
+        // 2023!!
+  });
 
   sota.bigNumber({
     section: "drugs",
-    number: "28.6%",
-    title: "drugs",
+    number: "32.99%",
+    title: "nicotine use",
     subtitle:
-      "of respondents consume drugs.",
-      // 2022!!
+      "of respondents have used a nicotine-based product.",
+      // 2023!!
   });
 
   sota.barChart({
@@ -1846,8 +1856,8 @@ window.onload = () => {
     displayPercentage: true,
     groupLabelStyle: "onBar",
     title: "Marijuana",
-    subtitle: "Have you ever used marijuana?",
-    // 2022!!
+    subtitle: "Have you ever used any form of marijuana?",
+    // 2023!!
   });
 
   sota.columnChart({
@@ -1857,8 +1867,8 @@ window.onload = () => {
     groupLabelStyle: "onBar",
     title: "tobacco",
     subtitle:
-      "Have you ever used any tobacco products (e.g. dipping and chewing tobacco, cigarettes)?",
-      // 2022!!
+      "Have you ever used any tobacco products (e.g. dipping and chewing tobacco, cigarettes, etc.)?",
+      // 2023!!
   });
 
   // sota.stackedBarChart({
@@ -1875,21 +1885,21 @@ window.onload = () => {
     section: "drugs",
     dataFile: "assets/data/drugs/99-drug_frequency",
     displayPercentage: true,
-    totalResp: 949,
+    totalResp: 822,
     title: "Drug habits",
     subtitle:
       "How often do you consume recreational drugs or alcohol on campus?",
-      // 2022!!
+      // 2023!!
   });
 
 
   sota.bigNumber({
     section: "drugs",
-    number: "70.7%",
+    number: "83.56%",
     title: "normalization of drugs and alcohol",
     subtitle:
       "of respondents believe that the use of recreational drugs or alcohol is normalized at Andover.",
-  });
+  });// 2023!!
 
   // sota.pieChart({
   //     section:"drugs",
@@ -1905,26 +1915,26 @@ window.onload = () => {
     title: "drugs and friendships",
     title:
       "Do you think that recreational drug or alcohol use significantly influences your friendships at Andover?",
-      // 2022!!
+      // 2023!!
   });
 
-  sota.pieChart({
-    section: "drugs",
-    dataFile: "assets/data/drugs/102-dorm_drug",
-    displayPercentage: true,
-    title: "dorm culture",
-    subtitle:
-      "Do you think your dorm significantly influences how you think about/use drugs and alcohol?",
-      // 2022!!
-  });
+  // sota.pieChart({
+  //   section: "drugs",
+  //   dataFile: "assets/data/drugs/102-dorm_drug",
+  //   displayPercentage: true,
+  //   title: "dorm culture",
+  //   subtitle:
+  //     "Do you think your dorm significantly influences how you think about/use drugs and alcohol?",
+  //     // 2022!!
+  // });
 
   sota.bigNumber({
     section: "drugs",
-    number: "33.1%",
+    number: "30.8%",
     title: "Drugs vs. student leadership",
     subtitle:
-      "of student leaders have consumed drugs or alchohol in their dorms.",
-  });
+      "of student leaders have consumed drugs or alchohol on and off campus",
+  }); // 2023!!
 
   sota.pieChart({
     section: "drugs",
@@ -1933,7 +1943,7 @@ window.onload = () => {
     title: "study drugs",
     subtitle:
       "Have you ever used pharmaceutical drugs in the hopes of enhancing academic performance (i.e. “study drugs”) during your time at Andover?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.stackedBarChart({
@@ -1951,10 +1961,10 @@ window.onload = () => {
     section: "drugs",
     dataFile: "assets/data/drugs/103-hard_drugs",
     displayPercentage: true,
-    totalResp: 949,
+    totalResp: 819,
     title: "Hallucinogens & hard drugs",
     subtitle: "Have you ever used hallucinogens or hard drugs?",
-    // 2022!!
+    // 2023!!
   });
 
   // sota.stackedBarChart({
@@ -1974,7 +1984,7 @@ window.onload = () => {
     title: "peer pressure",
     subtitle:
       "Have you ever felt pressured by peers to consume recreational drugs or alcohol on campus?",
-      // 2022!!
+      // 2023!!
   });
   sota.pieChart({
     section: "drugs",
@@ -1984,19 +1994,29 @@ window.onload = () => {
     title: "sales",
     subtitle:
       "Have you ever sold someone recreational drugs, alcohol, or your prescription medication?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.barChart({
     section: "drugs",
     dataFile: "assets/data/drugs/107-location",
     displayPercentage: true,
-    totalResp: 949,
+    totalResp: 820,
     title: "location",
     subtitle:
       "In which of the following settings at Andover have you been under the influence of recreational drugs or alcohol?",
-      // 2022!!
+      // 2023!!
   });
+
+  sota.pieChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/111-fakeid",
+    displayPercentage: true,
+    title: "I.D.",
+    subtitle:
+      "Have you ever purchased or do you own a fake I.D.?",
+      // 2023!!
+    });
 
   sota.pieChart({
     section: "drugs",
@@ -2005,7 +2025,17 @@ window.onload = () => {
     title: "Have you ever been sanctuaried?",
     subtitle:
       "Sanctuary: provided with a means of accessing support in situations where alcohol, drugs, tobacco, and/or nicotine are involved WITHOUT disciplinary consequences (The Blue Book).",
-      // 2022!!
+      // 2023!!
+    });
+
+  sota.stackedBarChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/110-sanctuaried-other",
+    displayPercentage: true,
+    title: "sanctuaried",
+    subtitle:
+      "Have you ever sanctuaried someone else",
+      // 2023!!
   });
 
   // ----- WELLNESS!! <3 ------
