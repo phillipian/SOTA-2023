@@ -324,26 +324,6 @@ window.onload = () => {
     // 2023!!
   });
 
-  sota.columnChart({
-    section: "general",
-    dataFile: "assets/data/general/17-race",
-    totalResp: 1057,
-    title: "What is your race?",
-    subtitle:
-      "Editor’s Note: Respondents were given the option to select more than one answer if applicable.",
-    // 2022!!
-  });
-
-  sota.barChart({
-    section: "general",
-    dataFile: "assets/data/general/18-ethnicity",
-    totalResp: 1349,
-    title: "What is your ethnicity?",
-    subtitle:
-      "Editor’s Note: Respondents were given the option to select more than one answer if applicable.",
-    // 2022!!
-  });
-
   sota.barChart({
     section: "general",
     dataFile: "assets/data/general/15-sexual_orientation",
@@ -362,6 +342,27 @@ window.onload = () => {
     // 2023!!
   });
 
+
+  sota.columnChart({
+    section: "general",
+    dataFile: "assets/data/general/17-race",
+    totalResp: 926,
+    title: "What is your race?",
+    subtitle:
+      "Editor’s Note: Respondents were given the option to select more than one answer if applicable.",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/18-ethnicity",
+    totalResp: 922,
+    title: "What is your ethnicity?",
+    subtitle:
+      "Editor’s Note: Respondents were given the option to select more than one answer if applicable.",
+    // 2023!!
+  });
+
   // sota.stackedBarChart({
   //     section: "general",
   //     dataFile: "assets/data/general/sexual_orientationXgender",
@@ -372,102 +373,320 @@ window.onload = () => {
   //     subtitle: "Editor’s Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents."
   // })
 
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/19-religion",
+    totalResp: 924,
+    displayPercentage: true,
+    title: "With which religion/faith system do you currently identify with?",
+    subtitle:
+      "Editor's Note: Respondents were given the option to select more than one answer if applicable.",
+    // 2023!!
+  });
 
+  sota.barChart({
+    section: "general",
+    dataFile: "assets/data/general/perceived-socioeconomic",
+    totalResp: 923,
+    displayPercentage: true,
+    title: "Socioeconomic Status",
+    subtitle:
+      "What is your perceived socioeconomic status?",
+    // 2023!!
+  });
 
   sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/21-income",
-    totalResp: 945,
+    totalResp: 921,
     sorted: false,
-    title: "NET INCOME",
+    title: "Net Income",
     subtitle: "What is your net family income?",
-    // 2022!!
+    // 2023!!
   });
 
   sota.columnChart({
     section: "general",
     dataFile: "assets/data/general/22-financial_aid",
-    totalResp: 967,
+    totalResp: 928,
     title: "Financial Aid",
     subtitle: "Are you on any form of financial aid?",
-    // 2022!!
+    // 2023!!
   }); 
 
   sota.bigNumber({
     section: "general",
-    number: "40.5%",
+    number: "42.0%",
     title: "Financial aid",
     subtitle: "of respondents are on financial aid provided by Andover.",
-    // 2022!!
+    // 2023!!
   });
 
 
+  // sota.stackedBarChart({
+  //   section: "general",
+  //   dataFile: "assets/data/general/legacyXincome",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   displayPercentage: true,
+  //   showLegend: false,
+  //   title: "Legacy and Income",
+  //   subtitle:
+  //     "Whether or not respondents had at least one immediate family member who was attending or has previously attended Andover, and their income.",
+  //   // 2022!
+  // });
 
-  sota.stackedBarChart({
-    section: "general",
-    dataFile: "assets/data/general/38-incarcerated",
-    totalResp: 930,
-    sorted: false,
-    title: "INCARCERATION",
-    subtitle: "Do you personally know someone who has been incarcerated?",
-    // shapeFile: "assets/svgs/handcuff"
-    // 2022!!
-  });
+  // sota.stackedBarChart({
+  //   section: "general",
+  //   dataFile: "assets/data/general/socioeconomicXincome0",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   showLegend: false,
+  //   title: "Perceived SEC & Income",
+  //   subtitle: "Perceived socioeconmic class compared to income of respondents.",
+  //   // 2022!!
+  // }); //better if 2 pie charts
 
+  // sota.pieChart({
+  //   section: "general",
+  //   dataFile: "assets/data/general/23-varsity",
+  //   sorted: false,
+  //   title: "Varsity Athletics",
+  //   subtitle: "Are you a varsity athlete?",
+  //   // 2022!!
+  // });
 
-
-  sota.stackedBarChart({
-    section: "general",
-    dataFile: "assets/data/general/legacyXincome",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    displayPercentage: true,
-    showLegend: false,
-    title: "Legacy and Income",
-    subtitle:
-      "Whether or not respondents had at least one immediate family member who was attending or has previously attended Andover, and their income.",
-    // 2022!
-  });
-
-  sota.stackedBarChart({
-    section: "general",
-    dataFile: "assets/data/general/socioeconomicXincome0",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    showLegend: false,
-    title: "Perceived SEC & Income",
-    subtitle: "Perceived socioeconmic class compared to income of respondents.",
-    // 2022!!
-  }); //better if 2 pie charts
-
-  sota.pieChart({
-    section: "general",
-    dataFile: "assets/data/general/23-varsity",
-    sorted: false,
-    title: "Varsity Athletics",
-    subtitle: "Are you a varsity athlete?",
-    // 2022!!
-  });
-
-  sota.barChart({
-    section: "general",
-    dataFile: "assets/data/general/19-religion",
-    totalResp: 1075,
-    displayPercentage: true,
-    title: "Religious Affiliation",
-    subtitle:
-      "With which religion/faith system do you currently identify, if any?",
-  });
 
   // --- POLITICS!! --
 
   sota.pieChart({
     section: "politics",
     dataFile: "assets/data/politics/24-political_affiliation",
-    totalResp: 931,
+    totalResp: 883,
+    sorted: false,
     title: "Political Affiliation",
     subtitle: "What is your political affiliation?",
-    // 2022!!
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/changing-beliefs",
+    totalResp: 879,
+    sorted: false,
+    title: "Changing Beliefs",
+    subtitle: "Have your political beliefs changed in the past year?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/andover-leaning",
+    totalResp: 878,
+    sorted: false,
+    title: "Andover's Politics",
+    subtitle: "Do you think the Andover community has a political leaning?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/27-censorship",
+    title: "Self-Censorship",
+    totalResp: 882,
+    sorted: false,
+    subtitle:
+      "While at Andover, have you ever felt the need to censor yourself due to your political leaning?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/28-informed",
+    sorted: false,
+    title:
+      "How informed do you believe you are about politics and/or current events?",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "politics",
+    dataFile: "assets/data/politics/30-news_sources",
+    totalResp: 879,
+    displayPercentage: true,
+    title: "Staying Informed",
+    subtitle: "How do you get your news?",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "politics",
+    dataFile: "assets/data/politics/29-news",
+    totalResp: 876,
+    displayPercentage: true,
+    title: "Getting Information",
+    subtitle: "Where do you get your news?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/31-affirmative_action",
+    title: "Affirmative Action",
+    subtitle: "Do you support affirmative action in academic institutions?",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "politics",
+    number: "34.4%",
+    title: '"Reverse Racism"',
+    subtitle:
+      "of respondents believe that white people can experience racism, an increase from 2022's 31%.",
+    // 2023!!
+  });
+
+
+  sota.barChart({
+    section: "politics",
+    dataFile: "assets/data/politics/32-reverse_racism",
+    title: '"Reverse Racism"',
+    subtitle:
+      "Do you believe that white people can experience racism (colloquially known as reverse racism)? ",
+      // 2023!!
+  });
+
+  sota.columnChart({
+    section: "politics",
+    dataFile: "assets/data/politics/33-blm",
+    showPercentage: true,
+    title: "Black Lives Matter",
+    subtitle: "Do you support the Black Lives Matter movement?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/advocacy-women",
+    title: "Women's Rights",
+    subtitle: "Do you support “the advocacy of women’s rights on the grounds of the equality of the sexes” (Oxford English Dictionary)?",
+    // 2023!!
+  });
+
+
+  sota.bigNumber({
+    section: "politics",
+    number: "70.8%",
+    title: "Feminism",
+    subtitle: "of respondents consider themselves feminists. ",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/35-feminist",
+    labelStyle: "onBar",
+    showLegend: true,
+    title: "Feminism",
+    subtitle: "Do you consider yourself a feminist?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/36-immigration",
+    title: "Immigration & Border Security",
+    subtitle:
+      "Do you believe that the United States should increase border security?",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/37-abortion",
+    labelStyle: "onBar",
+    showLegend: true,
+    title: "Abortion",
+    subtitle:
+      "Do you think that people should have the right to have an abortion?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "general",
+    dataFile: "assets/data/politics/incarcerated",
+    totalResp: 882,
+    title: "INCARCERATION",
+    subtitle: "Do you personally know someone who has been incarcerated?",
+    // shapeFile: "assets/svgs/handcuff"
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/prison_reformXincarceration",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage:true,
+    showLegend: true,
+    title: "Prison System",
+    subtitle:
+      "Do you believe that the current prison system in the United States should be altered?",
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/police",
+    title: "Police Reform",
+    subtitle:
+      "Do you believe that the current police system in the United States of America should be altered?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/israel-palestine",
+    title: "Israel-Palestine Conflict",
+    subtitle:
+      "Are you “pro-Israel” or “pro-Palestine” in the Israel-Palestine conflict?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/drug-decriminalization",
+    title: "Israel-Palestine Conflict",
+    subtitle:
+      "Are you “pro-Israel” or “pro-Palestine” in the Israel-Palestine conflict?",
+    // 2023!!
+  });
+
+  sota.customBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/42-firearms",
+    title: "Firearm Ownership",
+    subtitle: "Does your family own firearms?",
+    shapeFile: "assets/svgs/gun"
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "politics",
+    number: "92.7%",
+    title: "Gun Control",
+    subtitle:
+      "of respondents believe that gun control laws in the United States should be stricter.",
+      // 2022!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/gun-reform",
+    title: "Gun Reform",
+    subtitle:
+      "Do you think that gun control laws in the United States should change?",
+    // 2023!!
   });
 
   sota.stackedBarChart({
@@ -481,14 +700,7 @@ window.onload = () => {
       // 2022!!
   });
 
-  sota.pieChart({
-    section: "politics",
-    dataFile: "assets/data/politics/27-censorship",
-    title: "Self-Censorship",
-    subtitle:
-      "While at Andover, have you ever felt the need to censor yourself due to your political leaning?",
-    // 2022!!
-  });
+
 
   sota.stackedBarChart({
     section: "politics",
@@ -502,41 +714,8 @@ window.onload = () => {
       // 2022!!
   });
 
-  sota.pieChart({
-    section: "politics",
-    dataFile: "assets/data/politics/25-shifting_perspectives",
-    title: "Shifting Perspectives",
-    subtitle:
-      "Have your political beliefs  d after the increase in media coverage of societal and systemic injustices this past year?",
-    // 2022!!
-  });
 
-  sota.barChart({
-    section: "politics",
-    dataFile: "assets/data/politics/30-news_sources",
-    totalResp: 926,
-    displayPercentage: true,
-    title: "Staying Informed",
-    subtitle: "How do you get your news?",
-    // 2022!!
-  });
 
-  sota.bigNumber({
-    section: "politics",
-    number: "70.4%",
-    title: "Feminism",
-    subtitle: "of respondents consider themselves feminists. ",
-    // 2022!!
-  });
-
-  sota.stackedBarChart({
-    section: "politics",
-    dataFile: "assets/data/politics/35-feminist",
-    labelStyle: "onBar",
-    showLegend: true,
-    title: "Feminism",
-    subtitle: "Do you consider yourself a feminist?",
-  });
 
   sota.stackedBarChart({
     section: "politics",
@@ -558,31 +737,10 @@ window.onload = () => {
 
   // });
 
-  sota.pieChart({
-    section: "politics",
-    dataFile: "assets/data/politics/28-informed",
-    sorted: false,
-    title:
-      "How informed do you believe you are about politics and/or current events?",
-    // 2022!!
-  });
 
-  sota.columnChart({
-    section: "politics",
-    dataFile: "assets/data/politics/33-blm",
-    showPercentage: true,
-    title: "Black Lives Matter",
-    subtitle: "Do you support the Black Lives Matter movement?",
-    // 2022!!
-  });
 
-  sota.pieChart({
-    section: "politics",
-    dataFile: "assets/data/politics/31-affirmative_action",
-    title: "Affirmative Action",
-    subtitle: "Do you support affirmative action in academic institutions?",
-    // 2022!!
-  });
+
+
 
   sota.stackedColumnChart({
     section: "politics",
@@ -612,45 +770,7 @@ window.onload = () => {
       // 2022!!
   });
 
-  sota.stackedBarChart({
-    section: "politics",
-    dataFile: "assets/data/politics/prison_reformXincarceration",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    displayPercentage:true,
-    showLegend: true,
-    title: "Prison System",
-    subtitle:
-      "Do you believe that the current prison system in the United States should be altered?",
-      // 2022!!
-  });
 
-  sota.pieChart({
-    section: "politics",
-    dataFile: "assets/data/politics/36-immigration",
-    title: "Immigration & Border Security",
-    subtitle:
-      "Do you believe that the United States should increase border security?",
-    // 2022!!
-  });
-
-  sota.bigNumber({
-    section: "politics",
-    number: "31.3%",
-    title: '"Reverse Racism"',
-    subtitle:
-      "of respondents believe that white people can experience racism, a decrease from 2021's 33.3%.",
-    // 2022!!
-  });
-
-  sota.barChart({
-    section: "politics",
-    dataFile: "assets/data/politics/32-reverse_racism",
-    title: '"Reverse Racism"',
-    subtitle:
-      "Do you believe that white people can experience racism (colloquially known as reverse racism)? ",
-      // 2022!!
-  });
 
   sota.stackedColumnChart({
     section: "campus",
@@ -662,16 +782,7 @@ window.onload = () => {
     subtitle: "Whether or not respondents believe that white people can experience racism (colloquially known as reverse racism) by race.",
   });
 
-  sota.stackedBarChart({
-    section: "politics",
-    dataFile: "assets/data/politics/37-abortion",
-    labelStyle: "onBar",
-    showLegend: true,
-    title: "Abortion",
-    subtitle:
-      "Do you think that people should have the right to have an abortion?",
-    // 2022!!
-  });
+
 
   sota.stackedColumnChart({
     section: "politics",
@@ -718,23 +829,9 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.customBarChart({
-    section: "politics",
-    dataFile: "assets/data/politics/42-firearms",
-    title: "Firearm Ownership",
-    subtitle: "Does your family own firearms?",
-    shapeFile: "assets/svgs/gun"
-    // 2022!!
-  });
 
-  sota.bigNumber({
-    section: "politics",
-    number: "84.3%",
-    title: "Gun Control",
-    subtitle:
-      "of respondents believe that gun control laws in the United States should be stricter.",
-      // 2022!!
-  });
+
+
 
   // --- CAMPUS CULTURE!! ----
 
