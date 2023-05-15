@@ -824,7 +824,6 @@ window.onload = () => {
     section: "campus",
     dataFile: "assets/data/campus/128-ideologicaldiversity",
     title: "ideological diversity",
-    showLegend: true,
     subtitle:
       "Do you think the school promotes ideological diversity in its selection of speakers?",
       // 2023!!
@@ -841,7 +840,6 @@ window.onload = () => {
   sota.pieChart({
     section: "campus",
     dataFile: "assets/data/campus/130-indigenousday",
-
     title:
       'Do you think that Andover should have a "day on" for Indigenous People\'s Day?',
       // 2023!!
@@ -868,7 +866,7 @@ window.onload = () => {
   sota.pieChart({
     section: "campus",
     dataFile: "assets/data/campus/132-glorifyathletics",
-
+    sorted: false,
     title: "Do you think that Andover prioritizes athletics (compared to music, art, robotics, etc.)?",
     // 2023!!
   });
@@ -894,6 +892,7 @@ window.onload = () => {
   sota.pieChart({
     section: "campus",
     dataFile: "assets/data/campus/134-environment_impact",
+    sorted: false,
     title: "climate education",
     subtitle:
       "Do you feel that environmental issues (global warming, water, and air pollution, etc.) directly impact your life?",
@@ -903,6 +902,7 @@ window.onload = () => {
   sota.pieChart({
     section: "campus",
     dataFile: "assets/data/campus/135-combat_climate_change",
+    sorted: false,
     title: "Climate change",
     subtitle:
       "Do you feel like Andover is doing enough to combat climate change?",
@@ -912,6 +912,7 @@ window.onload = () => {
   sota.pieChart({
       section: "campus",
       dataFile: "assets/data/campus/136-divestfossilfuel",
+      sorted: false,
       title: "Do you believe that Andover should divest from fossil fuel companies?",
       subtitle: "Divestment is the act of \"taking money away from where you have invested it\" (Oxford Dictionaries).",
       // 2023!!
@@ -1057,32 +1058,66 @@ window.onload = () => {
   });
 
   // --- SCHOOL!! ---
+  sota.bigNumber({
+    section: "school",
+    number: "5.41",
+    title: "Overall Average GPA",
+    subtitle: "average rounded Winter Term G.P.A, a 0.6 increase from 2022 (last year).",
+    // 2023!!
+  });
+
+  sota.lineGraph({
+    section: "school",
+    dataFile: "assets/data/school/111-gpa",
+    maxVal: 156,
+    title: "G.P.A",
+    subtitle: "What was your rounded Winter 2022-2023 G.P.A.? (If you are between two numbers, round up to the closest decimal – a 5.3 G.P.A. would round to a 5.4. If you earned a Pass or multiple Passes, exclude this from your calculation).",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "school",
+    dataFile: "assets/data/school/112-4_good",
+    // totalResp: 854,
+    title: "Grading Scale",
+    subtitle: 'Do you think a "4" is a good grade?',
+    // 2023!!
+  });
 
   sota.bigNumber({
     section: "school",
-    number: "5.7",
+    number: "3.8",
     title: "Time Spent on Coursework",
-    subtitle: "average hours spent on coursework daily, a 1.17 hour increase from 2021 (last year).",
-    // 2022!!
+    subtitle: "average hours spent on coursework daily, a 1.9 hour decrease from 2022 (last year).",
+    // 2023!!
   });
 
   sota.lineGraph({
     section: "school",
     dataFile: "assets/data/school/113-hours_on_coursework",
     minVal: 2,
-    maxVal: 250,
+    maxVal: 259,
     title: "Hours on coursework",
-    subtitle: "Q113. How many hours do you spend on coursework outside of class each day?",
-    // 2022!
+    subtitle: "How many hours do you spend on coursework outside of class each day?",
+    // 2023!
   });
 
-  sota.lineGraph({
+  sota.barChart({
     section: "school",
-    dataFile: "assets/data/school/111-gpa",
-    maxVal: 180,
-    title: "G.P.A",
-    subtitle: "What was your rounded Winter 2021-2022 G.P.A.? (If you are between two numbers, round up to the closest decimal – a 5.3 G.P.A. would round to a 5.4. If you earned a Pass or multiple Passes, exclude this from your calculation).",
-    // 2022!!
+    dataFile: "assets/data/school/114-department_disparity",
+    title: "Disparity between teachers",
+    subtitle: "In which department(s), if any, is/are there an unreasonable grading disparity between teachers? Check all that apply.",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/115-switch_teacher",
+    sorted: false,
+    title: "Switching Teachers",
+    subtitle:
+      "Have you ever switched or attempted to switch teachers within the same course in order to attain a better grade?",
+      // 2023!!
   });
 
   sota.multiLineGraph({
@@ -1095,30 +1130,9 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.bigNumber({
-    section: "school",
-    number: "5.35",
-    title: "Overall Average G.P.A (Winter 2021-2022)",
-    subtitle: "Editor's note: the actual average G.P.A. according to Dean of Students Office was 5.29",
-    // 2022!!
-  });
 
-  sota.barChart({
-    section: "school",
-    dataFile: "assets/data/school/112-4_good",
-    // totalResp: 854,
-    title: "Grading Scale",
-    subtitle: 'Do you think a "4" is a good grade?',
-    // 2022!!
-  });
 
-  sota.barChart({
-    section: "school",
-    dataFile: "assets/data/school/114-department_disparity",
-    title: "Disparity between teachers",
-    subtitle: "In which department(s), if any, is/are there an unreasonable grading disparity between teachers? Check all that apply.",
-    // 2022!!
-  });
+
 
   sota.lineGraph({
     section: "school",
@@ -1131,15 +1145,7 @@ window.onload = () => {
       // 2022!!
   });
 
-  sota.pieChart({
-    section: "school",
-    dataFile: "assets/data/school/115-switch_teacher",
-    sorted: false,
-    title: "Switching Teachers",
-    subtitle:
-      "Have you ever switched or attempted to switch teachers within the same course in order to attain a better grade?",
-      // 2022!!
-  });
+
 
   sota.stackedColumnChart({
     section: "school",
