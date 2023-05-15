@@ -1164,7 +1164,7 @@ window.onload = () => {
     title: "Disciplinary System Effectiveness",
     subtitle:
       "Do you think that the new disciplinary system effectively responds to students who are caught breaking school rules?",
-      // 2023!!
+      // 2022!!
   });
 
   sota.stackedBarChart({
