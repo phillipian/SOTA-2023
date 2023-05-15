@@ -833,7 +833,6 @@ window.onload = () => {
   sota.pieChart({
     section: "campus",
     dataFile: "assets/data/campus/129-antiracismwork",
-
     title: "Anti-racist work",
     subtitle: "Do you think Andover’s anti-racist work is sufficient?",
     // 2023!!
