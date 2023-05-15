@@ -1355,35 +1355,35 @@ window.onload = () => {
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/138-faculty_diversity",
-    totalResp: 949,
+    totalResp: 757,
     displayPercentage: true,
     title: "Faculty Diversity",
     subtitle:
       "Do you think the faculty is lacking in diversity in _______________ ?",
-      // 2022!!
+      // 2023!!
   });
 
-  sota.stackedBarChart({
-    section: "diversity",
-    dataFile: "assets/data/diversity/faculty_diversityXgender",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    showLegend: true,
-    title: "Faculty Diversity By Gender",
-    subtitle: "Do you think the faculty is lacking in diversity of gender?",
-    // 2022!!
-  });
+  // sota.stackedBarChart({
+  //   section: "diversity",
+  //   dataFile: "assets/data/diversity/faculty_diversityXgender",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   showLegend: true,
+  //   title: "Faculty Diversity By Gender",
+  //   subtitle: "Do you think the faculty is lacking in diversity of gender?",
+  //   // 2022!!
+  // });
 
-  sota.stackedBarChart({
-    section: "diversity",
-    dataFile: "assets/data/diversity/faculty_diversityXrace",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    showLegend: true,
-    title: "Faculty Diversity By Race",
-    subtitle: "Do you think the faculty is lacking in diversity of race?",
-    // 2022!!
-  });
+  // sota.stackedBarChart({
+  //   section: "diversity",
+  //   dataFile: "assets/data/diversity/faculty_diversityXrace",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   showLegend: true,
+  //   title: "Faculty Diversity By Race",
+  //   subtitle: "Do you think the faculty is lacking in diversity of race?",
+  //   // 2022!!
+  // });
 
   // sota.stackedBarChart({
   //   section: "diversity",
@@ -1399,67 +1399,67 @@ window.onload = () => {
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/140-social_divide",
-    totalResp: 875,
+    totalResp: 763,
     displayPercentage: true,
     title: "Social Divide",
     subtitle:
       "Do you feel like there is a social divide at Andover between students of different _______________ ?",
-      // 2022!!
+      // 2023!!
   });
 
-  sota.stackedBarChart({
-    section: "diversity",
-    dataFile: "assets/data/diversity/social_divideXrace",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    showLegend: false,
-    title: "Social Divide by Racial Group",
-    subtitle: "Whether or not students believe there is a social divide on campus compared to their racial group.",
-    // 2022!!
-  });
+  // sota.stackedBarChart({
+  //   section: "diversity",
+  //   dataFile: "assets/data/diversity/social_divideXrace",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   showLegend: false,
+  //   title: "Social Divide by Racial Group",
+  //   subtitle: "Whether or not students believe there is a social divide on campus compared to their racial group.",
+  //   // 2022!!
+  // });
 
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/143-discrimination",
-    totalResp: 864,
+    totalResp: 747,
     displayPercentage: true,
     title: "Discrimination",
     subtitle:
       "Have you ever felt discriminated against at Andover due to your __________?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/139-faculty_support",
-    totalResp: 848,
+    totalResp: 745,
     displayPercentage: true,
     title: "Faculty Support",
     subtitle:
       "Which of the faculty/staff members in your life do you feel are supportive of a diverse range of students?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/144-identity_discussion",
-    totalResp: 870,
+    totalResp: 745,
     displayPercentage: true,
     title: "Talking the Talk",
     subtitle:
       "Do you think that there are facets of identity that are not discussed enough at Andover?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/142-classroom_comfort",
-    totalResp: 871,
+    totalResp: 752,
     displayPercentage: true,
     title: "Classroom",
     subtitle:
       "While at Andover, have any of the following aspects of your identity significantly and consistently affected your level of comfort in a classroom setting?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.pieChart({
@@ -1469,7 +1469,7 @@ window.onload = () => {
     title: "EBI Curriculum",
     subtitle:
       "Do you think the EBI curriculum at Andover is effective in helping students become better community members?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.stackedBarChart({
@@ -1479,19 +1479,19 @@ window.onload = () => {
     title: "EBI Curriculum Effectiveness for each class",
     subtitle:
       "Do you think the EBI curriculum at Andover is effective in helping students become better community members?",
-      // 2022!!
+      // 2023!!
   });
 
 
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/141-leadership",
-    totalResp: 862,
+    totalResp: 737,
     displayPercentage: true,
     title: "Leadership Positions",
     subtitle:
       "Do you think your capability to attain leadership positions at Andover is affected by your __________?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.stackedBarChart({
@@ -1500,7 +1500,7 @@ window.onload = () => {
     title: "Day Students",
     subtitle:
       "Do you think day students are able to integrate enough with boarding students at Andover this year?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.stackedBarChart({
@@ -1509,7 +1509,7 @@ window.onload = () => {
     title: "Day Student Integration vs. student status",
     subtitle:
       "Do you think day students are able to integrate enough with boarding students at Andover this year?",
-      // 2022!!
+      // 2023!!
   });
 
 
