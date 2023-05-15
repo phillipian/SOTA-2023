@@ -1120,6 +1120,139 @@ window.onload = () => {
       // 2023!!
   });
 
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/117-student_leader",
+    sorted: false,
+    title: "Student Leadership",
+    subtitle:
+      "Are you currently a student leader (prefect, proctor, DSM, EBI Senior, Cluster or School Co-President) on campus?",
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/leadership-positions",
+    sorted: false,
+    title: "Leadership Positions",
+    subtitle:
+      "How many leadership positions do you hold on campus?",
+      // 2023!!
+  });
+
+  sota.barChart({
+    section: "school",
+    dataFile: "assets/data/school/119-extracurriculars",
+    showLegend: true,
+    title: "On Campus, I ...",
+    subtitle:
+      "Do you participate in any extracurriculars because you think they will increase your chances of getting into a selective college?",
+      // 2023!!
+  });
+
+  sota.barChart({
+    section: "school",
+    dataFile: "assets/data/school/120-leaving",
+    showLegend: true,
+    title: "Leaving Andover",
+    subtitle: "Have you ever considered leaving Andover permanently or temporarily?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/121-teacher_care",
+    totalResp: 802,
+    sorted: false,
+    title: "Teacher Support",
+    subtitle:
+      "Do you think that the majority of your teachers care about your health and well-being?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/122-children",
+    sorted: false,
+    showLegend: true,
+    title: "Would you want your children to attend andover?",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "school",
+    dataFile: "assets/data/school/123-come_to_andover",
+    title:
+      "In retrospect, would you still make the decision to come to andover?",
+      // 2023!!
+  });
+
+
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/124-family_relationship",
+    sorted: false,
+    showLegend: true,
+    title: "Andover and family",
+    subtitle:
+      "Has attending Andover affected your relationship with your family?",
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/disability",
+    sorted: false,
+    showLegend: true,
+    title: "Learning Disabilities",
+    subtitle:
+      "Do you have a disability that affects your learning?",
+      // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "school",
+    number: "12.2%",
+    title: "Learning Disabiliy",
+    subtitle:
+      "of respondents have disability/disorder/impairment that affects their learning.",
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/accomodations",
+    sorted: false,
+    showLegend: true,
+    title: "Learning Accomodations",
+    subtitle:
+      "Do you currently have learning accommodations at Andover?",
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/andover-accomodations",
+    sorted: false,
+    showLegend: true,
+    title: "Andover Accomodations",
+    subtitle:
+      "Do you currently have learning accommodations at Andover?",
+      // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "school",
+    dataFile: "assets/data/school/learning_disabilityXaccomodation",
+    labelStyle: "onBar",
+    displayPercentage: true,
+    groupLabelStyle: "onBar",
+    showLegend: true,
+    title:
+      "Do you think Andover adequately accommodates students with learning disabilities?",
+      // 2022!!
+  });
+
   sota.multiLineGraph({
     section: "school",
     dataFile: "assets/data/school/gpaXgender",
@@ -1156,26 +1289,9 @@ window.onload = () => {
       // 2022!!
   });
 
-  sota.stackedBarChart({
-    section: "school",
-    dataFile: "assets/data/school/119-extracurriculars",
-    labelStyle: "onBar",
-    showLegend: true,
-    title: "On Campus, I ...",
-    subtitle:
-      "Do you participate in any extracurriculars because you think they will increase your chances of getting into a selective college?",
-      // 2022!!
-  });
 
-  sota.pieChart({
-    section: "school",
-    dataFile: "assets/data/school/121-teacher_care",
-    totalResp: 903,
-    title: "Teacher Support",
-    subtitle:
-      "Do you think that the majority of your teachers care about your health and well-being?",
-    // 2022!!
-  });
+
+
 
   sota.bigNumber({
     section: "school",
@@ -1184,15 +1300,7 @@ window.onload = () => {
     subtitle: "of respondents do not think the majority of their teachers care about their health and well-being.",
     // 2022!!
   });
-  sota.pieChart({
-    section: "school",
-    dataFile: "assets/data/school/117-student_leader",
-    sorted: false,
-    title: "Student Leadership",
-    subtitle:
-      "Are you currently a student leader (prefect, proctor, DSM, EBI Senior, Cluster or School Co-President) on campus?",
-      // 2022!!
-  });
+
 
   // sota.pieChart({
   //   section: "school",
@@ -1201,56 +1309,13 @@ window.onload = () => {
   //   title: "Are you a board member of a club on campus?",
   // });
 
-  sota.stackedBarChart({
-    section: "school",
-    dataFile: "assets/data/school/122-children",
-    labelStyle: "onBar",
-    showLegend: true,
-    title: "Would you want your children to attend andover?",
-    // 2022!!
-  });
 
-  sota.stackedBarChart({
-    section: "school",
-    dataFile: "assets/data/school/124-family_relationship",
-    labelStyle: "onBar",
-    showLegend: true,
-    title: "Andover and family",
-    subtitle:
-      "Has attending Andover affected your relationship ith your family?",
-      // 2022!!
-  });
 
-  sota.stackedBarChart({
-    section: "school",
-    dataFile: "assets/data/school/120-leaving",
-    labelStyle: "onBar",
-    showLegend: true,
-    title: "Leaving Andover",
-    subtitle: "Have you ever considered leaving Andover permanently?",
-    // 2022!!
-  });
 
-  sota.bigNumber({
-    section: "school",
-    number: "12.1%",
-    title: "Learning Accommodations",
-    subtitle:
-      "of respondents have disability/disorder/impairment that affects their learning.",
-      // 2022!!
-  });
 
-  sota.stackedBarChart({
-    section: "school",
-    dataFile: "assets/data/school/learning_disabilityXaccomodation",
-    labelStyle: "onBar",
-    displayPercentage: true,
-    groupLabelStyle: "onBar",
-    showLegend: true,
-    title:
-      "Do you think Andover adequately accommodates students with learning disabilities?",
-      // 2022!!
-  });
+
+
+
 
   // sota.pieChart({
   //   section: "school",
@@ -1261,13 +1326,6 @@ window.onload = () => {
   //     "Generally speaking, has attending Andover significantly affected your character?",
   // });
 
-  sota.barChart({
-    section: "school",
-    dataFile: "assets/data/school/123-come_to_andover",
-    title:
-      "In retrospect, would you still make the decision to come to andover?",
-      // 2022!!
-  });
 
   // --- DISCIPLINE!! ---
 
