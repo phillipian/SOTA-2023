@@ -1524,7 +1524,7 @@ window.onload = () => {
       // 2023!!
   });
 
-  sota.stackedBarChart({
+  sota.pieChart({
     section: "diversity",
     dataFile: "assets/data/diversity/146-day_student",
     title: "Day Students",
