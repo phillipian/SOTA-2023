@@ -1228,20 +1228,20 @@ window.onload = () => {
 
   sota.bigNumber({
     section: "discipline",
-    number: "40.6%",
-    title: "Major Offenses",
+    number: "10.79%",
+    title: "Level 3 Violation",
     subtitle:
-      "of respondents have commited a major offense without being caught.",
-      // 2022!!
+      "of respondents have commited a Level 3 violation without being caught.",
+      // 2023!!
   });
 
-  sota.pieChart({
-    section: "discipline",
-    dataFile: "assets/data/discipline/148-CCCDC",
-    sorted: false,
-    title: "Have you ever sat before a ccc or a dc?",
-    // 2022!!
-  });
+  // sota.pieChart({
+  //   section: "discipline",
+  //   dataFile: "assets/data/discipline/148-CCCDC",
+  //   sorted: false,
+  //   title: "Have you ever sat before a ccc or a dc?",
+  //   // 2022!!
+  // });
 
   sota.columnChart({
     section: "discipline",
@@ -1261,26 +1261,36 @@ window.onload = () => {
     title: "Disciplinary System Effectiveness",
     subtitle:
       "Do you think that the new disciplinary system effectively responds to students who are caught breaking school rules?",
-      // 2022!!
+      // 2023!!
   });
 
-  sota.stackedBarChart({
+  sota.pieChart({
     section: "discipline",
-    dataFile: "assets/data/discipline/major_offensesXboarding",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    title: "Boarding vs. day students and major offenses",
-    subtitle: "Have you ever committed a major offense without being caught?",
-  });
-
-  sota.bigNumber({
-    section: "discipline",
-    number: "33.0%",
-    title: "Concerning Contraband",
+    dataFile: "assets/data/discipline/159-privilege-background",
+    sorted: false,
+    title: "Privilege",
     subtitle:
-      "of respondents think that the administration should have the right to search an entire dorm for contraband material.",
-      // 2022!!
+      "Do you think that the school's disciplinary system favors students of privileged backgrounds?",
+      // 2023!!
   });
+
+  // sota.stackedBarChart({
+  //   section: "discipline",
+  //   dataFile: "assets/data/discipline/major_offensesXboarding",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   title: "Boarding vs. day students and major offenses",
+  //   subtitle: "Have you ever committed a major offense without being caught?",
+  // });
+
+  // sota.bigNumber({
+  //   section: "discipline",
+  //   number: "33.0%",
+  //   title: "Concerning Contraband",
+  //   subtitle:
+  //     "of respondents think that the administration should have the right to search an entire dorm for contraband material.",
+  //     // 2022!!
+  // });
 
   sota.pieChart({
     section: "discipline",
@@ -1292,23 +1302,23 @@ window.onload = () => {
       // 2023!!
   });
 
-  sota.bigNumber({
-    section: "discipline",
-    number: "36.5%",
-    title: "Room Visits—Have you ever had an illegal room visit: \"visiting the dormitory room of or inviting an individual from outside your dormitory to your dorm room?\"",
-    subtitle:
-      "of respondents had illegal visitations to their dorms.",
-    // 2022!!
-  });
+  // sota.bigNumber({
+  //   section: "discipline",
+  //   number: "60.5%",
+  //   title: "Room Visits—Have you ever had an illegal room visit: \"visiting the dormitory room of or inviting an individual from outside your dormitory to your dorm room?\"",
+  //   subtitle:
+  //     "of respondents had illegal visitations to their dorms.",
+  //   // 2022!!
+  // });
 
-  sota.bigNumber({
-    section: "discipline",
-    number: "68.3%",
-    title: "Room Visits",
-    subtitle:
-      "of respondents do not agree with this year's changes.",
-    // 2022!!
-  });
+  // sota.bigNumber({
+  //   section: "discipline",
+  //   number: "68.3%",
+  //   title: "Room Visits",
+  //   subtitle:
+  //     "of respondents do not agree with this year's changes.",
+  //   // 2022!!
+  // });
 
   sota.stackedColumnChart({
     section: "discipline",
@@ -1316,7 +1326,7 @@ window.onload = () => {
     title: "Cheating & Class",
     subtitle:
       "Have you ever cheated on any tests, quizzes, or in-class assessments while at Andover?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.barChart({
@@ -1329,15 +1339,35 @@ window.onload = () => {
     // 2023!!
   });
 
-
-  sota.stackedBarChart({
+  sota.pieChart({
     section: "discipline",
-    dataFile: "assets/data/discipline/153-plagiarized",
+    dataFile: "assets/data/discipline/160-Level3-caught",
     sorted: false,
-    title: "Plagiarizing",
-    subtitle: "Have you ever plagiarized while at Andover?",
-    // 2022!!
+    title: "Level 3",
+    subtitle:
+      "Have you ever committed a Level 3 violation without being caught? (Level 3 violations include, but are not limited to: selling or providing drugs/alcohol/nicotine, bullying, hazing, major destruction of property, sexual misconduct)",
+      // 2023!!
   });
+
+  sota.pieChart({
+    section: "discipline",
+    dataFile: "assets/data/discipline/161-Roomvisit",
+    sorted: false,
+    title: "Room Visit",
+    subtitle:
+      "Have you ever had a room visit? — Visiting the dormitory room of or inviting an individual from outside your dormitory to your dorm room.",
+      // 2023!!
+  });
+
+
+  // sota.stackedBarChart({
+  //   section: "discipline",
+  //   dataFile: "assets/data/discipline/153-plagiarized",
+  //   sorted: false,
+  //   title: "Plagiarizing",
+  //   subtitle: "Have you ever plagiarized while at Andover?",
+  //   // 2022!!
+  // });
 
   // sota.stackedBarChart({
   //   section: "discipline",
