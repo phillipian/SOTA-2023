@@ -463,6 +463,7 @@ window.onload = () => {
     section: "politics",
     dataFile: "assets/data/politics/24-political_affiliation",
     totalResp: 883,
+    sorted: false,
     title: "Political Affiliation",
     subtitle: "What is your political affiliation?",
     // 2023!!
@@ -472,6 +473,7 @@ window.onload = () => {
     section: "politics",
     dataFile: "assets/data/politics/changing-beliefs",
     totalResp: 879,
+    sorted: false,
     title: "Changing Beliefs",
     subtitle: "Have your political beliefs changed in the past year?",
     // 2023!!
@@ -481,6 +483,7 @@ window.onload = () => {
     section: "politics",
     dataFile: "assets/data/politics/andover-leaning",
     totalResp: 878,
+    sorted: false,
     title: "Andover's Politics",
     subtitle: "Do you think the Andover community has a political leaning?",
     // 2023!!
@@ -491,6 +494,7 @@ window.onload = () => {
     dataFile: "assets/data/politics/27-censorship",
     title: "Self-Censorship",
     totalResp: 882,
+    sorted: false,
     subtitle:
       "While at Andover, have you ever felt the need to censor yourself due to your political leaning?",
     // 2023!!
@@ -499,7 +503,7 @@ window.onload = () => {
   sota.pieChart({
     section: "politics",
     dataFile: "assets/data/politics/28-informed",
-    sorted: true,
+    sorted: false,
     title:
       "How informed do you believe you are about politics and/or current events?",
     // 2023!!
@@ -542,14 +546,6 @@ window.onload = () => {
     // 2023!!
   });
 
-  sota.bigNumber({
-    section: "politics",
-    number: "34.4%",
-    title: '"Reverse Racism"',
-    subtitle:
-      "of respondents believe that white people can experience racism, a decrease from 2021's 33.3%.",
-    // 2023!!
-  });
 
   sota.barChart({
     section: "politics",
@@ -637,6 +633,60 @@ window.onload = () => {
     subtitle:
       "Do you believe that the current prison system in the United States should be altered?",
       // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/police",
+    title: "Police Reform",
+    subtitle:
+      "Do you believe that the current police system in the United States of America should be altered?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/israel-palestine",
+    title: "Israel-Palestine Conflict",
+    subtitle:
+      "Are you “pro-Israel” or “pro-Palestine” in the Israel-Palestine conflict?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/drug-decriminalization",
+    title: "Israel-Palestine Conflict",
+    subtitle:
+      "Are you “pro-Israel” or “pro-Palestine” in the Israel-Palestine conflict?",
+    // 2023!!
+  });
+
+  sota.customBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/42-firearms",
+    title: "Firearm Ownership",
+    subtitle: "Does your family own firearms?",
+    shapeFile: "assets/svgs/gun"
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "politics",
+    number: "92.7%",
+    title: "Gun Control",
+    subtitle:
+      "of respondents believe that gun control laws in the United States should be stricter.",
+      // 2022!!
+  });
+
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/gun-reform",
+    title: "Gun Reform",
+    subtitle:
+      "Do you think that gun control laws in the United States should change?",
+    // 2023!!
   });
 
   sota.stackedBarChart({
@@ -779,23 +829,9 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.customBarChart({
-    section: "politics",
-    dataFile: "assets/data/politics/42-firearms",
-    title: "Firearm Ownership",
-    subtitle: "Does your family own firearms?",
-    shapeFile: "assets/svgs/gun"
-    // 2022!!
-  });
 
-  sota.bigNumber({
-    section: "politics",
-    number: "84.3%",
-    title: "Gun Control",
-    subtitle:
-      "of respondents believe that gun control laws in the United States should be stricter.",
-      // 2022!!
-  });
+
+
 
   // --- CAMPUS CULTURE!! ----
 
