@@ -1237,7 +1237,7 @@ window.onload = () => {
     showLegend: true,
     title: "Andover Accomodations",
     subtitle:
-      "Do you currently have learning accommodations at Andover?",
+      "Do you think Andover adequately accommodates students with disabilities that affect their learning?",
       // 2023!!
   });
 
@@ -1653,7 +1653,80 @@ window.onload = () => {
     dataFile: "assets/data/sex/70-sexual_activity",
     displayPercentage: true,
     title: "Have you ever engaged in sexual activity? Check all that apply.",
-    // 2022!!
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "sex",
+    dataFile: "assets/data/sex/72-number_of_partners",
+    displayPercentage: true,
+    title: "How many people have you engaged in sexual activity with?",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/71-sex_frequency",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "How frequently do you engage in sexual activity?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "sex",
+    dataFile: "assets/data/sex/73-hookup_culture",
+    displayPercentage: true,
+    title: "hook-up culture",
+    subtitle: "Do you believe that there is a hook-up culture at Andover?",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "sex",
+    number: "25.2%",
+    title: "Peer pressure & hook-up culture",
+    subtitle:
+      "of respondents that believe Andover has a hook-up culture have felt pressured by peers to participate in it.",
+    // 2023!!
+  });
+  sota.pieChart({
+    section: "sex",
+    dataFile: "assets/data/sex/74-participate_hookup",
+    displayPercentage: true,
+    sorted: false,
+    title:
+      "Have you ever felt pressured by your peers to participate in Andover's hook-up culture?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "sex",
+    dataFile: "assets/data/sex/75-ever_hookedup",
+    displayPercentage: true,
+    title: ' "Hooking-up"',
+    subtitle:
+      "Have you ever “hooked up” with someone you were not in a committed relationship with?",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "sex",
+    number: "16.5%",
+    title: "Partner Pressure",
+    subtitle:
+      "of respondents have felt pressured by their partners to engage in sexual activity.",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "sex",
+    dataFile: "assets/data/sex/76-partner_pressure",
+    displayPercentage: true,
+    title: "partner pressure",
+    subtitle:
+      "Have you ever felt pressured by a partner to engage in sexual activity?",
+    // 2023!!
   });
 
   sota.barChart({
@@ -1689,14 +1762,7 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.stackedBarChart({
-    section: "sex",
-    dataFile: "assets/data/sex/71-sex_frequency",
-    showLegend: true,
-    labelStyle: "onBar",
-    title: "How frequently do you engage in sexual activity?",
-    // 2022!!
-  });
+
 
   sota.stackedBarChart({
     section: "sex",
@@ -1707,13 +1773,7 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.barChart({
-    section: "sex",
-    dataFile: "assets/data/sex/72-number_of_partners",
-    displayPercentage: true,
-    title: "How many people have you engaged in sexual activity with?",
-    // 2022!!
-  });
+
 
   sota.barChart({
     section: "sex",
@@ -1744,60 +1804,9 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.pieChart({
-    section: "sex",
-    dataFile: "assets/data/sex/73-hookup_culture",
-    displayPercentage: true,
-    title: "hook-up culture",
-    subtitle: "Do you believe that there is a hook-up culture at Andover?",
-    // 2022!!
-  });
 
-  sota.bigNumber({
-    section: "sex",
-    number: "23.6%",
-    title: "Peer pressure & hook-up culture",
-    subtitle:
-      "of respondents that believe Andover has a hook-up culture have felt pressured by peers to participate in it.",
-    // 2022!!
-  });
-  sota.pieChart({
-    section: "sex",
-    dataFile: "assets/data/sex/74-participate_hookup",
-    displayPercentage: true,
-    title:
-      "Have you ever felt pressured by your peers to participate in Andover's hook-up culture?",
-    // 2022!!
-  });
 
-  sota.pieChart({
-    section: "sex",
-    dataFile: "assets/data/sex/75-ever_hookedup",
-    displayPercentage: true,
-    title: ' "Hooking-up"',
-    subtitle:
-      "Have you ever “hooked up” with someone you were not in a committed relationship with?",
-    // 2022!!
-  });
 
-  sota.pieChart({
-    section: "sex",
-    dataFile: "assets/data/sex/76-partner_pressure",
-    displayPercentage: true,
-    title: "partner pressure",
-    subtitle:
-      "Have you ever felt pressured by a partner to engage in sexual activity?",
-    // 2022!!
-  });
-
-  sota.bigNumber({
-    section: "sex",
-    number: "18.6%",
-    title: "Partner Pressure",
-    subtitle:
-      "of respondents have felt pressured by their partners to engage in sexual activity.",
-    // 2022!!
-  });
 
   sota.bigNumber({
     section: "sex",
