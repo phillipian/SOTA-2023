@@ -447,14 +447,7 @@ window.onload = () => {
   //   // 2022!!
   // }); //better if 2 pie charts
 
-  // sota.pieChart({
-  //   section: "general",
-  //   dataFile: "assets/data/general/23-varsity",
-  //   sorted: false,
-  //   title: "Varsity Athletics",
-  //   subtitle: "Are you a varsity athlete?",
-  //   // 2022!!
-  // });
+
 
 
   // --- POLITICS!! --
@@ -772,15 +765,7 @@ window.onload = () => {
 
 
 
-  sota.stackedColumnChart({
-    section: "campus",
-    dataFile: "assets/data/politics/reverse_racismXrace",
-    showLegend: true,
-    groupLabelStyle: "onBar",
-    labelStyle: "onBar",
-    title: "Reverse racism by race",
-    subtitle: "Whether or not respondents believe that white people can experience racism (colloquially known as reverse racism) by race.",
-  });
+
 
 
 
@@ -835,25 +820,116 @@ window.onload = () => {
 
   // --- CAMPUS CULTURE!! ----
 
-  sota.stackedBarChart({
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/128-ideologicaldiversity",
+    title: "ideological diversity",
+    showLegend: true,
+    subtitle:
+      "Do you think the school promotes ideological diversity in its selection of speakers?",
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/129-antiracismwork",
+
+    title: "Anti-racist work",
+    subtitle: "Do you think Andover’s anti-racist work is sufficient?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/130-indigenousday",
+
+    title:
+      'Do you think that Andover should have a "day on" for Indigenous People\'s Day?',
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/earthday",
+
+    title:
+      'Do you think that Andover should have a "day on" for Earth Day?',
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "general",
+    dataFile: "assets/data/campus/23-varsity",
+    sorted: false,
+    title: "Varsity Athletics",
+    subtitle: "Are you a varsity athlete?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/132-glorifyathletics",
+
+    title: "Do you think that Andover prioritizes athletics (compared to music, art, robotics, etc.)?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/hos-approval",
+    sorted: false,
+    title: "Head of School Approval",
+    subtitle: "Do you approve of the work the Head of School is doing for the students?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/hos-connection",
+    sorted: false,
+    title: "HOS Student Connection",
+    subtitle: "Do you think the Head of School connects with the student body?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/134-environment_impact",
+    title: "climate education",
+    subtitle:
+      "Do you feel that environmental issues (global warming, water, and air pollution, etc.) directly impact your life?",
+      // 2023!!
+  });
+
+  sota.pieChart({
     section: "campus",
     dataFile: "assets/data/campus/135-combat_climate_change",
-    showLegend: true,
-    labelStyle: "onBar",
     title: "Climate change",
     subtitle:
       "Do you feel like Andover is doing enough to combat climate change?",
-      // 2022!!
+      // 2023!!
   });
 
-//   sota.pieChart({
-//     section: "campus",
-//     dataFile: "assets/data/campus/134-environmental_justice",
-//     title: "climate education",
-//     subtitle:
-//       "Do you feel that environmental issues (global warming, water, and air pollution, etc.) directly impact your life?",
-//       // 2022!!
-//   });
+  sota.pieChart({
+      section: "campus",
+      dataFile: "assets/data/campus/136-divestfossilfuel",
+      title: "Do you believe that Andover should divest from fossil fuel companies?",
+      subtitle: "Divestment is the act of \"taking money away from where you have invested it\" (Oxford Dictionaries).",
+      // 2023!!
+  });
+
+  sota.stackedColumnChart({
+    section: "campus",
+    dataFile: "assets/data/politics/reverse_racismXrace",
+    showLegend: true,
+    groupLabelStyle: "onBar",
+    labelStyle: "onBar",
+    title: "Reverse racism by race",
+    subtitle: "Whether or not respondents believe that white people can experience racism (colloquially known as reverse racism) by race.",
+  });
+
+
+
 
 //   sota.barChart({
 //     section: "campus",
@@ -872,11 +948,7 @@ window.onload = () => {
       // 2022!!
   });
 
-  // sota.pieChart({
-  //     section: "campus",
-  //     dataFile: "assets/data/campus/divestfossilfuel",
-  //     title: "Do you believe that Andover should divest from fossil fuel companies? Divestment is the act of \"taking money away from where you have invested it\" (Oxford Dictionaries)."
-  // });
+
 
   sota.stackedBarChart({
     section: "campus",
@@ -890,16 +962,6 @@ window.onload = () => {
       // 2022!!
   });
 
-  sota.stackedBarChart({
-    section: "campus",
-    dataFile: "assets/data/campus/128-ideologicaldiversity",
-    showLegend: true,
-    labelStyle: "onBar",
-    title: "ideological diversity",
-    subtitle:
-      "Do you think the school promotes ideological diversity in its selection of speakers?",
-      // 2022!!
-  });
 
   sota.stackedBarChart({
     section: "campus",
@@ -913,15 +975,7 @@ window.onload = () => {
       // 2022!!
   });
 
-  sota.stackedBarChart({
-    section: "campus",
-    dataFile: "assets/data/campus/129-antiracismwork",
-    showLegend: true,
-    labelStyle: "onBar",
-    title: "Anti-racist work",
-    subtitle: "Do you think Andover’s anti-racist work is sufficient?",
-    // 2022!!
-  });
+
 
   sota.stackedBarChart({
     section: "campus",
@@ -955,23 +1009,9 @@ window.onload = () => {
 //       "Do you feel the creation of the Anti-Racism Task Force was a productive choice in making Andover a more racially equitable, inclusive, and just community?",
 //   });
 
-  sota.stackedBarChart({
-    section: "campus",
-    dataFile: "assets/data/campus/130-indigenousday",
-    showLegend: true,
-    labelStyle: "onBar",
-    title:
-      'Do you think that Andover should have a "day on" for Indigenous People\'s Day?',
-      // 2022!!
-  });
 
-  // sota.stackedBarChart({
-  //   section: "campus",
-  //   dataFile: "assets/data/campus/glorifyathletics",
-  //   showLegend: true,
-  //   labelStyle: "onBar",
-  //   title: "Do you think that Andover prioritizes athletics (compared to music, art, robotics, etc.)?",
-  // });
+
+
 
   sota.pieChart({
     section: "campus",
