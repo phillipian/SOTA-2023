@@ -1268,20 +1268,20 @@ window.onload = () => {
 
   sota.bigNumber({
     section: "discipline",
-    number: "40.6%",
-    title: "Major Offenses",
+    number: "10.79%",
+    title: "Level 3 Violation",
     subtitle:
-      "of respondents have commited a major offense without being caught.",
-      // 2022!!
+      "of respondents have commited a Level 3 violation without being caught.",
+      // 2023!!
   });
 
-  sota.pieChart({
-    section: "discipline",
-    dataFile: "assets/data/discipline/148-CCCDC",
-    sorted: false,
-    title: "Have you ever sat before a ccc or a dc?",
-    // 2022!!
-  });
+  // sota.pieChart({
+  //   section: "discipline",
+  //   dataFile: "assets/data/discipline/148-CCCDC",
+  //   sorted: false,
+  //   title: "Have you ever sat before a ccc or a dc?",
+  //   // 2022!!
+  // });
 
   sota.columnChart({
     section: "discipline",
@@ -1304,23 +1304,33 @@ window.onload = () => {
       // 2023!!
   });
 
-  sota.stackedBarChart({
+  sota.pieChart({
     section: "discipline",
-    dataFile: "assets/data/discipline/major_offensesXboarding",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    title: "Boarding vs. day students and major offenses",
-    subtitle: "Have you ever committed a major offense without being caught?",
+    dataFile: "assets/data/discipline/159-privilege-background",
+    sorted: false,
+    title: "Privilege",
+    subtitle:
+      "Do you think that the school's disciplinary system favors students of privileged backgrounds?",
+      // 2023!!
   });
 
-  sota.bigNumber({
-    section: "discipline",
-    number: "33.0%",
-    title: "Concerning Contraband",
-    subtitle:
-      "of respondents think that the administration should have the right to search an entire dorm for contraband material.",
-      // 2022!!
-  });
+  // sota.stackedBarChart({
+  //   section: "discipline",
+  //   dataFile: "assets/data/discipline/major_offensesXboarding",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   title: "Boarding vs. day students and major offenses",
+  //   subtitle: "Have you ever committed a major offense without being caught?",
+  // });
+
+  // sota.bigNumber({
+  //   section: "discipline",
+  //   number: "33.0%",
+  //   title: "Concerning Contraband",
+  //   subtitle:
+  //     "of respondents think that the administration should have the right to search an entire dorm for contraband material.",
+  //     // 2022!!
+  // });
 
   sota.pieChart({
     section: "discipline",
@@ -1332,23 +1342,23 @@ window.onload = () => {
       // 2023!!
   });
 
-  sota.bigNumber({
-    section: "discipline",
-    number: "36.5%",
-    title: "Room Visits—Have you ever had an illegal room visit: \"visiting the dormitory room of or inviting an individual from outside your dormitory to your dorm room?\"",
-    subtitle:
-      "of respondents had illegal visitations to their dorms.",
-    // 2022!!
-  });
+  // sota.bigNumber({
+  //   section: "discipline",
+  //   number: "60.5%",
+  //   title: "Room Visits—Have you ever had an illegal room visit: \"visiting the dormitory room of or inviting an individual from outside your dormitory to your dorm room?\"",
+  //   subtitle:
+  //     "of respondents had illegal visitations to their dorms.",
+  //   // 2022!!
+  // });
 
-  sota.bigNumber({
-    section: "discipline",
-    number: "68.3%",
-    title: "Room Visits",
-    subtitle:
-      "of respondents do not agree with this year's changes.",
-    // 2022!!
-  });
+  // sota.bigNumber({
+  //   section: "discipline",
+  //   number: "68.3%",
+  //   title: "Room Visits",
+  //   subtitle:
+  //     "of respondents do not agree with this year's changes.",
+  //   // 2022!!
+  // });
 
   sota.stackedColumnChart({
     section: "discipline",
@@ -1356,7 +1366,7 @@ window.onload = () => {
     title: "Cheating & Class",
     subtitle:
       "Have you ever cheated on any tests, quizzes, or in-class assessments while at Andover?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.barChart({
@@ -1369,15 +1379,35 @@ window.onload = () => {
     // 2023!!
   });
 
-
-  sota.stackedBarChart({
+  sota.pieChart({
     section: "discipline",
-    dataFile: "assets/data/discipline/153-plagiarized",
+    dataFile: "assets/data/discipline/160-Level3-caught",
     sorted: false,
-    title: "Plagiarizing",
-    subtitle: "Have you ever plagiarized while at Andover?",
-    // 2022!!
+    title: "Level 3",
+    subtitle:
+      "Have you ever committed a Level 3 violation without being caught? (Level 3 violations include, but are not limited to: selling or providing drugs/alcohol/nicotine, bullying, hazing, major destruction of property, sexual misconduct)",
+      // 2023!!
   });
+
+  sota.pieChart({
+    section: "discipline",
+    dataFile: "assets/data/discipline/161-Roomvisit",
+    sorted: false,
+    title: "Room Visit",
+    subtitle:
+      "Have you ever had a room visit? — Visiting the dormitory room of or inviting an individual from outside your dormitory to your dorm room.",
+      // 2023!!
+  });
+
+
+  // sota.stackedBarChart({
+  //   section: "discipline",
+  //   dataFile: "assets/data/discipline/153-plagiarized",
+  //   sorted: false,
+  //   title: "Plagiarizing",
+  //   subtitle: "Have you ever plagiarized while at Andover?",
+  //   // 2022!!
+  // });
 
   // sota.stackedBarChart({
   //   section: "discipline",
@@ -1395,35 +1425,35 @@ window.onload = () => {
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/138-faculty_diversity",
-    totalResp: 949,
+    totalResp: 757,
     displayPercentage: true,
     title: "Faculty Diversity",
     subtitle:
       "Do you think the faculty is lacking in diversity in _______________ ?",
-      // 2022!!
+      // 2023!!
   });
 
-  sota.stackedBarChart({
-    section: "diversity",
-    dataFile: "assets/data/diversity/faculty_diversityXgender",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    showLegend: true,
-    title: "Faculty Diversity By Gender",
-    subtitle: "Do you think the faculty is lacking in diversity of gender?",
-    // 2022!!
-  });
+  // sota.stackedBarChart({
+  //   section: "diversity",
+  //   dataFile: "assets/data/diversity/faculty_diversityXgender",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   showLegend: true,
+  //   title: "Faculty Diversity By Gender",
+  //   subtitle: "Do you think the faculty is lacking in diversity of gender?",
+  //   // 2022!!
+  // });
 
-  sota.stackedBarChart({
-    section: "diversity",
-    dataFile: "assets/data/diversity/faculty_diversityXrace",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    showLegend: true,
-    title: "Faculty Diversity By Race",
-    subtitle: "Do you think the faculty is lacking in diversity of race?",
-    // 2022!!
-  });
+  // sota.stackedBarChart({
+  //   section: "diversity",
+  //   dataFile: "assets/data/diversity/faculty_diversityXrace",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   showLegend: true,
+  //   title: "Faculty Diversity By Race",
+  //   subtitle: "Do you think the faculty is lacking in diversity of race?",
+  //   // 2022!!
+  // });
 
   // sota.stackedBarChart({
   //   section: "diversity",
@@ -1439,67 +1469,67 @@ window.onload = () => {
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/140-social_divide",
-    totalResp: 875,
+    totalResp: 763,
     displayPercentage: true,
     title: "Social Divide",
     subtitle:
       "Do you feel like there is a social divide at Andover between students of different _______________ ?",
-      // 2022!!
+      // 2023!!
   });
 
-  sota.stackedBarChart({
-    section: "diversity",
-    dataFile: "assets/data/diversity/social_divideXrace",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    showLegend: false,
-    title: "Social Divide by Racial Group",
-    subtitle: "Whether or not students believe there is a social divide on campus compared to their racial group.",
-    // 2022!!
-  });
+  // sota.stackedBarChart({
+  //   section: "diversity",
+  //   dataFile: "assets/data/diversity/social_divideXrace",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   showLegend: false,
+  //   title: "Social Divide by Racial Group",
+  //   subtitle: "Whether or not students believe there is a social divide on campus compared to their racial group.",
+  //   // 2022!!
+  // });
 
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/143-discrimination",
-    totalResp: 864,
+    totalResp: 747,
     displayPercentage: true,
     title: "Discrimination",
     subtitle:
       "Have you ever felt discriminated against at Andover due to your __________?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/139-faculty_support",
-    totalResp: 848,
+    totalResp: 745,
     displayPercentage: true,
     title: "Faculty Support",
     subtitle:
       "Which of the faculty/staff members in your life do you feel are supportive of a diverse range of students?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/144-identity_discussion",
-    totalResp: 870,
+    totalResp: 745,
     displayPercentage: true,
     title: "Talking the Talk",
     subtitle:
       "Do you think that there are facets of identity that are not discussed enough at Andover?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/142-classroom_comfort",
-    totalResp: 871,
+    totalResp: 752,
     displayPercentage: true,
     title: "Classroom",
     subtitle:
       "While at Andover, have any of the following aspects of your identity significantly and consistently affected your level of comfort in a classroom setting?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.pieChart({
@@ -1509,7 +1539,7 @@ window.onload = () => {
     title: "EBI Curriculum",
     subtitle:
       "Do you think the EBI curriculum at Andover is effective in helping students become better community members?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.stackedBarChart({
@@ -1519,28 +1549,28 @@ window.onload = () => {
     title: "EBI Curriculum Effectiveness for each class",
     subtitle:
       "Do you think the EBI curriculum at Andover is effective in helping students become better community members?",
-      // 2022!!
+      // 2023!!
   });
 
 
   sota.barChart({
     section: "diversity",
     dataFile: "assets/data/diversity/141-leadership",
-    totalResp: 862,
+    totalResp: 737,
     displayPercentage: true,
     title: "Leadership Positions",
     subtitle:
       "Do you think your capability to attain leadership positions at Andover is affected by your __________?",
-      // 2022!!
+      // 2023!!
   });
 
-  sota.stackedBarChart({
+  sota.pieChart({
     section: "diversity",
     dataFile: "assets/data/diversity/146-day_student",
     title: "Day Students",
     subtitle:
       "Do you think day students are able to integrate enough with boarding students at Andover this year?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.stackedBarChart({
@@ -1549,7 +1579,7 @@ window.onload = () => {
     title: "Day Student Integration vs. student status",
     subtitle:
       "Do you think day students are able to integrate enough with boarding students at Andover this year?",
-      // 2022!!
+      // 2023!!
   });
 
 
@@ -1867,17 +1897,27 @@ window.onload = () => {
     groupLabelStyle: "onBar",
     title: "Alcohol",
     subtitle: "Have you ever consumed alcohol recreationally?",
-    // 2022!!
+    // 2023!!
   });
 
+  sota.pieChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/112-nicotine-product",
+    displayPercentage: true,
+    sorted: false,
+    title: "e-cigarette",
+    subtitle:
+      "Have you ever used an e-cigarette or vaped a nicotine-based product?",
+        // 2023!!
+  });
 
   sota.bigNumber({
     section: "drugs",
-    number: "28.6%",
-    title: "drugs",
+    number: "32.99%",
+    title: "nicotine use",
     subtitle:
-      "of respondents consume drugs.",
-      // 2022!!
+      "of respondents have used a nicotine-based product.",
+      // 2023!!
   });
 
   sota.barChart({
@@ -1886,8 +1926,8 @@ window.onload = () => {
     displayPercentage: true,
     groupLabelStyle: "onBar",
     title: "Marijuana",
-    subtitle: "Have you ever used marijuana?",
-    // 2022!!
+    subtitle: "Have you ever used any form of marijuana?",
+    // 2023!!
   });
 
   sota.columnChart({
@@ -1897,8 +1937,8 @@ window.onload = () => {
     groupLabelStyle: "onBar",
     title: "tobacco",
     subtitle:
-      "Have you ever used any tobacco products (e.g. dipping and chewing tobacco, cigarettes)?",
-      // 2022!!
+      "Have you ever used any tobacco products (e.g. dipping and chewing tobacco, cigarettes, etc.)?",
+      // 2023!!
   });
 
   // sota.stackedBarChart({
@@ -1915,21 +1955,21 @@ window.onload = () => {
     section: "drugs",
     dataFile: "assets/data/drugs/99-drug_frequency",
     displayPercentage: true,
-    totalResp: 949,
+    totalResp: 822,
     title: "Drug habits",
     subtitle:
       "How often do you consume recreational drugs or alcohol on campus?",
-      // 2022!!
+      // 2023!!
   });
 
 
   sota.bigNumber({
     section: "drugs",
-    number: "70.7%",
+    number: "83.56%",
     title: "normalization of drugs and alcohol",
     subtitle:
       "of respondents believe that the use of recreational drugs or alcohol is normalized at Andover.",
-  });
+  });// 2023!!
 
   // sota.pieChart({
   //     section:"drugs",
@@ -1945,26 +1985,26 @@ window.onload = () => {
     title: "drugs and friendships",
     title:
       "Do you think that recreational drug or alcohol use significantly influences your friendships at Andover?",
-      // 2022!!
+      // 2023!!
   });
 
-  sota.pieChart({
-    section: "drugs",
-    dataFile: "assets/data/drugs/102-dorm_drug",
-    displayPercentage: true,
-    title: "dorm culture",
-    subtitle:
-      "Do you think your dorm significantly influences how you think about/use drugs and alcohol?",
-      // 2022!!
-  });
+  // sota.pieChart({
+  //   section: "drugs",
+  //   dataFile: "assets/data/drugs/102-dorm_drug",
+  //   displayPercentage: true,
+  //   title: "dorm culture",
+  //   subtitle:
+  //     "Do you think your dorm significantly influences how you think about/use drugs and alcohol?",
+  //     // 2022!!
+  // });
 
   sota.bigNumber({
     section: "drugs",
-    number: "33.1%",
+    number: "30.8%",
     title: "Drugs vs. student leadership",
     subtitle:
-      "of student leaders have consumed drugs or alchohol in their dorms.",
-  });
+      "of student leaders have consumed drugs or alchohol on and off campus",
+  }); // 2023!!
 
   sota.pieChart({
     section: "drugs",
@@ -1973,7 +2013,7 @@ window.onload = () => {
     title: "study drugs",
     subtitle:
       "Have you ever used pharmaceutical drugs in the hopes of enhancing academic performance (i.e. “study drugs”) during your time at Andover?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.stackedBarChart({
@@ -1991,10 +2031,10 @@ window.onload = () => {
     section: "drugs",
     dataFile: "assets/data/drugs/103-hard_drugs",
     displayPercentage: true,
-    totalResp: 949,
+    totalResp: 819,
     title: "Hallucinogens & hard drugs",
     subtitle: "Have you ever used hallucinogens or hard drugs?",
-    // 2022!!
+    // 2023!!
   });
 
   // sota.stackedBarChart({
@@ -2014,7 +2054,7 @@ window.onload = () => {
     title: "peer pressure",
     subtitle:
       "Have you ever felt pressured by peers to consume recreational drugs or alcohol on campus?",
-      // 2022!!
+      // 2023!!
   });
   sota.pieChart({
     section: "drugs",
@@ -2024,19 +2064,29 @@ window.onload = () => {
     title: "sales",
     subtitle:
       "Have you ever sold someone recreational drugs, alcohol, or your prescription medication?",
-      // 2022!!
+      // 2023!!
   });
 
   sota.barChart({
     section: "drugs",
     dataFile: "assets/data/drugs/107-location",
     displayPercentage: true,
-    totalResp: 949,
+    totalResp: 820,
     title: "location",
     subtitle:
       "In which of the following settings at Andover have you been under the influence of recreational drugs or alcohol?",
-      // 2022!!
+      // 2023!!
   });
+
+  sota.pieChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/111-fakeid",
+    displayPercentage: true,
+    title: "I.D.",
+    subtitle:
+      "Have you ever purchased or do you own a fake I.D.?",
+      // 2023!!
+    });
 
   sota.pieChart({
     section: "drugs",
@@ -2045,7 +2095,17 @@ window.onload = () => {
     title: "Have you ever been sanctuaried?",
     subtitle:
       "Sanctuary: provided with a means of accessing support in situations where alcohol, drugs, tobacco, and/or nicotine are involved WITHOUT disciplinary consequences (The Blue Book).",
-      // 2022!!
+      // 2023!!
+    });
+
+  sota.stackedBarChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/110-sanctuaried-other",
+    displayPercentage: true,
+    title: "sanctuaried",
+    subtitle:
+      "Have you ever sanctuaried someone else",
+      // 2023!!
   });
 
   // ----- WELLNESS!! <3 ------
