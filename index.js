@@ -2115,16 +2115,16 @@ window.onload = () => {
       // 2023!!
   });
 
-  sota.stackedBarChart({
-    section: "drugs",
-    dataFile: "assets/data/drugs/studydrugsXgpa",
-    displayPercentage: true,
-    groupLabelStyle: "onBar",
-    title: "Study drug use vs. G.P.A.",
-    subtitle:
-      'respondents who use study drugs compared to their G.P.A.',
-      // 2022!!
-  });
+  // sota.stackedBarChart({
+  //   section: "drugs",
+  //   dataFile: "assets/data/drugs/studydrugsXgpa",
+  //   displayPercentage: true,
+  //   groupLabelStyle: "onBar",
+  //   title: "Study drug use vs. G.P.A.",
+  //   subtitle:
+  //     'respondents who use study drugs compared to their G.P.A.',
+  //     // 2022!!
+  // });
 
   sota.barChart({
     section: "drugs",
