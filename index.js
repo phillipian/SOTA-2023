@@ -1445,7 +1445,7 @@ window.onload = () => {
     section: "discipline",
     dataFile: "assets/data/discipline/160-Level3-caught",
     sorted: false,
-    title: "Level 3",
+    title: "Level 3 Violation",
     subtitle:
       "Have you ever committed a Level 3 violation without being caught? (Level 3 violations include, but are not limited to: selling or providing drugs/alcohol/nicotine, bullying, hazing, major destruction of property, sexual misconduct)",
       // 2023!!
@@ -2197,14 +2197,14 @@ window.onload = () => {
       // 2023!!
     });
 
-  sota.barChart({
+  sota.stackedBarChart({
     section: "drugs",
     dataFile: "assets/data/drugs/110-sanctuaried-other",
     showLegend: true,
     labelStyle: "onBar",
     title: "Santuary Policy",
     subtitle:
-      "Have you ever sanctuaried someone else",
+      "Have you ever sanctuaried someone else?",
       // 2023!!
   });
 
