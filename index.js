@@ -447,14 +447,7 @@ window.onload = () => {
   //   // 2022!!
   // }); //better if 2 pie charts
 
-  // sota.pieChart({
-  //   section: "general",
-  //   dataFile: "assets/data/general/23-varsity",
-  //   sorted: false,
-  //   title: "Varsity Athletics",
-  //   subtitle: "Are you a varsity athlete?",
-  //   // 2022!!
-  // });
+
 
 
   // --- POLITICS!! --
@@ -772,15 +765,7 @@ window.onload = () => {
 
 
 
-  sota.stackedColumnChart({
-    section: "campus",
-    dataFile: "assets/data/politics/reverse_racismXrace",
-    showLegend: true,
-    groupLabelStyle: "onBar",
-    labelStyle: "onBar",
-    title: "Reverse racism by race",
-    subtitle: "Whether or not respondents believe that white people can experience racism (colloquially known as reverse racism) by race.",
-  });
+
 
 
 
@@ -835,25 +820,116 @@ window.onload = () => {
 
   // --- CAMPUS CULTURE!! ----
 
-  sota.stackedBarChart({
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/128-ideologicaldiversity",
+    title: "ideological diversity",
+    subtitle:
+      "Do you think the school promotes ideological diversity in its selection of speakers?",
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/129-antiracismwork",
+    title: "Anti-racist work",
+    subtitle: "Do you think Andover’s anti-racist work is sufficient?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/130-indigenousday",
+    title:
+      'Do you think that Andover should have a "day on" for Indigenous People\'s Day?',
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/earthday",
+
+    title:
+      'Do you think that Andover should have a "day on" for Earth Day?',
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "general",
+    dataFile: "assets/data/campus/23-varsity",
+    sorted: false,
+    title: "Varsity Athletics",
+    subtitle: "Are you a varsity athlete?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/132-glorifyathletics",
+    sorted: false,
+    title: "Do you think that Andover prioritizes athletics (compared to music, art, robotics, etc.)?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/hos-approval",
+    sorted: false,
+    title: "Head of School Approval",
+    subtitle: "Do you approve of the work the Head of School is doing for the students?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/hos-connection",
+    sorted: false,
+    title: "HOS Student Connection",
+    subtitle: "Do you think the Head of School connects with the student body?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "campus",
+    dataFile: "assets/data/campus/134-environment_impact",
+    sorted: false,
+    title: "climate education",
+    subtitle:
+      "Do you feel that environmental issues (global warming, water, and air pollution, etc.) directly impact your life?",
+      // 2023!!
+  });
+
+  sota.pieChart({
     section: "campus",
     dataFile: "assets/data/campus/135-combat_climate_change",
-    showLegend: true,
-    labelStyle: "onBar",
+    sorted: false,
     title: "Climate change",
     subtitle:
       "Do you feel like Andover is doing enough to combat climate change?",
-      // 2022!!
+      // 2023!!
   });
 
-//   sota.pieChart({
-//     section: "campus",
-//     dataFile: "assets/data/campus/134-environmental_justice",
-//     title: "climate education",
-//     subtitle:
-//       "Do you feel that environmental issues (global warming, water, and air pollution, etc.) directly impact your life?",
-//       // 2022!!
-//   });
+  sota.pieChart({
+      section: "campus",
+      dataFile: "assets/data/campus/136-divestfossilfuel",
+      sorted: false,
+      title: "Do you believe that Andover should divest from fossil fuel companies?",
+      subtitle: "Divestment is the act of \"taking money away from where you have invested it\" (Oxford Dictionaries).",
+      // 2023!!
+  });
+
+  sota.stackedColumnChart({
+    section: "campus",
+    dataFile: "assets/data/politics/reverse_racismXrace",
+    showLegend: true,
+    groupLabelStyle: "onBar",
+    labelStyle: "onBar",
+    title: "Reverse racism by race",
+    subtitle: "Whether or not respondents believe that white people can experience racism (colloquially known as reverse racism) by race.",
+  });
+
+
+
 
 //   sota.barChart({
 //     section: "campus",
@@ -872,11 +948,7 @@ window.onload = () => {
       // 2022!!
   });
 
-  // sota.pieChart({
-  //     section: "campus",
-  //     dataFile: "assets/data/campus/divestfossilfuel",
-  //     title: "Do you believe that Andover should divest from fossil fuel companies? Divestment is the act of \"taking money away from where you have invested it\" (Oxford Dictionaries)."
-  // });
+
 
   sota.stackedBarChart({
     section: "campus",
@@ -890,16 +962,6 @@ window.onload = () => {
       // 2022!!
   });
 
-  sota.stackedBarChart({
-    section: "campus",
-    dataFile: "assets/data/campus/128-ideologicaldiversity",
-    showLegend: true,
-    labelStyle: "onBar",
-    title: "ideological diversity",
-    subtitle:
-      "Do you think the school promotes ideological diversity in its selection of speakers?",
-      // 2022!!
-  });
 
   sota.stackedBarChart({
     section: "campus",
@@ -913,15 +975,7 @@ window.onload = () => {
       // 2022!!
   });
 
-  sota.stackedBarChart({
-    section: "campus",
-    dataFile: "assets/data/campus/129-antiracismwork",
-    showLegend: true,
-    labelStyle: "onBar",
-    title: "Anti-racist work",
-    subtitle: "Do you think Andover’s anti-racist work is sufficient?",
-    // 2022!!
-  });
+
 
   sota.stackedBarChart({
     section: "campus",
@@ -955,23 +1009,9 @@ window.onload = () => {
 //       "Do you feel the creation of the Anti-Racism Task Force was a productive choice in making Andover a more racially equitable, inclusive, and just community?",
 //   });
 
-  sota.stackedBarChart({
-    section: "campus",
-    dataFile: "assets/data/campus/130-indigenousday",
-    showLegend: true,
-    labelStyle: "onBar",
-    title:
-      'Do you think that Andover should have a "day on" for Indigenous People\'s Day?',
-      // 2022!!
-  });
 
-  // sota.stackedBarChart({
-  //   section: "campus",
-  //   dataFile: "assets/data/campus/glorifyathletics",
-  //   showLegend: true,
-  //   labelStyle: "onBar",
-  //   title: "Do you think that Andover prioritizes athletics (compared to music, art, robotics, etc.)?",
-  // });
+
+
 
   sota.pieChart({
     section: "campus",
@@ -1018,50 +1058,21 @@ window.onload = () => {
   });
 
   // --- SCHOOL!! ---
-
   sota.bigNumber({
     section: "school",
-    number: "5.7",
-    title: "Time Spent on Coursework",
-    subtitle: "average hours spent on coursework daily, a 1.17 hour increase from 2021 (last year).",
-    // 2022!!
-  });
-
-  sota.lineGraph({
-    section: "school",
-    dataFile: "assets/data/school/113-hours_on_coursework",
-    minVal: 2,
-    maxVal: 250,
-    title: "Hours on coursework",
-    subtitle: "Q113. How many hours do you spend on coursework outside of class each day?",
-    // 2022!
+    number: "5.41",
+    title: "Overall Average GPA",
+    subtitle: "average rounded Winter Term G.P.A, a 0.6 increase from 2022 (last year).",
+    // 2023!!
   });
 
   sota.lineGraph({
     section: "school",
     dataFile: "assets/data/school/111-gpa",
-    maxVal: 180,
+    maxVal: 156,
     title: "G.P.A",
-    subtitle: "What was your rounded Winter 2021-2022 G.P.A.? (If you are between two numbers, round up to the closest decimal – a 5.3 G.P.A. would round to a 5.4. If you earned a Pass or multiple Passes, exclude this from your calculation).",
-    // 2022!!
-  });
-
-  sota.multiLineGraph({
-    section: "school",
-    dataFile: "assets/data/school/gpaXgender",
-    displayPercentage: true,
-    maxVal: 24,
-    minVal: 0,
-    title: "G.P.A. and Gender",
-    // 2022!!
-  });
-
-  sota.bigNumber({
-    section: "school",
-    number: "5.35",
-    title: "Overall Average G.P.A (Winter 2021-2022)",
-    subtitle: "Editor's note: the actual average G.P.A. according to Dean of Students Office was 5.29",
-    // 2022!!
+    subtitle: "What was your rounded Winter 2022-2023 G.P.A.? (If you are between two numbers, round up to the closest decimal – a 5.3 G.P.A. would round to a 5.4. If you earned a Pass or multiple Passes, exclude this from your calculation).",
+    // 2023!!
   });
 
   sota.barChart({
@@ -1070,7 +1081,25 @@ window.onload = () => {
     // totalResp: 854,
     title: "Grading Scale",
     subtitle: 'Do you think a "4" is a good grade?',
-    // 2022!!
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "school",
+    number: "3.8",
+    title: "Time Spent on Coursework",
+    subtitle: "average hours spent on coursework daily, a 1.9 hour decrease from 2022 (last year).",
+    // 2023!!
+  });
+
+  sota.lineGraph({
+    section: "school",
+    dataFile: "assets/data/school/113-hours_on_coursework",
+    minVal: 2,
+    maxVal: 259,
+    title: "Hours on coursework",
+    subtitle: "How many hours do you spend on coursework outside of class each day?",
+    // 2023!
   });
 
   sota.barChart({
@@ -1078,18 +1107,7 @@ window.onload = () => {
     dataFile: "assets/data/school/114-department_disparity",
     title: "Disparity between teachers",
     subtitle: "In which department(s), if any, is/are there an unreasonable grading disparity between teachers? Check all that apply.",
-    // 2022!!
-  });
-
-  sota.lineGraph({
-    section: "school",
-    dataFile: "assets/data/school/gpa2017",
-    maxVal: 6.0,
-    minVal: 5.0,
-    title: "Average G.P.A Since 2017",
-    subtitle:
-      "Editor's note: this question uses data from the 2017 to 2022 State of the Academy surveys.",
-      // 2022!!
+    // 2023!!
   });
 
   sota.pieChart({
@@ -1099,46 +1117,9 @@ window.onload = () => {
     title: "Switching Teachers",
     subtitle:
       "Have you ever switched or attempted to switch teachers within the same course in order to attain a better grade?",
-      // 2022!!
+      // 2023!!
   });
 
-  sota.stackedColumnChart({
-    section: "school",
-    dataFile: "assets/data/school/collegeXclass",
-    title: "Andover College",
-    subtitle:
-      "Do you think attending Andover affets your chances of attending a selective college?",
-      // 2022!!
-  });
-
-  sota.stackedBarChart({
-    section: "school",
-    dataFile: "assets/data/school/119-extracurriculars",
-    labelStyle: "onBar",
-    showLegend: true,
-    title: "On Campus, I ...",
-    subtitle:
-      "Do you participate in any extracurriculars because you think they will increase your chances of getting into a selective college?",
-      // 2022!!
-  });
-
-  sota.pieChart({
-    section: "school",
-    dataFile: "assets/data/school/121-teacher_care",
-    totalResp: 903,
-    title: "Teacher Support",
-    subtitle:
-      "Do you think that the majority of your teachers care about your health and well-being?",
-    // 2022!!
-  });
-
-  sota.bigNumber({
-    section: "school",
-    number: "26.2%",
-    title: "Teacher Care",
-    subtitle: "of respondents do not think the majority of their teachers care about their health and well-being.",
-    // 2022!!
-  });
   sota.pieChart({
     section: "school",
     dataFile: "assets/data/school/117-student_leader",
@@ -1146,53 +1127,118 @@ window.onload = () => {
     title: "Student Leadership",
     subtitle:
       "Are you currently a student leader (prefect, proctor, DSM, EBI Senior, Cluster or School Co-President) on campus?",
-      // 2022!!
+      // 2023!!
   });
 
-  // sota.pieChart({
-  //   section: "school",
-  //   dataFile: "assets/data/school/board_member",
-  //   sorted: false,
-  //   title: "Are you a board member of a club on campus?",
-  // });
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/leadership-positions",
+    sorted: false,
+    title: "Leadership Positions",
+    subtitle:
+      "How many leadership positions do you hold on campus?",
+      // 2023!!
+  });
 
-  sota.stackedBarChart({
+  sota.barChart({
+    section: "school",
+    dataFile: "assets/data/school/119-extracurriculars",
+    showLegend: true,
+    title: "On Campus, I ...",
+    subtitle:
+      "Do you participate in any extracurriculars because you think they will increase your chances of getting into a selective college?",
+      // 2023!!
+  });
+
+  sota.barChart({
+    section: "school",
+    dataFile: "assets/data/school/120-leaving",
+    showLegend: true,
+    title: "Leaving Andover",
+    subtitle: "Have you ever considered leaving Andover permanently or temporarily?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/121-teacher_care",
+    totalResp: 802,
+    sorted: false,
+    title: "Teacher Support",
+    subtitle:
+      "Do you think that the majority of your teachers care about your health and well-being?",
+    // 2023!!
+  });
+
+  sota.pieChart({
     section: "school",
     dataFile: "assets/data/school/122-children",
-    labelStyle: "onBar",
+    sorted: false,
     showLegend: true,
     title: "Would you want your children to attend andover?",
-    // 2022!!
+    // 2023!!
   });
 
-  sota.stackedBarChart({
+  sota.barChart({
+    section: "school",
+    dataFile: "assets/data/school/123-come_to_andover",
+    title:
+      "In retrospect, would you still make the decision to come to andover?",
+      // 2023!!
+  });
+
+
+  sota.pieChart({
     section: "school",
     dataFile: "assets/data/school/124-family_relationship",
-    labelStyle: "onBar",
+    sorted: false,
     showLegend: true,
     title: "Andover and family",
     subtitle:
-      "Has attending Andover affected your relationship ith your family?",
-      // 2022!!
+      "Has attending Andover affected your relationship with your family?",
+      // 2023!!
   });
 
-  sota.stackedBarChart({
+  sota.pieChart({
     section: "school",
-    dataFile: "assets/data/school/120-leaving",
-    labelStyle: "onBar",
+    dataFile: "assets/data/school/disability",
+    sorted: false,
     showLegend: true,
-    title: "Leaving Andover",
-    subtitle: "Have you ever considered leaving Andover permanently?",
-    // 2022!!
+    title: "Learning Disabilities",
+    subtitle:
+      "Do you have a disability that affects your learning?",
+      // 2023!!
   });
 
   sota.bigNumber({
     section: "school",
-    number: "12.1%",
-    title: "Learning Accommodations",
+    number: "12.2%",
+    title: "Learning Disabiliy",
     subtitle:
       "of respondents have disability/disorder/impairment that affects their learning.",
-      // 2022!!
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/accomodations",
+    sorted: false,
+    showLegend: true,
+    title: "Learning Accomodations",
+    subtitle:
+      "Do you currently have learning accommodations at Andover?",
+      // 2023!!
+  });
+
+  sota.pieChart({
+    section: "school",
+    dataFile: "assets/data/school/andover-accomodations",
+    sorted: false,
+    showLegend: true,
+    title: "Andover Accomodations",
+    subtitle:
+      "Do you think Andover adequately accommodates students with disabilities that affect their learning?",
+      // 2023!!
   });
 
   sota.stackedBarChart({
@@ -1207,6 +1253,70 @@ window.onload = () => {
       // 2022!!
   });
 
+  sota.multiLineGraph({
+    section: "school",
+    dataFile: "assets/data/school/gpaXgender",
+    displayPercentage: true,
+    maxVal: 24,
+    minVal: 0,
+    title: "G.P.A. and Gender",
+    // 2022!!
+  });
+
+
+
+
+
+  sota.lineGraph({
+    section: "school",
+    dataFile: "assets/data/school/gpa2017",
+    maxVal: 6.0,
+    minVal: 5.0,
+    title: "Average G.P.A Since 2017",
+    subtitle:
+      "Editor's note: this question uses data from the 2017 to 2022 State of the Academy surveys.",
+      // 2022!!
+  });
+
+
+
+  sota.stackedColumnChart({
+    section: "school",
+    dataFile: "assets/data/school/collegeXclass",
+    title: "Andover College",
+    subtitle:
+      "Do you think attending Andover affets your chances of attending a selective college?",
+      // 2022!!
+  });
+
+
+
+
+
+  sota.bigNumber({
+    section: "school",
+    number: "26.2%",
+    title: "Teacher Care",
+    subtitle: "of respondents do not think the majority of their teachers care about their health and well-being.",
+    // 2022!!
+  });
+
+
+  // sota.pieChart({
+  //   section: "school",
+  //   dataFile: "assets/data/school/board_member",
+  //   sorted: false,
+  //   title: "Are you a board member of a club on campus?",
+  // });
+
+
+
+
+
+
+
+
+
   // sota.pieChart({
   //   section: "school",
   //   dataFile: "assets/data/school/character",
@@ -1216,13 +1326,6 @@ window.onload = () => {
   //     "Generally speaking, has attending Andover significantly affected your character?",
   // });
 
-  sota.barChart({
-    section: "school",
-    dataFile: "assets/data/school/123-come_to_andover",
-    title:
-      "In retrospect, would you still make the decision to come to andover?",
-      // 2022!!
-  });
 
   // --- DISCIPLINE!! ---
 
@@ -1559,7 +1662,110 @@ window.onload = () => {
     dataFile: "assets/data/sex/70-sexual_activity",
     displayPercentage: true,
     title: "Have you ever engaged in sexual activity? Check all that apply.",
-    // 2022!!
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "sex",
+    dataFile: "assets/data/sex/72-number_of_partners",
+    displayPercentage: true,
+    title: "How many people have you engaged in sexual activity with?",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/71-sex_frequency",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "How frequently do you engage in sexual activity?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "sex",
+    dataFile: "assets/data/sex/73-hookup_culture",
+    displayPercentage: true,
+    title: "hook-up culture",
+    subtitle: "Do you believe that there is a hook-up culture at Andover?",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "sex",
+    number: "25.2%",
+    title: "Peer pressure & hook-up culture",
+    subtitle:
+      "of respondents that believe Andover has a hook-up culture have felt pressured by peers to participate in it.",
+    // 2023!!
+  });
+  sota.pieChart({
+    section: "sex",
+    dataFile: "assets/data/sex/74-participate_hookup",
+    displayPercentage: true,
+    sorted: false,
+    title:
+      "Have you ever felt pressured by your peers to participate in Andover's hook-up culture?",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "sex",
+    number: "34.6%",
+    title: '"Hooking-up"',
+    subtitle:
+      'of respondents have "hooked up" with someone they were not in a committed relationship with',
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "sex",
+    dataFile: "assets/data/sex/75-ever_hookedup",
+    displayPercentage: true,
+    title: ' "Hooking-up"',
+    subtitle:
+      "Have you ever “hooked up” with someone you were not in a committed relationship with?",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "sex",
+    number: "16.5%",
+    title: "Partner Pressure",
+    subtitle:
+      "of respondents have felt pressured by their partners to engage in sexual activity.",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "sex",
+    dataFile: "assets/data/sex/76-partner_pressure",
+    displayPercentage: true,
+    title: "partner pressure",
+    subtitle:
+      "Have you ever felt pressured by a partner to engage in sexual activity?",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/77-rape_culture",
+    displayPercentage: true,
+    groupLabelStyle: "onBar",
+    title: "Do you believe that there is rape culture at Andover?",
+    subtitle:
+      "Rape culture: “a society or environment whose prevailing social attitudes have the effect of normalizing or trivializing sexual assault and abuse” (Oxford Dictionaries)",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/78-verbalconsent",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "consent",
+    subtitle: "Do you consistently ask your partner for verbal consent?",
+    // 2023!!
   });
 
   sota.barChart({
@@ -1568,7 +1774,156 @@ window.onload = () => {
     displayPercentage: true,
     title:
       "Do you use protection while engaging in sexual activity? Check all that apply.",
-    // 2022!!
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "sex",
+    dataFile: "assets/data/sex/80-committed_relationship",
+    showLegend: true,
+    title: "Have you ever been in a committed relationship?",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/inter-class_relationship",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "inter-class relationships",
+    subtitle:
+      "If you are currently in a committed relationship, what class is your partner in?",
+    // 2023!!
+  });
+
+  sota.lineGraph({
+    section: "sex",
+    dataFile: "assets/data/sex/sex_ed",
+    title: "Sexual Education",
+    subtitle:
+      "Percentage of students who thought that their sexual education at Andover has been/is adequate.",
+    inputIsPercentage: true,
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/83-masturbation",
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    title: "masturbation",
+    subtitle: "How frequently do you masturbate?",
+    // 2023!!
+  })
+
+  sota.stackedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/84-telling_friends_masturbate",
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title:
+      "Would you feel comfortable telling your friends that you masturbate?",
+    subtitle:
+      "Editor's Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, and nonbinary have been removed in an effort to protect the complete anonymity of these respondents.",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "sex",
+    dataFile: "assets/data/sex/85-porn",
+    displayPercentage: true,
+    title: "Porn",
+    subtitle:
+      "If you watch pornography/read pornographic materials, how frequently, on average, do you do so?",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "sex",
+    number: "23.0%",
+    title: "sexting",
+    subtitle:
+      "of respondents have sent a sexually explicit photo of themselves.",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "sex",
+    dataFile: "assets/data/sex/86-receive_sext",
+    displayPercentage: true,
+    title: "Have you ever sent a sexually explicit photo?",
+    // 2023!!
+  });
+
+  sota.columnChart({
+    section: "sex",
+    dataFile: "assets/data/sex/89-harassed",
+    displayPercentage: true,
+    totalResp: 771,
+    title: "Have you ever been sexually harassed?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "sex",
+    dataFile: "assets/data/sex/90-sex_racial",
+    showLegend: true,
+    sorted: false,
+    title: "Sexual racism",
+    subtitle:
+      "Have you ever been sexualized (including being fetishized and hypersexualized) or desexualized (including being defeminized and emasculated) due to your racial-ethnic identity?",
+    // 2023!!
+  });
+
+  sota.columnChart({
+    section: "sex",
+    dataFile: "assets/data/sex/91-assaulted",
+    displayPercentage: true,
+    totalResp: 773,
+    title: "Have you ever been sexually assaulted?",
+    // 2023!!
+  });
+
+  sota.barChart({
+    section: "sex",
+    dataFile: "assets/data/sex/92-sti",
+    displayPercentage: true,
+    title: "Sexual health",
+    subtitle:
+      "Have you ever contracted a Sexually Transmitted Infection (STI) or Sexually Transmitted Disease (STD)?",
+    // 2023!!
+  });
+
+  sota.pieChart({
+    section: "sex",
+    dataFile: "assets/data/sex/sex-sykes",
+    showLegend: true,
+    title: "Sykes Support",
+    subtitle:
+      "Do you feel comfortable consulting Rebecca M. Sykes Wellness Center for sex-related resources and care?",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "sex",
+    number: "18.8%",
+    title: "Sex, Drugs, and Alcohol",
+    subtitle:
+      "of respondents who have consumed drugs or alcohol have had sex under the influence.",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/sex-influence",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "Sex Under the Influence",
+    subtitle: "Have you ever engaged in sexual activity while under the influence of drugs or alcohol?",
+    // 2023!!
   });
 
   sota.groupedBarChart({
@@ -1595,14 +1950,7 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.stackedBarChart({
-    section: "sex",
-    dataFile: "assets/data/sex/71-sex_frequency",
-    showLegend: true,
-    labelStyle: "onBar",
-    title: "How frequently do you engage in sexual activity?",
-    // 2022!!
-  });
+
 
   sota.stackedBarChart({
     section: "sex",
@@ -1613,230 +1961,12 @@ window.onload = () => {
     // 2022!!
   });
 
-  sota.barChart({
-    section: "sex",
-    dataFile: "assets/data/sex/72-number_of_partners",
-    displayPercentage: true,
-    title: "How many people have you engaged in sexual activity with?",
-    // 2022!!
-  });
 
-  sota.barChart({
-    section: "sex",
-    dataFile: "assets/data/sex/92-sti",
-    displayPercentage: true,
-    title: "Sexual health",
-    subtitle:
-      "Have you ever contracted a Sexually Transmitted Infection (STI) or Sexually Transmitted Disease (STD)?",
-    // 2022!!
-  });
 
-  sota.bigNumber({
-    section: "sex",
-    number: "19.0%",
-    title: "Sex, Drugs, and Alcohol",
-    subtitle:
-      "of respondents who have consumed drugs or alcohol have had sex under the influence.",
-    // 2022!!
-  });
 
-  sota.lineGraph({
-    section: "sex",
-    dataFile: "assets/data/sex/sex_ed",
-    title: "Sexual Education",
-    subtitle:
-      "Percentage of students who thought that their sexual education at Andover has been/is adequate.",
-    inputIsPercentage: true,
-    // 2022!!
-  });
 
-  sota.pieChart({
-    section: "sex",
-    dataFile: "assets/data/sex/73-hookup_culture",
-    displayPercentage: true,
-    title: "hook-up culture",
-    subtitle: "Do you believe that there is a hook-up culture at Andover?",
-    // 2022!!
-  });
 
-  sota.bigNumber({
-    section: "sex",
-    number: "23.6%",
-    title: "Peer pressure & hook-up culture",
-    subtitle:
-      "of respondents that believe Andover has a hook-up culture have felt pressured by peers to participate in it.",
-    // 2022!!
-  });
-  sota.pieChart({
-    section: "sex",
-    dataFile: "assets/data/sex/74-participate_hookup",
-    displayPercentage: true,
-    title:
-      "Have you ever felt pressured by your peers to participate in Andover's hook-up culture?",
-    // 2022!!
-  });
 
-  sota.pieChart({
-    section: "sex",
-    dataFile: "assets/data/sex/75-ever_hookedup",
-    displayPercentage: true,
-    title: ' "Hooking-up"',
-    subtitle:
-      "Have you ever “hooked up” with someone you were not in a committed relationship with?",
-    // 2022!!
-  });
-
-  sota.pieChart({
-    section: "sex",
-    dataFile: "assets/data/sex/76-partner_pressure",
-    displayPercentage: true,
-    title: "partner pressure",
-    subtitle:
-      "Have you ever felt pressured by a partner to engage in sexual activity?",
-    // 2022!!
-  });
-
-  sota.bigNumber({
-    section: "sex",
-    number: "18.6%",
-    title: "Partner Pressure",
-    subtitle:
-      "of respondents have felt pressured by their partners to engage in sexual activity.",
-    // 2022!!
-  });
-
-  sota.bigNumber({
-    section: "sex",
-    number: "32.6%",
-    title: '"Hooking-up"',
-    subtitle:
-      'of respondents have "hooked up" with someone they were not in a committed relationship with',
-    // 2022!!
-  });
-
-  sota.stackedBarChart({
-    section: "sex",
-    dataFile: "assets/data/sex/77-rape_culture",
-    displayPercentage: true,
-    groupLabelStyle: "onBar",
-    title: "Do you believe that there is rape culture at Andover?",
-    subtitle:
-      "Rape culture: “a society or environment whose prevailing social attitudes have the effect of normalizing or trivializing sexual assault and abuse” (Oxford Dictionaries)",
-    // 2022!!
-  });
-
-  sota.stackedBarChart({
-    section: "sex",
-    dataFile: "assets/data/sex/78-verbalconsent",
-    showLegend: true,
-    labelStyle: "onBar",
-    title: "consent",
-    subtitle: "Do you consistently ask your partner for verbal consent?",
-    // 2022!!
-  });
-
-  sota.stackedBarChart({
-    section: "sex",
-    dataFile: "assets/data/sex/80-committed_relationship",
-    showLegend: true,
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    title: "Have you ever been in a committed relationship?",
-    // 2022!!
-  });
-
-  sota.stackedColumnChart({
-    section: "sex",
-    dataFile: "assets/data/sex/inter-class_relationship",
-    showLegend: true,
-    labelStyle: "onBar",
-    title: "inter-class relationships",
-    subtitle:
-      "If you are currently in a committed relationship, what class is your partner in?",
-    // 2022!!
-  });
-
-  sota.stackedBarChart({
-    section: "sex",
-    dataFile: "assets/data/sex/84-telling_friends_masturbate",
-    showLegend: true,
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    displayPercentage: true,
-    title:
-      "Would you feel comfortable telling your friends that you masturbate?",
-    subtitle:
-      "Editor's Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, and nonbinary have been removed in an effort to protect the complete anonymity of these respondents.",
-    // 2022!!
-  });
-
-  sota.stackedBarChart({
-    section: "sex",
-    dataFile: "assets/data/sex/83-masturbation",
-    showLegend: true,
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    title: "masturbation",
-    subtitle: "How frequently do you masturbate?",
-    // 2022!!
-  });
-
-  sota.barChart({
-    section: "sex",
-    dataFile: "assets/data/sex/85-porn",
-    displayPercentage: true,
-    title: "Porn",
-    subtitle:
-      "If you watch pornography/read pornographic materials, how frequently, on average, do you do so?",
-    // 2022!!
-  });
-
-  sota.columnChart({
-    section: "sex",
-    dataFile: "assets/data/sex/89-harassed",
-    displayPercentage: true,
-    totalResp: 949,
-    title: "Have you ever been sexually harassed?",
-    // 2022!!
-  });
-
-  sota.columnChart({
-    section: "sex",
-    dataFile: "assets/data/sex/91-assaulted",
-    displayPercentage: true,
-    totalResp: 949,
-    title: "Have you ever been sexually assaulted?",
-    // 2022!!
-  });
-
-  sota.bigNumber({
-    section: "sex",
-    number: "25.2%",
-    title: "sexting",
-    subtitle:
-      "of respondents have sent a sexually explicit photo of themselves.",
-    // 2022!!
-  });
-
-  sota.pieChart({
-    section: "sex",
-    dataFile: "assets/data/sex/86-receive_sext",
-    displayPercentage: true,
-    title: "Have you ever received a sexually explicit photo?",
-    // 2022!!
-  });
-
-  sota.pieChart({
-    section: "sex",
-    dataFile: "assets/data/sex/90-sex_racial",
-    showLegend: true,
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    title: "Sexual racism",
-    subtitle:
-      "Have you ever been sexualized (including being fetishized and hypersexualized) or desexualized (including being defeminized and emasculated) due to your racial-ethnic identity?",
-    // 2022!!
-  });
 
   sota.bigNumber({
     section: "sex",

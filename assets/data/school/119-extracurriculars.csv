@@ -1,2 +1,5 @@
-group,"Yes, solely","Yes, mostly","Yes, partly",No
-answer,36,157,457,201
+label,value
+"Yes, solely",46
+"Yes, mostly",152
+"Yes, partly",414
+No,190

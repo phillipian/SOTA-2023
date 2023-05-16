@@ -1,2 +1,4 @@
-group,"Yes, positively","Yes, negatively",No
-answer,339,252,261
+label,value
+"Yes, positively",358
+"Yes, negatively",217
+"No",224
