@@ -1355,12 +1355,11 @@ window.onload = () => {
       // 2023!!
   });
 
-  sota.stackedBarChart({
+  sota.barChart({
     section: "discipline",
     dataFile: "assets/data/discipline/effectiveXconsequences",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    showLegend: true,
+    totalResp: 758,
+    displayPercentage: true,
     title: "Disciplinary System Effectiveness",
     subtitle:
       "Do you think that the new disciplinary system effectively responds to students who are caught breaking school rules?",
@@ -2181,7 +2180,7 @@ window.onload = () => {
     section: "drugs",
     dataFile: "assets/data/drugs/111-fakeid",
     displayPercentage: true,
-    title: "I.D.",
+    title: "Fake I.D.",
     subtitle:
       "Have you ever purchased or do you own a fake I.D.?",
       // 2023!!
@@ -2200,8 +2199,9 @@ window.onload = () => {
   sota.stackedBarChart({
     section: "drugs",
     dataFile: "assets/data/drugs/110-sanctuaried-other",
-    displayPercentage: true,
-    title: "sanctuaried",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "Santuary Policy",
     subtitle:
       "Have you ever sanctuaried someone else",
       // 2023!!
