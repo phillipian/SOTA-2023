@@ -1609,6 +1609,10 @@ window.onload = () => {
     section: "diversity",
     dataFile: "assets/data/diversity/ebiXclass",
     sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
     title: "EBI Curriculum Effectiveness for each class",
     subtitle:
       "Do you think the EBI curriculum at Andover is effective in helping students become better community members?",
@@ -1639,6 +1643,11 @@ window.onload = () => {
   sota.stackedBarChart({
     section: "diversity",
     dataFile: "assets/data/diversity/day_supportXboarding",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
     title: "Day Student Integration vs. student status",
     subtitle:
       "Do you think day students are able to integrate enough with boarding students at Andover this year?",
@@ -2106,16 +2115,16 @@ window.onload = () => {
       // 2023!!
   });
 
-  sota.stackedBarChart({
-    section: "drugs",
-    dataFile: "assets/data/drugs/studydrugsXgpa",
-    displayPercentage: true,
-    groupLabelStyle: "onBar",
-    title: "Study drug use vs. G.P.A.",
-    subtitle:
-      'respondents who use study drugs compared to their G.P.A.',
-      // 2022!!
-  });
+  // sota.stackedBarChart({
+  //   section: "drugs",
+  //   dataFile: "assets/data/drugs/studydrugsXgpa",
+  //   displayPercentage: true,
+  //   groupLabelStyle: "onBar",
+  //   title: "Study drug use vs. G.P.A.",
+  //   subtitle:
+  //     'respondents who use study drugs compared to their G.P.A.',
+  //     // 2022!!
+  // });
 
   sota.barChart({
     section: "drugs",
