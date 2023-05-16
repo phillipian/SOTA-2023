@@ -2345,6 +2345,28 @@ window.onload = () => {
     subtitle:
       "Have you ever been to the Sykes Wellness Center to see a counselor?",
     title: "Sykes counseling",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "wellness",
+    title: "Adequate Recources",
+    number: "27.5%",
+    subtitle:
+      "less respondents believe that the resources provided by the Sykes Wellness Center are sufficient compared to last year (2022).",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "wellness",
+    dataFile: "assets/data/wellness/sykesmentalXseencounselor",
+    groupLabelStyle: "onBar",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "sykes counseling resources",
+    subtitle:
+      "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient?",
+    // 2022!!
   });
 
   sota.stackedBarChart({
@@ -2495,26 +2517,7 @@ window.onload = () => {
 
 
 
-  // sota.bigNumber({
-  //   section: "wellness",
-  //   title: "Adequate Recources",
-  //   number: "30.5%",
-  //   subtitle:
-  //     "less respondents believe that the resources provided by the Sykes Wellness Center are sufficient compared to last year (2021).",
-  //   // 2022!!
-  // });
 
-  // sota.stackedBarChart({
-  //   section: "wellness",
-  //   dataFile: "assets/data/wellness/sykesmentalXseencounselor",
-  //   groupLabelStyle: "onBar",
-  //   showLegend: true,
-  //   labelStyle: "onBar",
-  //   title: "sykes counseling resources",
-  //   subtitle:
-  //     "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient?",
-  //   // 2022!!
-  // });
 
   // sota.customBarChart({
   //   section: "wellness",
