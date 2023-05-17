@@ -480,10 +480,10 @@ window.onload = () => {
     // 2023!!
   });
 
-  sota.pieChart({
+  sota.customColumnChart({
     section: "general",
     dataFile: "assets/data/campus/23-varsity",
-    sorted: false,
+    shapeFile: "assets/svgs/varsityjacket",
     title: "Varsity Athletics",
     subtitle: "Are you a varsity athlete?",
     // 2023!!
@@ -612,7 +612,6 @@ window.onload = () => {
     dataFile: "assets/data/politics/27-censorship",
     title: "Self-Censorship",
     totalResp: 882,
-    sorted: false,
     subtitle:
       "While at Andover, have you ever felt the need to censor yourself due to your political leaning?",
     // 2023!!
