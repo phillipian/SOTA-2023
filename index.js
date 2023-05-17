@@ -423,7 +423,7 @@ window.onload = () => {
     // 2023!!
   });
 
-  sota.pieChart({
+  sota.customColumnChart({
     section: "general",
     dataFile: "assets/data/general/21-income",
     totalResp: 921,
@@ -507,7 +507,15 @@ window.onload = () => {
     // 2023!
   });
 
-
+  sota.pieChart({
+    section: "general",
+    dataFile: "assets/data/politics/incarcerated",
+    totalResp: 882,
+    title: "INCARCERATION",
+    subtitle: "Do you personally know someone who has been incarcerated?",
+    shapeFile: "assets/svgs/handcuff"
+    // 2023!!
+  });
 
 
 
@@ -640,6 +648,21 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/affirmativeXclassyear",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    inputIsPercentage: false,
+    sorted: false,
+    showLegend: false,
+    title: "Affirmative Action & Class Year",
+    subtitle:
+      "Whether respondents support affirmative action in institutions compared to class year.",
+    // 2023!
+  });
+
   sota.bigNumber({
     section: "politics",
     number: "34.4%",
@@ -715,15 +738,7 @@ window.onload = () => {
     // 2023!!
   });
 
-  sota.pieChart({
-    section: "general",
-    dataFile: "assets/data/politics/incarcerated",
-    totalResp: 882,
-    title: "INCARCERATION",
-    subtitle: "Do you personally know someone who has been incarcerated?",
-    // shapeFile: "assets/svgs/handcuff"
-    // 2023!!
-  });
+
 
   sota.stackedBarChart({
     section: "politics",
