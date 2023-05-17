@@ -96,21 +96,21 @@ sota.sotaConfig.sections = [
     blurb:
       "While 66.1 percent of day students think day students are able to integrate enough with boarding students at Andover this year, while just 37.8 percent agreed. On the basis of socioeconomic equity, 16.9 percent of respondents that feel like their capability of attaining a leadership position is affected by their socioeconomic status are of lower and lower middle class. 67.3 percent ​​of respondents who are black feel as though Andover’s faculty is lacking racial diversity.",
   },
-  {
-    slug: "senior",
-    name: "Senior Sota",
-    colors: [
-      "#235085",
-      "#1065a1",
-      "#0b88c0",
-      "#22a7d3",
-      "#4ac2e5",
-      "#7CB7D1",
-      "#8dd1e9",
-      "#c6e6f3",
-      "#e3f4fb",
-    ],
-  },
+  // {
+  //   slug: "senior",
+  //   name: "Senior Sota",
+  //   colors: [
+  //     "#235085",
+  //     "#1065a1",
+  //     "#0b88c0",
+  //     "#22a7d3",
+  //     "#4ac2e5",
+  //     "#7CB7D1",
+  //     "#8dd1e9",
+  //     "#c6e6f3",
+  //     "#e3f4fb",
+  //   ],
+  // },
 ];
 
 sota.setColors(sota.sotaConfig);
@@ -293,6 +293,20 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "general",
+    dataFile: "assets/data/general/legacyXincome",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    inputIsPercentage: false,
+    showLegend: false,
+    title: "Legacy and Income",
+    subtitle:
+      "Whether or not respondents had at least one immediate family member who was attending or has previously attended Andover, and their income.",
+    // 2023!
+  });
+
   sota.barChart({
     section: "general",
     dataFile: "assets/data/general/12-sex",
@@ -331,6 +345,20 @@ window.onload = () => {
     displayPercentage: true,
     title: "What is your sexual orientation?",
     // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "general",
+    dataFile: "assets/data/general/identityXorientation",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    inputIsPercentage: false,
+    showLegend: false,
+    title: "Sexual Orientation & Gender Identity",
+    subtitle:
+      "The respondents' sexual orientation compared to their gender identity. Editor's Note: Only the data from respondents identifying as Man or Woman are included.",
+    // 2023!
   });
 
   sota.barChart({
@@ -405,6 +433,29 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "general",
+    dataFile: "assets/data/general/socioeconomicXincome0",
+    labelStyle: "onBar",
+    inputIsPercentage: true,
+    groupLabelStyle: "onBar",
+    showLegend: false,
+    title: "Perceived SEC & Income",
+    subtitle: "Perceived socioeconmic class compared to income of respondents.",
+    // 2023!!
+  }); //better if 2 pie charts
+
+  sota.stackedBarChart({
+    section: "general",
+    dataFile: "assets/data/general/socioeconomicXgrade",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    showLegend: false,
+    title: "Income & Repeating Grade",
+    subtitle: "Net income compared to respondents who have repeated grades.",
+    // 2023!!
+  }); //better if 2 pie charts
+
   sota.columnChart({
     section: "general",
     dataFile: "assets/data/general/22-financial_aid",
@@ -422,30 +473,42 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.pieChart({
+    section: "general",
+    dataFile: "assets/data/campus/23-varsity",
+    sorted: false,
+    title: "Varsity Athletics",
+    subtitle: "Are you a varsity athlete?",
+    // 2023!!
+  });
 
-  // sota.stackedBarChart({
-  //   section: "general",
-  //   dataFile: "assets/data/general/legacyXincome",
-  //   labelStyle: "onBar",
-  //   groupLabelStyle: "onBar",
-  //   displayPercentage: true,
-  //   showLegend: false,
-  //   title: "Legacy and Income",
-  //   subtitle:
-  //     "Whether or not respondents had at least one immediate family member who was attending or has previously attended Andover, and their income.",
-  //   // 2022!
-  // });
+  sota.stackedBarChart({
+    section: "general",
+    dataFile: "assets/data/general/socioeconomicXvarsity",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    showLegend: false,
+    title: "Income & Varsity",
+    subtitle: "Net income compared to respondents who are varsity athletes.",
+    // 2023!!
+  }); //better if 2 pie charts
 
-  // sota.stackedBarChart({
-  //   section: "general",
-  //   dataFile: "assets/data/general/socioeconomicXincome0",
-  //   labelStyle: "onBar",
-  //   groupLabelStyle: "onBar",
-  //   showLegend: false,
-  //   title: "Perceived SEC & Income",
-  //   subtitle: "Perceived socioeconmic class compared to income of respondents.",
-  //   // 2022!!
-  // }); //better if 2 pie charts
+  sota.stackedBarChart({
+    section: "general",
+    dataFile: "assets/data/general/varsityXrace",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    inputIsPercentage: false,
+    showLegend: false,
+    title: "Varsity & Race",
+    subtitle:
+      "Races of respondents who are varsity athletes. Editor's Note: Not all races were included due to the small number of responses in those categories.",
+    // 2023!
+  });
+
+
+
 
 
 
@@ -462,6 +525,37 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/affiliationXgender",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    inputIsPercentage: false,
+    sorted: false,
+    showLegend: false,
+    title: "Gender & Affiliation",
+    subtitle:
+      "Gender makeup of respondents correlated with their political affliliation. Editor's Note: Only the data from respondents identifying as Man or Woman are included.",
+    // 2023!
+  });
+
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/affiliationXvarsity",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    inputIsPercentage: false,
+    sorted: false,
+    showLegend: false,
+    title: "Varsity & Affiliation",
+    subtitle:
+      "Respondents who are varsity athletes correlated with their political affliliation.",
+    // 2023!
+  });
+
+
   sota.pieChart({
     section: "politics",
     dataFile: "assets/data/politics/changing-beliefs",
@@ -471,6 +565,22 @@ window.onload = () => {
     subtitle: "Have your political beliefs changed in the past year?",
     // 2023!!
   });
+
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/affiliationXchange",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    inputIsPercentage: false,
+    sorted: false,
+    showLegend: false,
+    title: "Affiliation & Change",
+    subtitle:
+      "Whether respondents did or did not change beliefs by their political affiliations.",
+    // 2023!
+  });
+
 
   sota.pieChart({
     section: "politics",
@@ -673,14 +783,14 @@ window.onload = () => {
   //     // 2022!!
   // });
 
-  // sota.pieChart({
-  //   section: "politics",
-  //   dataFile: "assets/data/politics/gun-reform",
-  //   title: "Gun Reform",
-  //   subtitle:
-  //     "Do you think that gun control laws in the United States should change?",
-  //   // 2023!!
-  // });
+  sota.pieChart({
+    section: "politics",
+    dataFile: "assets/data/politics/gun-reform",
+    title: "Gun Reform",
+    subtitle:
+      "Do you think that gun control laws in the United States should change?",
+    // 2023!!
+  });
 
   // sota.stackedBarChart({
   //   section: "politics",
@@ -854,14 +964,7 @@ window.onload = () => {
       // 2023!!
   });
 
-  sota.pieChart({
-    section: "general",
-    dataFile: "assets/data/campus/23-varsity",
-    sorted: false,
-    title: "Varsity Athletics",
-    subtitle: "Are you a varsity athlete?",
-    // 2023!!
-  });
+
 
   sota.pieChart({
     section: "campus",
