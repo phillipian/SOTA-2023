@@ -14,6 +14,8 @@ sota.sotaConfig.sections = [
       "#c6e6f3",
       "#e3f4fb",
     ],
+    blurb:
+      "35% of respondents have at least one immediate family member who is currently attending or has previously attended Andover."
   },
   {
     slug: "politics",
@@ -29,50 +31,15 @@ sota.sotaConfig.sections = [
       "#DFDBE7",
     ],
     blurb:
-      "98 percent of respondents said that they ​​support “the advocacy of women's rights on the ground of the equality of the sexes?” However, 70.4 percent of people said they consider themselves feminists. 77.8 percent of students think that people should always have the right to have an abortion, while 97.7 percent of people supported abortion in at least some circumstances. In addition, 31.6 percent of students believe that white people can experience reverse racism.",
+      "49.8% have felt the need to censor themselves due to their political leaning.",
   },
-  {
-    slug: "campus",
-    name: "Campus Culture",
-    colors: ["#762670", "#945E98", "#A77FAD", "#BC98B9", "#D9C6D8"],
-    blurb:
-      "Following Divest Andover’s requests, 80.5 percent of students believe that Andover should divest from fossil fuel companies. A 62 percent majority of students believe that the Shuman Office of Admissions does not accurately represent the school. Following the release of the Andover Anti-Racism Task Force (AATF) Report, 18.2 percent of students feel that Andover’s anti-racist work is sufficient. Last year, 28.3 percent of students believed the same.",
-  },
+
   {
     slug: "school",
-    name: "School",
+    name: "Education",
     colors: ["#812F54", "#AA7281", "#BF97A0", "#BF97A0", "#DCC5C3"],
     blurb:
-      "After a shift from online and hybrid schooling during the 2020-2021 school year to primarily in-person learning this year, Andover’s average G.P.A. for the 2021-2022 Winter Term was 5.35. Last year, the average G.P.A. was reported to be 5.50. This year, students reported spending 5.7 hours on average doing coursework each night. This was a 1.17 hour increase from last year’s average of 4.53. Of respondents, 14.6 percent of students believe that a “4” is a good grade.",
-  },
-  {
-    slug: "discipline",
-    name: "Discipline",
-    colors: ["#B53432", "#C74F50", "#D47173", "#E4A8A6", "#F0D1CA"],
-    blurb:
-      "Andover’s Community Conduct Council (C.C.C.) and Disciplinary Committee (D.C.) are responsible for handling subsequent action when a student has committed a major offense. 45.7 percent of respondents reported cheating on tests, quizzes, or in-class assessments, and 11.4 percent of respondents reported plagiarizing. When correlated with income, 88.5 percent of respondents whose net family income is $35,000 or less believe the C.C.C. and D.C. systems favor students of privileged backgrounds compared to 59.5 percent of respondents whose income is $500,000 or more. 36.5 percent of respondents reported engaging in illegal room visitations, and 68.3 percent of respondents disagree with this year’s changes to room visitation policies.",
-  },
-  {
-    slug: "sex",
-    name: "Sex",
-    colors: [
-      "#D5127D",
-      "#DF5694",
-      "#E680A9",
-      "#ECA8C1",
-      "#F5BAD1",
-      "#F8D3DD",
-      "#fbe7ec",
-    ],
-    blurb:
-      "At Andover, 76.6 percent of Juniors, 63.3 percent of Lowers, 48.3 percent of Uppers, and 38.2 percent of Seniors have never engaged in sexual activity—defined as digital, oral, vaginal, or anal sex. 72.3 percent of men feel comfortable telling friends that they masturbate, while only 40 percent of women feel the same way. 1.6 percent of respondents have contracted Sexually Transmitted Infections. ",
-  },
-  {
-    slug: "drugs",
-    name: "Drugs & Alcohol",
-    colors: ["#E77929", "#EFA05E", "#F3B572", "#F6CC99", "#FAE3C4"],
-    blurb:
-      "Of Andover’s current student population, 55.3 percent of students have consumed alcohol recreationally. Of respondents, 38.4 percent of student leaders have consumed drugs or alcohol on campus, compared to 27.2 percent of non-student leaders. As of this year, XXX percent of students have used pharmaceutical drugs in the hopes of enhancing academic performance (i.e. “study drugs”) during their time at Andover.",
+      "The mean grade point average (GPA) among respondents is 5.41 – a 0.06 increase from last year.",
   },
   {
     slug: "wellness",
@@ -87,15 +54,55 @@ sota.sotaConfig.sections = [
       "#BAE5AE",
     ],
     blurb:
-      "Students at Andover on average sleep 6.65 hours a night. 66.9 percent of Andover students feel as though they have an adequate mental and/or emotional support system on campus, with 61.9 percent marking family as a part of this support system while 88.5 percent noted friends and 81.1 percent chose themselves as an aspect of said system. Only 38.0 percent indicated faculty and staff as a part of their support system. Of respondents, 76.3 percent generally consider themselves happy at Andover, while only 52.7 percent of students think that Andover students are happy.",
+      "27.5% of students think that the mental health resources provided by the Rebecca M. Sykes Wellness Center are sufficient.",
+  },
+  {
+    slug: "drugs",
+    name: "Drugs & Alcohol",
+    colors: ["#E77929", "#EFA05E", "#F3B572", "#F6CC99", "#FAE3C4"],
+    blurb:
+      "83.6% of respondents think the use of recreational drugs or alcohol is normalized at Andover.",
+  },
+  {
+    slug: "sex",
+    name: "Sex",
+    colors: [
+      "#D5127D",
+      "#DF5694",
+      "#E680A9",
+      "#ECA8C1",
+      "#F5BAD1",
+      "#F8D3DD",
+      "#fbe7ec",
+    ],
+    blurb:
+      "82.1% of respondents believe that there is a hook-up culture on campus.",
+  },
+  {
+    slug: "campus",
+    name: "Campus Culture",
+    colors: ["#762670", "#945E98", "#A77FAD", "#BC98B9", "#D9C6D8"],
+    blurb:
+      "15.4% of students think the Head of School (HOS) connects with the student body.",
   },
   {
     slug: "diversity",
-    name: "Campus Diversity",
+    name: "Community Diversity",
     colors: ["#279680", "#29AD97", "#78C4B1", "#AEDCCA", "#C8E7DD"],
     blurb:
-      "While 66.1 percent of day students think day students are able to integrate enough with boarding students at Andover this year, while just 37.8 percent agreed. On the basis of socioeconomic equity, 16.9 percent of respondents that feel like their capability of attaining a leadership position is affected by their socioeconomic status are of lower and lower middle class. 67.3 percent ​​of respondents who are black feel as though Andover’s faculty is lacking racial diversity.",
+      "20.8% of students believe the EBI curriculum is effective in helping students become better community members.",
   },
+  {
+    slug: "discipline",
+    name: "Discipline",
+    colors: ["#B53432", "#C74F50", "#D47173", "#E4A8A6", "#F0D1CA"],
+    blurb:
+      "10.1% of day students have received at least one disciplinary consequence, compared to 22.6% of boarding students.",
+  },
+
+
+
+
   // {
   //   slug: "senior",
   //   name: "Senior Sota",
@@ -423,7 +430,7 @@ window.onload = () => {
     // 2023!!
   });
 
-  sota.customColumnChart({
+  sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/21-income",
     totalResp: 921,
