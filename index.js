@@ -15,7 +15,7 @@ sota.sotaConfig.sections = [
       "#e3f4fb",
     ],
     blurb:
-      "35% of respondents have at least one immediate family member who is currently attending or has previously attended Andover."
+      "931 students responded - 81.0% of the student body participated in the survey. 35% of respondents have at least one immediate family member who is currently attending or has previously attended Andover."
   },
   {
     slug: "politics",
@@ -31,7 +31,7 @@ sota.sotaConfig.sections = [
       "#DFDBE7",
     ],
     blurb:
-      "49.8% have felt the need to censor themselves due to their political leaning.",
+      "97.8% of students indicated that they support “the advocacy of women’s rights on the ground of the equality of the sexes.” However, 70.8% of students consider themselves to be a feminist. 67.4% of students believe the police system in the United States of America should be altered. When asked who students support in the Israel-Palestine conflict, 66.1% of students indicated that they did not know enough about the conflict to answer. 34.4% of students believe that white people can experience racism, colloquially known as “reverse racism.”",
   },
 
   {
@@ -39,7 +39,7 @@ sota.sotaConfig.sections = [
     name: "Education",
     colors: ["#812F54", "#AA7281", "#BF97A0", "#BF97A0", "#DCC5C3"],
     blurb:
-      "The mean grade point average (GPA) among respondents is 5.41 – a 0.06 increase from last year.",
+      "As Andover students returned for a second year of in-person classes after the Covid-19 pandemic, students reported an average grade point average (GPA) of 5.41. Last year, students reported an average GPA of 5.35. Students reported an average of 3.8 hours spent on course work each day, which is a 1.9 hour decrease from last year’s average of 5.7 hours. 79.8% of students believe there is an unreasonable grading disparity between teachers in Andover’s English Department.",
   },
   {
     slug: "wellness",
@@ -54,14 +54,14 @@ sota.sotaConfig.sections = [
       "#BAE5AE",
     ],
     blurb:
-      "27.5% of students think that the mental health resources provided by the Rebecca M. Sykes Wellness Center are sufficient.",
+      "Andover students average 6.80 hours of sleep a night. Of respondents, 77.4% consider themselves happy at Andover and 67.2% feel as though they have an adequate mental or emotional support system on campus. 88.2% of students indicate that friends are a part of their support system, whereas 38.4% indicate faculty or staff. 27.5% of respondents think that the mental health and counseling resources provided by the Rebecca M. Sykes Wellness Center are sufficient.",
   },
   {
     slug: "drugs",
     name: "Drugs & Alcohol",
     colors: ["#E77929", "#EFA05E", "#F3B572", "#F6CC99", "#FAE3C4"],
     blurb:
-      "83.6% of respondents think the use of recreational drugs or alcohol is normalized at Andover.",
+      "Of Andover students, 57.7% have consumed alcohol recreationally, 33.9% have used a form of marijuana, 23.0% have used an e-cigarette or vaped a nicotine-based product, 15.0% have used tobacco products, and 6.4% have used hallucinogens or hard drugs. Of those who have been under the influence of recreational drugs or alcohol on campus, 28.4% did so in a dorm setting and 25.1% did so at a school-sponsored event.",
   },
   {
     slug: "sex",
@@ -76,28 +76,28 @@ sota.sotaConfig.sections = [
       "#fbe7ec",
     ],
     blurb:
-      "82.1% of respondents believe that there is a hook-up culture on campus.",
+      "At Andover, 41.3% of students have engaged in sexual activity — defined as digital, oral, anal, online, and vaginal sex. 51.9% of respondents have been or are currently in a committed relationship. 47.7% of students feel comfortable with telling friends that they masturbate; of those respondents, 63.1% were men and 30.1% were women.",
   },
   {
     slug: "campus",
     name: "Campus Culture",
     colors: ["#762670", "#945E98", "#A77FAD", "#BC98B9", "#D9C6D8"],
     blurb:
-      "15.4% of students think the Head of School (HOS) connects with the student body.",
+      "As Dr. Raynard Kington nears the end of his third year as Andover’s Head of School (HOS), 41.0% of students approve of the work Kington is doing for the students, and 15.4% of students think Kington connects with the student body. Reflecting Divest Andover’s ongoing efforts, 80.3% of students believe that Andover should divest from fossil fuel companies and 62.3% of students support a “day on” for Earth Day. 21.7% of students think Andover’s anti-racist work is sufficient.",
   },
   {
     slug: "diversity",
     name: "Community Diversity",
     colors: ["#279680", "#29AD97", "#78C4B1", "#AEDCCA", "#C8E7DD"],
     blurb:
-      "20.8% of students believe the EBI curriculum is effective in helping students become better community members.",
+      "Day students compose 26.3% of the Andover student body; and 53.1% of the student body believes that day students are able to integrate enough with boarding students in the Andover community. 25.7% of respondents have felt discriminated against at Andover due to their race, and 22.6% of respondents have felt discriminated against due to their gender. When asked about the Equity, Balance, and Inclusion (EBI) curriculum, 20.8% of respondents think the EBI curriculum at Andover is effective in helping students become better community members. ",
   },
   {
     slug: "discipline",
     name: "Discipline",
     colors: ["#B53432", "#C74F50", "#D47173", "#E4A8A6", "#F0D1CA"],
     blurb:
-      "10.1% of day students have received at least one disciplinary consequence, compared to 22.6% of boarding students.",
+      "This school year, Andover changed its disciplinary process to the “Responses to Student Behaviors” process, and 68.6% of the student body understand the changes that have been implemented. The disciplinary offenses are now categorized into three levels — each with their respective consequences — 16.1% of all respondents believe that the new disciplinary system effectively responds to students who are caught breaking school rules. 64.0% of students think that the disciplinary system favors students of privileged backgrounds. When correlated with income, 88.9% of respondents whose net family income was less than $35,000 believe that the disciplinary system favors students of privileged backgrounds, while 57.7% of respondents whose net family income was greater than $1,000,000 believe that the disciplinary system favors students of privileged backgrounds.",
   },
 
 
@@ -163,16 +163,17 @@ window.onload = () => {
     subtitle: "of the student body participated in this survey.",
   });
 
-  sota.customColumnChart({
+  sota.pieChart({
     section: "general",
     dataFile: "assets/data/general/1-class",
     totalResp: 929,
     displayPercentage: true,
+    sorted: false,
     // shapeFile: "assets/svgs/graduationcap",
-    shapeFile: "assets/svgs/graduationcap",
+    // shapeFile: "assets/svgs/graduationcap",
     // shapeHeight: 100,
     title: "WHAT CLASS ARE YOU IN?",
-    subtitle: "Editor’s note: two students did not select a class year.",
+    subtitle: "Editor’s note: Two students did not select a class year.",
     // 2023!!
   });
 
@@ -190,21 +191,21 @@ window.onload = () => {
     section: "general",
     number: "184",
     title: "",
-    subtitle: "students responded from the class of 2026.",
+    subtitle: "students responded from the Class of 2026.",
     // 2023
   });
   sota.bigNumber({
     section: "general",
     number: "226",
     title: "",
-    subtitle: "students responded from the class of 2025.",
+    subtitle: "students responded from the Class of 2025.",
     // 2023
   });
   sota.bigNumber({
     section: "general",
     number: "270",
     title: "",
-    subtitle: "students responded from the class of 2024.",
+    subtitle: "students responded from the Class of 2024.",
     // 2023
   });
 
@@ -212,7 +213,7 @@ window.onload = () => {
     section: "general",
     number: "249",
     title: "",
-    subtitle: "students responded from the class of 2023.",
+    subtitle: "students responded from the Class of 2023.",
     // 2023
   });
 
@@ -221,7 +222,8 @@ window.onload = () => {
     dataFile: "assets/data/general/cluster",
     sorted: false,
     title: "Student Clusters",
-    subtitle: "What cluster are you affiliated with?",
+    subtitle: "Which cluster are you affiliated with?",
+    margin: margin,
     // 2023!!
   });
 
@@ -374,7 +376,7 @@ window.onload = () => {
     showLegend: false,
     title: "Sexual Orientation & Gender Identity",
     subtitle:
-      "The respondents' sexual orientation compared to their gender identity. Editor's Note: Only the data from respondents identifying as Man or Woman are included.",
+      "The respondents' sexual orientation compared to their gender identity. Editor’s Note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary,” and “Other” gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
     // 2023!
   });
 
@@ -561,7 +563,7 @@ window.onload = () => {
     showLegend: false,
     title: "Gender & Affiliation",
     subtitle:
-      "Gender makeup of respondents correlated with their political affliliation. Editor's Note: Only the data from respondents identifying as Man or Woman are included.",
+      "Gender makeup of respondents correlated with their political affliliation. Editor’s Note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary,” and “Other” gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
     // 2023!
   });
 
@@ -790,7 +792,7 @@ window.onload = () => {
     showLegend: false,
     title: "Feminism & Gender Identity",
     subtitle:
-      "Whether respondents identify as feminists compared to their gender identity. Editor's Note: Only respondents who identify as Man or Woman are included.",
+      "Whether respondents identify as feminists compared to their gender identity. Editor’s Note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary,” and “Other” gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
     // 2023!
   });
 
@@ -824,7 +826,7 @@ window.onload = () => {
     showLegend: true,
     title: "Abortion & Gender",
     subtitle:
-      "Whether respondents believe people should have the right to have an abortion correlated to their gender identity. Editor's Note: Only respondents who identify as Man or Woman are included.",
+      "Whether respondents believe people should have the right to have an abortion correlated to their gender identity. Editor’s Note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary,” and “Other” gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
       // 2023!!
   });
 
@@ -1345,7 +1347,7 @@ window.onload = () => {
     section: "school",
     dataFile: "assets/data/school/114-department_disparity",
     title: "Disparity between teachers",
-    subtitle: "In which department(s), if any, is/are there an unreasonable grading disparity between teachers? Check all that apply.",
+    subtitle: "In which department(s), if any, is/are there an unreasonable grading disparity between teachers?",
     // 2023!!
   });
 
@@ -1900,7 +1902,7 @@ window.onload = () => {
     section: "sex",
     dataFile: "assets/data/sex/70-sexual_activity",
     displayPercentage: true,
-    title: "Have you ever engaged in sexual activity? Check all that apply.",
+    title: "Have you ever engaged in sexual activity?",
     // 2023!!
   });
 
@@ -2012,7 +2014,7 @@ window.onload = () => {
     dataFile: "assets/data/sex/79-use_protection",
     displayPercentage: true,
     title:
-      "Do you use protection while engaging in sexual activity? Check all that apply.",
+      "Do you use protection while engaging in sexual activity?",
     // 2023!!
   });
 
@@ -2565,7 +2567,7 @@ window.onload = () => {
     labelStyle: "onBar",
     title: "Body Insecurity & Gender",
     subtitle:
-      "Correspondents who feel insecure about their body, physical health, and/or appearance correlated with their gender. Editor's Note: Only the data from respondents identifying as Man or Woman are included.",
+      "Correspondents who feel insecure about their body, physical health, and/or appearance correlated with their gender. Editor’s Note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary,” and “Other” gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
     // 2023!!
   });
 
