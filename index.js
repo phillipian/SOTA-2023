@@ -978,33 +978,33 @@ window.onload = () => {
 
 
 
-  sota.stackedColumnChart({
-    section: "politics",
-    dataFile: "assets/data/politics/affirmative_actionXclass",
-    title: "Do you support affirmative action in academic institutions?",
-    subtitle: "Percentage by Class Year",
-    // 2022!!
-  });
+  // sota.stackedColumnChart({
+  //   section: "politics",
+  //   dataFile: "assets/data/politics/affirmative_actionXclass",
+  //   title: "Do you support affirmative action in academic institutions?",
+  //   subtitle: "Percentage by Class Year",
+  //   // 2022!!
+  // });
 
-  sota.stackedColumnChart({
-    section: "politics",
-    dataFile: "assets/data/politics/affirmative_actionXrace",
-    title: "Do you support affirmative action in academic institutions?",
-    subtitle: "Percentage by Race",
-    // 2022!!
-  });
+  // sota.stackedColumnChart({
+  //   section: "politics",
+  //   dataFile: "assets/data/politics/affirmative_actionXrace",
+  //   title: "Do you support affirmative action in academic institutions?",
+  //   subtitle: "Percentage by Race",
+  //   // 2022!!
+  // });
 
-  sota.stackedBarChart({
-    section: "politics",
-    dataFile: "assets/data/politics/affirmativeXgender",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    showLegend: true,
-    title: "Affirmative Action Support By Gender Identity",
-    subtitle:
-      "Editor’s Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
-      // 2022!!
-  });
+  // sota.stackedBarChart({
+  //   section: "politics",
+  //   dataFile: "assets/data/politics/affirmativeXgender",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   showLegend: true,
+  //   title: "Affirmative Action Support By Gender Identity",
+  //   subtitle:
+  //     "Editor’s Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, nonbinary, and other gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
+  //     // 2022!!
+  // });
 
 
 
