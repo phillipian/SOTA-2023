@@ -141,6 +141,13 @@ window.onload = () => {
   
 // -- GENERAL!! --- 
 
+  var margin = {
+    top: 20,
+    left: 30,
+    bottom: 40,
+    right: 10
+  };
+
   sota.bigNumber({
     section: "general",
     number: "931",
@@ -156,11 +163,14 @@ window.onload = () => {
     subtitle: "of the student body participated in this survey.",
   });
 
-  sota.barChart({
+  sota.customColumnChart({
     section: "general",
     dataFile: "assets/data/general/1-class",
     totalResp: 929,
     displayPercentage: true,
+    // shapeFile: "assets/svgs/graduationcap",
+    shapeFile: "assets/svgs/graduationcap",
+    // shapeHeight: 100,
     title: "WHAT CLASS ARE YOU IN?",
     subtitle: "Editor’s note: two students did not select a class year.",
     // 2023!!
@@ -480,10 +490,10 @@ window.onload = () => {
     // 2023!!
   });
 
-  sota.customColumnChart({
+  sota.pieChart({
     section: "general",
     dataFile: "assets/data/campus/23-varsity",
-    shapeFile: "assets/svgs/varsityjacket",
+    // shapeFile: "assets/svgs/varsityjacket",
     title: "Varsity Athletics",
     subtitle: "Are you a varsity athlete?",
     // 2023!!
@@ -617,6 +627,21 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/affiliationXcensorship",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    inputIsPercentage: false,
+    sorted: false,
+    showLegend: false,
+    title: "Affiliation & Censorship",
+    subtitle:
+      "Whether respondents felt the need to censor themselves due to their political affiliations.",
+    // 2023!
+  });
+
   sota.pieChart({
     section: "politics",
     dataFile: "assets/data/politics/28-informed",
@@ -669,6 +694,21 @@ window.onload = () => {
     // 2023!
   });
 
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/affirmative_actionXrace",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    inputIsPercentage: false,
+    sorted: false,
+    showLegend: false,
+    title: "Affirmative Action & Race",
+    subtitle:
+      "Whether respondents support affirmative action in institutions compared to their race. Editor's Note: Some races with small numbers of respondents are ommitted.",
+    // 2023!
+  });
+
   sota.bigNumber({
     section: "politics",
     number: "34.4%",
@@ -686,6 +726,21 @@ window.onload = () => {
     subtitle:
       "Do you believe that white people can experience racism (colloquially known as reverse racism)? ",
       // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/reverse_racismXrace",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    inputIsPercentage: false,
+    sorted: false,
+    showLegend: false,
+    title: "Reverse Racism & Race",
+    subtitle:
+      "Whether respondents believe in reverse racism compared to their race. Editor's Note: Some races with small numbers of respondents are ommitted.",
+    // 2023!
   });
 
   sota.columnChart({
@@ -724,6 +779,21 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/feministXgender",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    inputIsPercentage: false,
+    sorted: false,
+    showLegend: false,
+    title: "Feminism & Gender Identity",
+    subtitle:
+      "Whether respondents identify as feminists compared to their gender identity. Editor's Note: Only respondents who identify as Man or Woman are included.",
+    // 2023!
+  });
+
   sota.pieChart({
     section: "politics",
     dataFile: "assets/data/politics/36-immigration",
@@ -744,7 +814,19 @@ window.onload = () => {
     // 2023!!
   });
 
-
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/abortionXgender",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage:true,
+    inputIsPercentage: true,
+    showLegend: true,
+    title: "Abortion & Gender",
+    subtitle:
+      "Whether respondents believe people should have the right to have an abortion correlated to their gender identity. Editor's Note: Only respondents who identify as Man or Woman are included.",
+      // 2023!!
+  });
 
   sota.stackedBarChart({
     section: "politics",
@@ -782,8 +864,22 @@ window.onload = () => {
     dataFile: "assets/data/politics/drug-decriminalization",
     title: "Israel-Palestine Conflict",
     subtitle:
-      "Are you “pro-Israel” or “pro-Palestine” in the Israel-Palestine conflict?",
+      "Do you believe that drugs should be decriminalized in the United States?",
     // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "politics",
+    dataFile: "assets/data/politics/drugsXincarceration",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage:true,
+    inputIsPercentage:true,
+    showLegend: true,
+    title: "Decriminalization of Drugs & Incarceration",
+    subtitle:
+      "Whether respondents believe drugs should be decriminalized compared to whether they know an incarcerated person.",
+      // 2023!!
   });
 
   sota.customBarChart({
@@ -793,6 +889,20 @@ window.onload = () => {
     subtitle: "Does your family own firearms?",
     shapeFile: "assets/svgs/gun"
     // 2023!!
+  });
+
+  sota.stackedColumnChart({
+    section: "politics",
+    dataFile: "assets/data/politics/affiliationXguns",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage:true,
+    inputIsPercentage:true,
+    showLegend: true,
+    title: "Firearms & Political Affiliation",
+    subtitle:
+      "Respondents who own firearms correlated with their political affiliation.",
+      // 2023!!
   });
 
   // sota.bigNumber({
@@ -1013,15 +1123,20 @@ window.onload = () => {
     // 2023!!
   });
 
+
+
   sota.pieChart({
     section: "campus",
     dataFile: "assets/data/campus/134-environment_impact",
     sorted: false,
     title: "climate education",
+    // pieRad: 100,
+    margin: margin,
     subtitle:
       "Do you feel that environmental issues (global warming, water, and air pollution, etc.) directly impact your life?",
       // 2023!!
   });
+
 
   sota.pieChart({
     section: "campus",
@@ -1580,6 +1695,7 @@ window.onload = () => {
     dataFile: "assets/data/discipline/161-Roomvisit",
     sorted: false,
     title: "Room Visit",
+    margin: margin,
     subtitle:
       "Have you ever had a room visit? — Visiting the dormitory room of or inviting an individual from outside your dormitory to your dorm room.",
       // 2023!!
@@ -2437,6 +2553,19 @@ window.onload = () => {
     title: "body insecurity",
     subtitle:
       "Do you feel insecure about your body, physical health, and/or appearance?",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "wellness",
+    dataFile: "assets/data/wellness/insecurityXgender",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "Body Insecurity & Gender",
+    subtitle:
+      "Correspondents who feel insecure about their body, physical health, and/or appearance correlated with their gender. Editor's Note: Only the data from respondents identifying as Man or Woman are included.",
     // 2023!!
   });
 
