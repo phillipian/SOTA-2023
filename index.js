@@ -2548,6 +2548,19 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "wellness",
+    dataFile: "assets/data/wellness/insecurityXgpa",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "GPA & Intellectual Insecurity",
+    subtitle:
+      "Correspondents who feel insecure about their academic ability and/or intelligence correlated with their GPA. Editor's Note: Only data from the GPA range of 5.0 - 6.0 is used.",
+    // 2023!!
+  });
+
   sota.pieChart({
     section: "wellness",
     dataFile: "assets/data/wellness/54-insecure_body",
@@ -2568,6 +2581,19 @@ window.onload = () => {
     title: "Body Insecurity & Gender",
     subtitle:
       "Correspondents who feel insecure about their body, physical health, and/or appearance correlated with their gender. Editor’s Note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary,” and “Other” gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "wellness",
+    dataFile: "assets/data/wellness/insecurityXsocial-media",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "Body Insecurity & Social Media",
+    subtitle:
+      "Correspondents who feel insecure about their body, physical health, and/or appearance correlated with the hours they spend on social media.",
     // 2023!!
   });
 
@@ -2610,6 +2636,19 @@ window.onload = () => {
     subtitle:
       "Have you ever been to the Sykes Wellness Center to see a counselor?",
     title: "Sykes counseling",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "wellness",
+    dataFile: "assets/data/wellness/counselorXsufficient",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "Sufficient Support & Counseling",
+    subtitle:
+      "Correlation between respondents who believe Sykes mental health support is sufficient and whether they have seen a counselor.",
     // 2023!!
   });
 
@@ -2664,6 +2703,18 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "wellness",
+    dataFile: "assets/data/wellness/anxietyXgender",
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    title: "Anxiety & Gender",
+    subtitle:
+      "Respondents who have anxiety correlated with their gender identity. Editor’s Note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary,” and “Other” gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
+    // 2023!!
+  });
+
   sota.pieChart({
     section: "wellness",
     dataFile: "assets/data/wellness/treatment",
@@ -2695,6 +2746,18 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "wellness",
+    dataFile: "assets/data/wellness/happyXgpa",
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    title: "Happiness & GPA",
+    subtitle:
+      "Whether respondents are happy at Andover correlated with their GPA. Editor's Note: Only data from the GPA range of 5.0 - 6.0 is used.",
+    // 2023!!
+  });
+
   sota.barChart({
     section: "wellness",
     dataFile: "assets/data/wellness/67-support_system",
@@ -2718,10 +2781,23 @@ window.onload = () => {
   sota.pieChart({
     section: "wellness",
     dataFile: "assets/data/wellness/isolation",
-    title: "Lonly & Isolated",
+    title: "Lonely & Isolated",
     sorted: false,
     subtitle:
       "How often do you feel lonely or isolated?",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "wellness",
+    dataFile: "assets/data/wellness/lonelyXsocial-media",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "Lonliness & Social Media",
+    subtitle:
+      "Correspondents who feel lonely or isolated correlated with the hours they spend on social media.",
     // 2023!!
   });
 
