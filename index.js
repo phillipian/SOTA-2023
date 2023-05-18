@@ -2021,7 +2021,6 @@ window.onload = () => {
     section: "sex",
     dataFile: "assets/data/sex/77-rape_culture",
     displayPercentage: true,
-    groupLabelStyle: "onBar",
     title: "Do you believe that there is rape culture at Andover?",
     subtitle:
       "Rape culture: “a society or environment whose prevailing social attitudes have the effect of normalizing or trivializing sexual assault and abuse” (Oxford Dictionaries)",
