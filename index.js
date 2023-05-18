@@ -54,7 +54,7 @@ sota.sotaConfig.sections = [
       "#BAE5AE",
     ],
     blurb:
-      "Andover students average 6.80 hours of sleep a night. Of respondents, 77.4% consider themselves happy at Andover and 67.2% feel as though they have an adequate mental or emotional support system on campus. 88.2% of students indicate that friends are a part of their support system, whereas 38.4% indicate faculty or staff. 27.5% of respondents think that the mental health and counseling resources provided by the Rebecca M. Sykes Wellness Center are sufficient.",
+      "Andover students average [6.80] hours of sleep a night. Of respondents, 77.4% consider themselves happy at Andover and 67.2% feel as though they have an adequate mental or emotional support system on campus. 88.2% of students indicate that friends are a part of their support system, whereas 38.4% indicate faculty or staff. 27.5% of respondents think that the mental health and counseling resources provided by the Rebecca M. Sykes Wellness Center are sufficient.",
   },
   {
     slug: "drugs",
@@ -279,7 +279,7 @@ window.onload = () => {
     section: "general",
     dataFile: "assets/data/general/US-residential",
     sorted: false,
-    title: "US Residence",
+    title: "U.S. Residence",
     subtitle: "If you live in the United States of America, are you a citizen and/or permanent resident of the U.S.?",
     // 2023!!
   });
@@ -289,7 +289,7 @@ window.onload = () => {
     dataFile: "assets/data/general/guardian-residence",
     totalResp: 928,
     displayPercentage: true,
-    title: "Parents and Guardians Residence",
+    title: "Parent and Guardian Residence",
     subtitle: "If you live in the United States of America, how many of your guardian(s) are citizens and/or permanent residents of the U.S.?"
     // 2023!!
   });
@@ -522,7 +522,7 @@ window.onload = () => {
     showLegend: false,
     title: "Varsity & Race",
     subtitle:
-      "Races of respondents who are varsity athletes. Editor's Note: Not all races were included due to the small number of responses in those categories.",
+      "Races of respondents who are Varsity Athletes. Editor's Note: Not all races were included due to the small number of responses in those categories.",
     // 2023!
   });
 
@@ -801,7 +801,7 @@ window.onload = () => {
     dataFile: "assets/data/politics/36-immigration",
     title: "Immigration & Border Security",
     subtitle:
-      "Do you believe that the United States should increase border security?",
+      "Do you believe that the United States of America should increase border security?",
     // 2023!!
   });
 
@@ -839,7 +839,7 @@ window.onload = () => {
     showLegend: true,
     title: "Prison System",
     subtitle:
-      "Do you believe that the current prison system in the United States should be altered?",
+      "Do you believe that the current prison system in the United States of America should be altered?",
       // 2023!!
   });
 
@@ -848,7 +848,7 @@ window.onload = () => {
     dataFile: "assets/data/politics/police",
     title: "Police Reform",
     subtitle:
-      "Do you believe that the current police system in the United States of America should be altered?",
+      "Do you believe that the current police system in the U.S. should be altered?",
     // 2023!!
   });
 
@@ -864,9 +864,9 @@ window.onload = () => {
   sota.pieChart({
     section: "politics",
     dataFile: "assets/data/politics/drug-decriminalization",
-    title: "Israel-Palestine Conflict",
+    title: "Decriminalization of Drugs",
     subtitle:
-      "Do you believe that drugs should be decriminalized in the United States?",
+      "Do you believe that drugs should be decriminalized in the United States of America?",
     // 2023!!
   });
 
@@ -921,7 +921,7 @@ window.onload = () => {
     dataFile: "assets/data/politics/gun-reform",
     title: "Gun Reform",
     subtitle:
-      "Do you think that gun control laws in the United States should change?",
+      "Do you think that gun control laws in the United States of America should change?",
     // 2023!!
   });
 
@@ -1303,7 +1303,7 @@ window.onload = () => {
     section: "school",
     number: "5.41",
     title: "Overall Average GPA",
-    subtitle: "average rounded Winter Term G.P.A, a 0.6 increase from 2022 (last year).",
+    subtitle: "average rounded Winter Term GPA, a 0.06 increase from 2022 (last year).",
     // 2023!!
   });
 
@@ -1311,8 +1311,8 @@ window.onload = () => {
     section: "school",
     dataFile: "assets/data/school/111-gpa",
     maxVal: 156,
-    title: "G.P.A",
-    subtitle: "What was your rounded Winter 2022-2023 G.P.A.? (If you are between two numbers, round up to the closest decimal – a 5.3 G.P.A. would round to a 5.4. If you earned a Pass or multiple Passes, exclude this from your calculation).",
+    title: "GPA",
+    subtitle: "What was your rounded Winter 2022-2023 G.P.A.?",
     // 2023!!
   });
 
@@ -1385,7 +1385,7 @@ window.onload = () => {
     section: "school",
     dataFile: "assets/data/school/119-extracurriculars",
     showLegend: true,
-    title: "On Campus, I ...",
+    title: "Extracurriculars",
     subtitle:
       "Do you participate in any extracurriculars because you think they will increase your chances of getting into a selective college?",
       // 2023!!
@@ -1454,9 +1454,9 @@ window.onload = () => {
   sota.bigNumber({
     section: "school",
     number: "12.2%",
-    title: "Learning Disabiliy",
+    title: "Learning Disability",
     subtitle:
-      "of respondents have disability/disorder/impairment that affects their learning.",
+      "of respondents have a disability/disorder/impairment that affects their learning.",
       // 2023!!
   });
 
@@ -1572,7 +1572,7 @@ window.onload = () => {
 
   sota.bigNumber({
     section: "discipline",
-    number: "10.79%",
+    number: "10.8%",
     title: "Level 3 Violation",
     subtitle:
       "of respondents have commited a Level 3 violation without being caught.",
@@ -1666,7 +1666,7 @@ window.onload = () => {
   sota.stackedColumnChart({
     section: "discipline",
     dataFile: "assets/data/discipline/cheatedXclass",
-    title: "Cheating & Class",
+    title: "Cheating by Class",
     subtitle:
       "Have you ever cheated on any tests, quizzes, or in-class assessments while at Andover?",
       // 2023!!
@@ -1733,7 +1733,7 @@ window.onload = () => {
     displayPercentage: true,
     title: "Faculty Diversity",
     subtitle:
-      "Do you think the faculty is lacking in diversity in... ?",
+      "Do you think the faculty is lacking in diversity in...?",
       // 2023!!
   });
 
@@ -1868,7 +1868,7 @@ window.onload = () => {
     displayPercentage: true,
     title: "Leadership Positions",
     subtitle:
-      "Do you think your capability to attain leadership positions at Andover is affected by your __________?",
+      "Do you think your capability to attain leadership positions at Andover is affected by your...?",
       // 2023!!
   });
 
@@ -1877,7 +1877,7 @@ window.onload = () => {
     dataFile: "assets/data/diversity/146-day_student",
     title: "Day Students",
     subtitle:
-      "Do you think day students are able to integrate enough with boarding students at Andover this year?",
+      "Do you think day students are able to integrate enough with boarding students at Andover?",
       // 2023!!
   });
 
@@ -1889,7 +1889,7 @@ window.onload = () => {
     labelStyle: "onBar",
     groupLabelStyle: "onBar",
     displayPercentage: true,
-    title: "Day Student Integration vs. student status",
+    title: "Day Student Integration by student status",
     subtitle:
       "Do you think day students are able to integrate enough with boarding students at Andover this year?",
       // 2023!!
@@ -1984,7 +1984,7 @@ window.onload = () => {
     number: "34.6%",
     title: '"Hooking-up"',
     subtitle:
-      'of respondents have "hooked up" with someone they were not in a committed relationship with',
+      'of respondents have "hooked-up" with someone they were not in a committed relationship with',
     // 2023!!
   });
 
@@ -2023,7 +2023,7 @@ window.onload = () => {
     displayPercentage: true,
     title: "Do you believe that there is rape culture at Andover?",
     subtitle:
-      "Rape culture: “a society or environment whose prevailing social attitudes have the effect of normalizing or trivializing sexual assault and abuse” (Oxford Dictionaries)",
+      "Rape culture: “a society or environment whose prevailing social attitudes have the effect of normalizing or trivializing sexual assault and abuse.” (Oxford Dictionaries)",
     // 2023!!
   });
 
@@ -2041,11 +2041,10 @@ window.onload = () => {
       // 2023!!
   });
 
-  sota.stackedBarChart({
+  sota.pieChart({
     section: "sex",
     dataFile: "assets/data/sex/78-verbalconsent",
-    showLegend: true,
-    labelStyle: "onBar",
+    displayPercentage: true,
     title: "consent",
     subtitle: "Do you consistently ask your partner for verbal consent?",
     // 2023!!
@@ -2324,7 +2323,7 @@ window.onload = () => {
 
   sota.bigNumber({
     section: "drugs",
-    number: "32.99%",
+    number: "33.0%",
     title: "nicotine use",
     subtitle:
       "of respondents have used a nicotine-based product.",
@@ -2376,7 +2375,7 @@ window.onload = () => {
 
   sota.bigNumber({
     section: "drugs",
-    number: "83.56%",
+    number: "83.6%",
     title: "normalization of drugs and alcohol",
     subtitle:
       "of respondents believe that the use of recreational drugs or alcohol is normalized at Andover.",
@@ -2493,9 +2492,9 @@ window.onload = () => {
     section: "drugs",
     dataFile: "assets/data/drugs/111-fakeid",
     displayPercentage: true,
-    title: "Fake I.D.",
+    title: "Fake ID",
     subtitle:
-      "Have you ever purchased or do you own a fake I.D.?",
+      "Have you ever purchased or do you own a fake ID?",
       // 2023!!
     });
 
@@ -2505,7 +2504,7 @@ window.onload = () => {
     displayPercentage: true,
     title: "Have you ever been sanctuaried?",
     subtitle:
-      "Sanctuary: provided with a means of accessing support in situations where alcohol, drugs, tobacco, and/or nicotine are involved WITHOUT disciplinary consequences (The Blue Book).",
+      "Sanctuary: provided with a means of accessing support in situations where alcohol, drugs, tobacco, and/or nicotine are involved WITHOUT disciplinary consequences (The Blue Book)",
       // 2023!!
     });
 
@@ -2572,7 +2571,7 @@ window.onload = () => {
     section: "wellness",
     title: "neurodivergence",
     number: "175",
-    subtitle: "respondents consider themselves neurodivergent",
+    subtitle: "respondents consider themselves neurodivergent.",
     // 2023!
   });
 
@@ -2695,7 +2694,7 @@ window.onload = () => {
     title: "Sykes Counseling",
     number: "34.9%",
     subtitle:
-      "of students have been to Sykes Wellness Center to see a counselor.",
+      "of students have been to Rebecca M. Sykes Wellness Center to see a counselor.",
     // 2023!!
   });
 
@@ -2704,7 +2703,7 @@ window.onload = () => {
     dataFile: "assets/data/wellness/58-see_counselor",
     sorted: false,
     subtitle:
-      "Have you ever been to the Sykes Wellness Center to see a counselor?",
+      "Have you ever been to the Rebecca M. Sykes Wellness Center to see a counselor?",
     title: "Sykes counseling",
     // 2023!!
   });
@@ -2727,7 +2726,7 @@ window.onload = () => {
     title: "Adequate Recources",
     number: "27.5%",
     subtitle:
-      "less respondents believe that the resources provided by the Sykes Wellness Center are sufficient compared to last year (2022).",
+      "less respondents believe that the resources provided by the Rebecca M. Sykes Wellness Center are sufficient compared to last year (2022).",
     // 2023!!
   });
 
@@ -2739,7 +2738,7 @@ window.onload = () => {
     labelStyle: "onBar",
     title: "sykes counseling resources",
     subtitle:
-      "Do you think that the mental health and counseling resources provided by the Sykes Wellness Center are sufficient?",
+      "Do you think that the mental health and counseling resources provided by the Rebecca M. Sykes Wellness Center are sufficient?",
     // 2022!!
   });
 
@@ -2747,7 +2746,7 @@ window.onload = () => {
     section: "wellness",
     dataFile: "assets/data/wellness/60-sykes_physical",
     subtitle:
-      "Do you think that the physical health resources provided by the Sykes Wellness Center are sufficient?",
+      "Do you think that the physical health resources provided by the Rebecca M. Sykes Wellness Center are sufficient?",
     title: "physical health resources",
     shapeFile: "assets/svgs/pregnancy",
     // 2023!!
@@ -2758,7 +2757,7 @@ window.onload = () => {
     title: "ADD/ADHD",
     number: "272",
     subtitle:
-      "respondents have or would like to seek an evaluation for ADD/ADHD",
+      "respondents have or would like to seek an evaluation for ADD/ADHD.",
     // 2023!!
   });
 
@@ -2790,7 +2789,7 @@ window.onload = () => {
     dataFile: "assets/data/wellness/treatment",
     sorted: false,
     subtitle:
-      "Are you currently receiving treatment for any mental health diagnosis? (ie. therapy, medication, etc.)?",
+      "Are you currently receiving treatment for any mental health diagnosis (ie. therapy, medication, etc.)?",
     title: "Treatment",
     // 2023!!
   });
