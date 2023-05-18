@@ -1906,6 +1906,21 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.groupedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/sexualactivityXgrade",
+    totalResp: { 2026: 212, 2025: 301, 2024: 442, 2023: 477 },
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Sexual Activity by Grade",
+    subtitle:
+      "Respondents who have participated in sexual activity sorted by grade.",
+      // 2023!!
+  });
+
   sota.barChart({
     section: "sex",
     dataFile: "assets/data/sex/72-number_of_partners",
@@ -1930,6 +1945,20 @@ window.onload = () => {
     title: "hook-up culture",
     subtitle: "Do you believe that there is a hook-up culture at Andover?",
     // 2023!!
+  });
+
+ sota.stackedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/hookupXgender",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Hook-Up Culture & Gender Identity",
+    subtitle:
+      "Whether respondents believe there is a hook-up culture at Andover by their gender identity. Editor's Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, and nonbinary have been removed in an effort to protect the complete anonymity of these respondents.",
+      // 2023!!
   });
 
   sota.bigNumber({
@@ -1999,6 +2028,20 @@ window.onload = () => {
     // 2023!!
   });
 
+ sota.stackedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/rapecultureXgender",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Rape Culture & Gender Identity",
+    subtitle:
+      "Whether respondents believe there is a rape culture at Andover by their gender identity. Editor's Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, and nonbinary have been removed in an effort to protect the complete anonymity of these respondents.",
+      // 2023!!
+  });
+
   sota.stackedBarChart({
     section: "sex",
     dataFile: "assets/data/sex/78-verbalconsent",
@@ -2057,7 +2100,7 @@ window.onload = () => {
     title: "masturbation",
     subtitle: "How frequently do you masturbate?",
     // 2023!!
-  })
+  });
 
   sota.stackedBarChart({
     section: "sex",
@@ -2071,6 +2114,20 @@ window.onload = () => {
     subtitle:
       "Editor's Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, and nonbinary have been removed in an effort to protect the complete anonymity of these respondents.",
     // 2023!!
+  });
+
+   sota.stackedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/masturbateXgender",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Talking about Masturbation & Gender Identity",
+    subtitle:
+      "Whether respondents feel comfortable telling their friends they masturbate by their gender identity. Editor's Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, and nonbinary have been removed in an effort to protect the complete anonymity of these respondents.",
+      // 2023!!
   });
 
   sota.barChart({
@@ -2166,6 +2223,20 @@ window.onload = () => {
     title: "Sex Under the Influence",
     subtitle: "Have you ever engaged in sexual activity while under the influence of drugs or alcohol?",
     // 2023!!
+  });
+
+
+   sota.stackedBarChart({
+    section: "sex",
+    dataFile: "assets/data/sex/influenceXconsumption",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Sex Under the Influence & Substance Consumption",
+    subtitle: "Whether respondents have had sex under the influence correlated with substance consumption.",
+          // 2023!!
   });
 
   // sota.groupedBarChart({
