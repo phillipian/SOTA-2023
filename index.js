@@ -2208,7 +2208,7 @@ window.onload = () => {
     groupLabelStyle: "onBar",
     displayPercentage: true,
     title: "Leadership & Race",
-    subtitle: "Respondents' opinions on whether race limits their capacity to obtain leadership positions correlated with their race.",
+    subtitle: "Respondents' opinions on whether race limits their capacity to obtain leadership positions correlated with their race. Editor’s Note: Correlated statistics from respondents whose races are “Indigenous People of the Americas” and “Native Hawaiian or Pacific Islander” have been removed in an effort to protect the complete anonymity of these respondents. ",
       // 2023!!
   });
 
