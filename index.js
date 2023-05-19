@@ -449,6 +449,7 @@ window.onload = () => {
     sorted: false,
     title: "Net Income",
     subtitle: "What is your net family income?",
+    margin: margin,
     // 2023!!
   });
 
@@ -616,6 +617,7 @@ window.onload = () => {
     sorted: false,
     title: "Andover's Politics",
     subtitle: "Do you think the Andover community has a political leaning?",
+    margin: margin,
     // 2023!!
   });
 
@@ -759,6 +761,7 @@ window.onload = () => {
     dataFile: "assets/data/politics/advocacy-women",
     title: "Women's Rights",
     subtitle: "Do you support “the advocacy of women’s rights on the grounds of the equality of the sexes” (Oxford English Dictionary)?",
+    margin: margin,
     // 2023!!
   });
 
@@ -922,6 +925,7 @@ window.onload = () => {
     title: "Gun Reform",
     subtitle:
       "Do you think that gun control laws in the United States should change?",
+    margin: margin,
     // 2023!!
   });
 
@@ -1378,6 +1382,7 @@ window.onload = () => {
     title: "Leadership Positions",
     subtitle:
       "How many leadership positions do you hold on campus?",
+    margin: margin,
       // 2023!!
   });
 
@@ -1448,6 +1453,7 @@ window.onload = () => {
     title: "Learning Disabilities",
     subtitle:
       "Do you have a disability that affects your learning?",
+    margin: margin,
       // 2023!!
   });
 
@@ -1466,6 +1472,7 @@ window.onload = () => {
     sorted: false,
     showLegend: true,
     title: "Learning Accomodations",
+    margin: margin,
     subtitle:
       "Do you currently have learning accommodations at Andover?",
       // 2023!!
@@ -1576,6 +1583,7 @@ window.onload = () => {
     title: "Level 3 Violation",
     subtitle:
       "of respondents have commited a Level 3 violation without being caught.",
+    margin: margin,
       // 2023!!
   });
 
@@ -2311,6 +2319,20 @@ window.onload = () => {
     // 2023!!
   });
 
+   sota.stackedBarChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/normalizationXuse",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    inputIsPercentage: true,
+    title: "Normalization of Drug Culture & Substance Use",
+    subtitle: "Whether respondents believe drug culture has been normalized at Andover correlated with substance use.",
+          // 2023!!
+  });
+
   sota.pieChart({
     section: "drugs",
     dataFile: "assets/data/drugs/112-nicotine-product",
@@ -2373,6 +2395,55 @@ window.onload = () => {
       // 2023!!
   });
 
+  sota.bigNumber({
+    section: "drugs",
+    number: "30.8%",
+    title: "Drugs vs. student leadership",
+    subtitle:
+      "of student leaders have consumed drugs or alchohol on and off campus",
+  }); // 2023!!
+
+  sota.stackedBarChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/studentleaderXalcohol",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Student Leadership & Alcohol Use",
+    subtitle: "How respondents who are student leaders are correlated with alcohol use.",
+        // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/alcoholXcluster",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Cluster & Alcohol Use",
+    subtitle: "Alcohol use by students by cluster.",
+        // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/alcoholXincome",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Income & Alcohol Use",
+    subtitle: "Alcohol use by students correlated with their household income.",
+        // 2023!!
+  });
 
   sota.bigNumber({
     section: "drugs",
@@ -2409,24 +2480,30 @@ window.onload = () => {
   //     // 2022!!
   // });
 
-  sota.bigNumber({
-    section: "drugs",
-    number: "30.8%",
-    title: "Drugs vs. student leadership",
-    subtitle:
-      "of student leaders have consumed drugs or alchohol on and off campus",
-  }); // 2023!!
-
   sota.pieChart({
     section: "drugs",
     dataFile: "assets/data/drugs/104-study_drugs",
     displayPercentage: true,
     title: "study drugs",
+    margin: margin,
     subtitle:
       "Have you ever used pharmaceutical drugs in the hopes of enhancing academic performance (i.e. “study drugs”) during your time at Andover?",
       // 2023!!
   });
 
+   sota.stackedBarChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/studydrugsXgpa",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Use of Study Drugs & GPA",
+    subtitle: "Whether respondents use study drugs correlated with their GPA. Editor's Note: Only data from the GPA range of 5.0 - 6.0 is used.",
+        // 2023!!
+  });
   // sota.stackedBarChart({
   //   section: "drugs",
   //   dataFile: "assets/data/drugs/studydrugsXgpa",
@@ -2467,12 +2544,28 @@ window.onload = () => {
       "Have you ever felt pressured by peers to consume recreational drugs or alcohol on campus?",
       // 2023!!
   });
+
+   sota.stackedBarChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/pressureXdrugs",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Pressure & Drug Use",
+    subtitle: "Whether respondents feel pressured to participate in drug use correlated with drug use.",
+        // 2023!!
+  });
+
   sota.pieChart({
     section: "drugs",
     dataFile: "assets/data/drugs/106-sold_drugs",
     displayPercentage: true,
     sorted: false,
     title: "sales",
+    margin: margin,
     subtitle:
       "Have you ever sold someone recreational drugs, alcohol, or your prescription medication?",
       // 2023!!
@@ -2494,16 +2587,32 @@ window.onload = () => {
     dataFile: "assets/data/drugs/111-fakeid",
     displayPercentage: true,
     title: "Fake I.D.",
+    margin: margin,
     subtitle:
       "Have you ever purchased or do you own a fake I.D.?",
       // 2023!!
     });
+
+   sota.stackedBarChart({
+    section: "drugs",
+    dataFile: "assets/data/drugs/fakeidXalcohol",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Fake I.D. & Alcohol Use",
+    subtitle: "Whether respondents have fake I.D.'s correlated with alcohol use",
+        // 2023!!
+  });
 
   sota.pieChart({
     section: "drugs",
     dataFile: "assets/data/drugs/109-been_sancted",
     displayPercentage: true,
     title: "Have you ever been sanctuaried?",
+    margin: margin,
     subtitle:
       "Sanctuary: provided with a means of accessing support in situations where alcohol, drugs, tobacco, and/or nicotine are involved WITHOUT disciplinary consequences (The Blue Book).",
       // 2023!!
@@ -2855,6 +2964,7 @@ window.onload = () => {
     sorted: false,
     subtitle:
       "How often do you feel lonely or isolated?",
+    margin: margin,
     // 2023!!
   });
 
