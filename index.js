@@ -1768,6 +1768,7 @@ window.onload = () => {
     section: "discipline",
     dataFile: "assets/data/discipline/149-consequences",
     totalResp: 759,
+    margin: margin,
     title:
       "Which of the following disciplinary consequences have you recieved?",
       // 2023!!
@@ -1947,6 +1948,7 @@ window.onload = () => {
     dataFile: "assets/data/discipline/160-Level3-caught",
     sorted: false,
     title: "Level 3 Violation",
+    margin: margin,
     subtitle:
       "Have you ever committed a Level 3 violation without being caught? (Level 3 violations include, but are not limited to: selling or providing drugs/alcohol/nicotine, bullying, hazing, major destruction of property, sexual misconduct)",
       // 2023!!
