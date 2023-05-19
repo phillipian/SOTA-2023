@@ -2056,18 +2056,18 @@ window.onload = () => {
         // 2023!!
   });
 
-  sota.stackedBarChart({
-    section: "diversity",
-    dataFile: "assets/data/diversity/divideXrace",
-    sorted: false,
-    showLegend: true,
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    displayPercentage: true,
-    title: "Social Divide & Race",
-    subtitle: "Respondents' opinions on whether there is a social divide at Andover correlated with their race.",
-        // 2023!!
-  });
+  // sota.stackedBarChart({
+  //   section: "diversity",
+  //   dataFile: "assets/data/diversity/divideXrace",
+  //   sorted: false,
+  //   showLegend: true,
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   displayPercentage: true,
+  //   title: "Social Divide & Race",
+  //   subtitle: "Respondents' opinions on whether there is a social divide at Andover correlated with their race.",
+  //       // 2023!!
+  // });
 
   // sota.stackedBarChart({
   //   section: "diversity",
