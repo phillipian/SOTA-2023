@@ -1762,6 +1762,34 @@ window.onload = () => {
       // 2023!!
   });
 
+ sota.stackedBarChart({
+    section: "discipline",
+    dataFile: "assets/data/discipline/systemXrecipients",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Discipline System & Recipients",
+    subtitle:
+      "The effectiveness of the disciplinary system correlated with the respondents who have gone through the discipline system.",
+      // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "discipline",
+    dataFile: "assets/data/discipline/residentialXrecipients",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Discipline System & Residential Status",
+    subtitle:
+      "Respondents' residential statuses correlated with the discipline system.",
+      // 2023!!
+  });
+
   sota.barChart({
     section: "discipline",
     dataFile: "assets/data/discipline/effectiveXconsequences",
@@ -1780,6 +1808,20 @@ window.onload = () => {
     title: "Privilege",
     subtitle:
       "Do you think that the school's disciplinary system favors students of privileged backgrounds?",
+      // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "discipline",
+    dataFile: "assets/data/discipline/privilegeXdiscipline",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Privilege & Discipline",
+    subtitle:
+      "Whether respondents believe the disciplinary process favors those from privileged backgrounds correlated with their income.",
       // 2023!!
   });
 
@@ -1838,6 +1880,20 @@ window.onload = () => {
       // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "discipline",
+    dataFile: "assets/data/discipline/integrityXclassyear",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Academic Integrity & Class Year",
+    subtitle:
+      "Whether respondents have committed academic integrity violations correlated with their class year.",
+      // 2023!!
+  });
+
   sota.barChart({
     section: "discipline",
     dataFile: "assets/data/discipline/147-understand_processes",
@@ -1848,6 +1904,33 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "discipline",
+    dataFile: "assets/data/discipline/understandXresidential",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Understanding the Process & Residential Status",
+    subtitle:
+      "Whether respondents understand the new disciplinary process correlated with their residential status.",
+      // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "discipline",
+    dataFile: "assets/data/discipline/understandXclassyear",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Understanding the Process & Class Year",
+    subtitle:
+      "Whether respondents understand the new disciplinary process correlated with their class year.",
+      // 2023!!
+  });
   sota.pieChart({
     section: "discipline",
     dataFile: "assets/data/discipline/160-Level3-caught",
