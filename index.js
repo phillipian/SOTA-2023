@@ -3092,18 +3092,18 @@ window.onload = () => {
     // 2023!!
   });
 
-  // sota.stackedBarChart({
-  //   section: "wellness",
-  //   dataFile: "assets/data/wellness/insecurityXgender",
-  //   labelStyle: "onBar",
-  //   groupLabelStyle: "onBar",
-  //   showLegend: true,
-  //   labelStyle: "onBar",
-  //   title: "Body Insecurity & Gender",
-  //   subtitle:
-  //     "Correspondents who feel insecure about their body, physical health, and/or appearance correlated with their gender. Editor’s Note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary,” and “Other” gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
-  //   // 2023!!
-  // });
+  sota.stackedBarChart({
+    section: "wellness",
+    dataFile: "assets/data/wellness/insecurityXgender",
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    showLegend: true,
+    labelStyle: "onBar",
+    title: "Body Insecurity & Gender",
+    subtitle:
+      "Correspondents who feel insecure about their body, physical health, and/or appearance correlated with their gender. Editor’s Note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary,” and “Other” gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
+    // 2023!!
+  });
 
   sota.stackedBarChart({
     section: "wellness",
