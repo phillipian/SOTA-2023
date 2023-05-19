@@ -54,7 +54,7 @@ sota.sotaConfig.sections = [
       "#BAE5AE",
     ],
     blurb:
-      "Andover students average [6.80] hours of sleep a night. Of respondents, 77.4% consider themselves happy at Andover and 67.2% feel as though they have an adequate mental or emotional support system on campus. 88.2% of students indicate that friends are a part of their support system, whereas 38.4% indicate faculty or staff. 27.5% of respondents think that the mental health and counseling resources provided by the Rebecca M. Sykes Wellness Center are sufficient.",
+      "Andover students average 6.80 hours of sleep a night. Of respondents, 77.4% consider themselves happy at Andover and 67.2% feel as though they have an adequate mental or emotional support system on campus. 88.2% of students indicate that friends are a part of their support system, whereas 38.4% indicate faculty or staff. 27.5% of respondents think that the mental health and counseling resources provided by the Rebecca M. Sykes Wellness Center are sufficient.",
   },
   {
     slug: "drugs",
@@ -709,7 +709,7 @@ window.onload = () => {
     showLegend: false,
     title: "Affirmative Action & Race",
     subtitle:
-      "Whether respondents support affirmative action in institutions compared to their race. Editor's Note: Some races with small numbers of respondents are ommitted.",
+      "Whether respondents support affirmative action in institutions compared to their race. Editor’s Note: Correlated statistics from respondents whose races are “Indigenous Peoples of the Americas” and “Native Hawaiian or Pacific Islander” have been removed in an effort to protect the complete anonymity of these respondents."
     // 2023!
   });
 
@@ -728,7 +728,7 @@ window.onload = () => {
     dataFile: "assets/data/politics/32-reverse_racism",
     title: '"Reverse Racism"',
     subtitle:
-      "Do you believe that white people can experience racism (colloquially known as reverse racism)? ",
+      'Do you believe that white people can experience racism (colloquially known as "reverse racism")? ',
       // 2023!!
   });
 
@@ -743,7 +743,7 @@ window.onload = () => {
     showLegend: false,
     title: "Reverse Racism & Race",
     subtitle:
-      "Whether respondents believe in reverse racism compared to their race. Editor's Note: Some races with small numbers of respondents are ommitted.",
+      "Whether respondents believe in reverse racism compared to their race. Editor’s Note: Correlated statistics from respondents whose races are “Indigenous Peoples of the Americas” and “Native Hawaiian or Pacific Islander” have been removed in an effort to protect the complete anonymity of these respondents",
     // 2023!
   });
 
@@ -858,6 +858,7 @@ window.onload = () => {
   sota.pieChart({
     section: "politics",
     dataFile: "assets/data/politics/israel-palestine",
+    showLegend: true,
     title: "Israel-Palestine Conflict",
     subtitle:
       "Are you “pro-Israel” or “pro-Palestine” in the Israel-Palestine conflict?",
@@ -923,6 +924,7 @@ window.onload = () => {
     section: "politics",
     dataFile: "assets/data/politics/gun-reform",
     title: "Gun Reform",
+    margin: margin,
     subtitle:
       "Do you think that gun control laws in the United States should change?",
     // 2023!!
@@ -1175,6 +1177,15 @@ window.onload = () => {
         // 2023!!
   });
 
+  sota.bigNumber({
+    section: "campus",
+    number: "41%",
+    title: "Head of School Approval",
+    subtitle:
+      "of respondents that approve of the work the Head of School is doing for students.",
+    // 2023!!
+  });
+
   sota.pieChart({
     section: "campus",
     dataFile: "assets/data/campus/hos-approval",
@@ -1406,7 +1417,7 @@ window.onload = () => {
     dataFile: "assets/data/school/111-gpa",
     maxVal: 156,
     title: "GPA",
-    subtitle: "What was your rounded Winter 2022-2023 G.P.A.?",
+    subtitle: "What was your rounded Winter 2022-2023 GPA?",
     // 2023!!
   });
 
@@ -1424,7 +1435,7 @@ window.onload = () => {
     section: "school",
     number: "5.42",
     title: "Respondents who indentified as a man or woman had the same average GPA of",
-    subtitle: "Editor's note: Correlated statistics from respondents identifying as other gender identities have been removed to protect their complete anonymity.",
+    subtitle: "Editor’s note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary.” and “Other” have been removed in an effort to protect the complete anonymity of these respondents.",
     // 2023!!
   });
 
@@ -2120,7 +2131,7 @@ window.onload = () => {
     groupLabelStyle: "onBar",
     displayPercentage: true,
     title: "Classroom Comfort & Race",
-    subtitle: "Whether respondents feel race is a factor in whether they are comfortable in a classroom correlated with their race. Editor’s Note: Correlated statistics from respondents whose races are 'Indigenous People of the Americas' and 'Native Hawaiian or Pacific Islander' have been removed in an effort to protect the complete anonymity of these respondents.",
+    subtitle: "Editor’s Note: Correlated statistics from respondents whose races are “Indigenous Peoples of the Americas” and “Native Hawaiian or Pacific Islander” have been removed in an effort to protect the complete anonymity of these respondents."
       // 2023!!
   });
 
@@ -2182,7 +2193,7 @@ window.onload = () => {
     groupLabelStyle: "onBar",
     displayPercentage: true,
     title: "Leadership & Gender",
-    subtitle: "Respondents' opinions on whether gender limits their capacity to obtain leadership positions correlated with their gender. Editor's Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, and nonbinary have been removed in an effort to protect the complete anonymity of these respondents.",
+    subtitle: "Respondents' opinions on whether gender limits their capacity to obtain leadership positions correlated with their gender. Editor’s note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary.” and “Other” have been removed in an effort to protect the complete anonymity of these respondents.",
       // 2023!!
   });
 
@@ -2297,7 +2308,7 @@ window.onload = () => {
     displayPercentage: true,
     title: "Hook-Up Culture & Gender Identity",
     subtitle:
-      "Whether respondents believe there is a hook-up culture at Andover by their gender identity. Editor's Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, and nonbinary have been removed in an effort to protect the complete anonymity of these respondents.",
+      "Whether respondents believe there is a hook-up culture at Andover by their gender identity. Editor’s note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary.” and “Other” have been removed in an effort to protect the complete anonymity of these respondents.",
       // 2023!!
   });
 
@@ -2377,7 +2388,7 @@ window.onload = () => {
     displayPercentage: true,
     title: "Rape Culture & Gender Identity",
     subtitle:
-      "Whether respondents believe there is a rape culture at Andover by their gender identity. Editor's Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, and nonbinary have been removed in an effort to protect the complete anonymity of these respondents.",
+      "Whether respondents believe there is a rape culture at Andover by their gender identity. Editor’s note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary.” and “Other” have been removed in an effort to protect the complete anonymity of these respondents.",
       // 2023!!
   });
 
@@ -2450,7 +2461,7 @@ window.onload = () => {
     title:
       "Would you feel comfortable telling your friends that you masturbate?",
     subtitle:
-      "Editor's Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, and nonbinary have been removed in an effort to protect the complete anonymity of these respondents.",
+      "Editor’s note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary.” and “Other” have been removed in an effort to protect the complete anonymity of these respondents.",
     // 2023!!
   });
 
@@ -2464,7 +2475,7 @@ window.onload = () => {
     displayPercentage: true,
     title: "Talking about Masturbation & Gender Identity",
     subtitle:
-      "Whether respondents feel comfortable telling their friends they masturbate by their gender identity. Editor's Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, and nonbinary have been removed in an effort to protect the complete anonymity of these respondents.",
+      "Whether respondents feel comfortable telling their friends they masturbate by their gender identity. Editor’s note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary.” and “Other” have been removed in an effort to protect the complete anonymity of these respondents.",
       // 2023!!
   });
 
@@ -2894,9 +2905,9 @@ window.onload = () => {
     section: "drugs",
     dataFile: "assets/data/drugs/106-sold_drugs",
     displayPercentage: true,
-    sorted: false,
     title: "sales",
     margin: margin,
+
     subtitle:
       "Have you ever sold someone recreational drugs, alcohol, or your prescription medication?",
       // 2023!!
@@ -2966,7 +2977,7 @@ window.onload = () => {
     section: "wellness",
     title: "sleep",
     number: "6.80",
-    subtitle: "Average hours of sleep per night of an Andover student",
+    subtitle: "average hours of sleep per night of an Andover student.",
     // 2023!!
   });
 
@@ -3081,18 +3092,18 @@ window.onload = () => {
     // 2023!!
   });
 
-  sota.stackedBarChart({
-    section: "wellness",
-    dataFile: "assets/data/wellness/insecurityXgender",
-    labelStyle: "onBar",
-    groupLabelStyle: "onBar",
-    showLegend: true,
-    labelStyle: "onBar",
-    title: "Body Insecurity & Gender",
-    subtitle:
-      "Correspondents who feel insecure about their body, physical health, and/or appearance correlated with their gender. Editor’s Note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary,” and “Other” gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
-    // 2023!!
-  });
+  // sota.stackedBarChart({
+  //   section: "wellness",
+  //   dataFile: "assets/data/wellness/insecurityXgender",
+  //   labelStyle: "onBar",
+  //   groupLabelStyle: "onBar",
+  //   showLegend: true,
+  //   labelStyle: "onBar",
+  //   title: "Body Insecurity & Gender",
+  //   subtitle:
+  //     "Correspondents who feel insecure about their body, physical health, and/or appearance correlated with their gender. Editor’s Note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary,” and “Other” gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
+  //   // 2023!!
+  // });
 
   sota.stackedBarChart({
     section: "wellness",
