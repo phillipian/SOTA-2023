@@ -1075,12 +1075,68 @@ window.onload = () => {
       // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "campus",
+    dataFile: "assets/data/campus/ideologyXaffiliation",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Ideological Diversity & Political Affiliation",
+    subtitle: "Respondents' opinions on whether Andover's speakers are diverse in ideologies correlated with their political affiliation.",
+        // 2023!!
+  });
+
   sota.pieChart({
     section: "campus",
     dataFile: "assets/data/campus/129-antiracismwork",
     title: "Anti-racist work",
     subtitle: "Do you think Andover’s anti-racist work is sufficient?",
     // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "campus",
+    dataFile: "assets/data/campus/antiracismXyear",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Anti-Racism & Class Year",
+    subtitle: "Respondents' opinions on whether Andover's anti-racism work is sufficient correlated with their class year.",
+        // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "campus",
+    dataFile: "assets/data/campus/antiracismXaffiliation",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Anti-Racism & Political Affiliation",
+    subtitle: "Respondents' opinions on whether Andover's anti-racism work is sufficient correlated with their political affiliation.",
+        // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "campus",
+    dataFile: "assets/data/campus/antiracismXrace",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Anti-Racism & Race",
+    subtitle: "Respondents' opinions on whether Andover's anti-racism work is sufficient correlated with their race.",
+        // 2023!!
   });
 
   sota.pieChart({
@@ -1110,6 +1166,20 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "campus",
+    dataFile: "assets/data/campus/glorifyathleticsXvarsity",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Glorifying Athletics & Varisity Athletes",
+    subtitle: "Respondents' opinions on whether Andover glorifies athletics correlated with whether they are a varsity athlete.",
+        // 2023!!
+  });
+
   sota.pieChart({
     section: "campus",
     dataFile: "assets/data/campus/hos-approval",
@@ -1117,6 +1187,20 @@ window.onload = () => {
     title: "Head of School Approval",
     subtitle: "Do you approve of the work the Head of School is doing for the students?",
     // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "campus",
+    dataFile: "assets/data/campus/hosXclassyear",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Head of School Approval & Class Year",
+    subtitle: "Respondents' opinions on whether they support the work the Head of School is doing for the students correlated with their class year.",
+        // 2023!!
   });
 
   sota.pieChart({
@@ -1160,6 +1244,20 @@ window.onload = () => {
       title: "Do you believe that Andover should divest from fossil fuel companies?",
       subtitle: "Divestment is the act of \"taking money away from where you have invested it\" (Oxford Dictionaries).",
       // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "campus",
+    dataFile: "assets/data/campus/divestXaffiliation",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    inputIsPercentage: true,
+    displayPercentage: true,
+    title: "Divestment & Political Affiliation",
+    subtitle: "Respondents' opinions on Andover divesting from fossil fuels correlated with their political affiliation.",
+        // 2023!!
   });
 
 //   sota.stackedColumnChart({
