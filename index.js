@@ -1316,6 +1316,46 @@ window.onload = () => {
     // 2023!!
   });
 
+  sota.lineGraph({
+    section: "school",
+    dataFile: "assets/data/school/GPA2018",
+    maxVal: 6.0,
+    minVal: 5.0,
+    title: "Average GPA Since 2018",
+    subtitle: "Editor's note: All GPA values above are from previous State of the Academy surveys.",
+    // 2023!!
+  });
+
+  sota.bigNumber({
+    section: "school",
+    number: "5.42",
+    title: "Respondents who indentified as a man or woman had the same average GPA of",
+    subtitle: "Editor's note: Correlated statistics from respondents identifying as other gender identities have been removed to protect their complete anonymity.",
+    // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "school",
+    dataFile: "assets/data/school/GPAxsleep",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "GPA and Sleep",
+      // 2023!!
+  });
+
+  sota.multiLineGraph({
+    section: "school",
+    dataFile: "assets/data/school/GPAxvarsity",
+    displayPercentage: true,
+    maxVal: 24,
+    minWal: 0,
+    title: "GPA and Varsity Athlete",
+      // 2023!!
+  });
+
   sota.barChart({
     section: "school",
     dataFile: "assets/data/school/112-4_good",
@@ -1323,6 +1363,20 @@ window.onload = () => {
     title: "Grading Scale",
     subtitle: 'Do you think a "4" is a good grade?',
     // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "school",
+    dataFile: "assets/data/school/collegexclassyear",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Andover and College",
+    subtitle:
+      "Do you think attending Andover affects your chances of attending a selective college?",
+      // 2023!!
   });
 
   sota.bigNumber({
@@ -1398,6 +1452,20 @@ window.onload = () => {
     title: "Leaving Andover",
     subtitle: "Have you ever considered leaving Andover permanently or temporarily?",
     // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "school",
+    dataFile: "assets/data/school/leavingxclassyear",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Leaving Andover by Class Year",
+    subtitle:
+      "Have you ever considered leaving Andover permanently or temporarily?",
+      // 2023!!
   });
 
   sota.pieChart({
