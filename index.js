@@ -2131,7 +2131,7 @@ window.onload = () => {
     groupLabelStyle: "onBar",
     displayPercentage: true,
     title: "Classroom Comfort & Race",
-    subtitle: "Editor’s Note: Correlated statistics from respondents whose races are “Indigenous Peoples of the Americas” and “Native Hawaiian or Pacific Islander” have been removed in an effort to protect the complete anonymity of these respondents."
+    subtitle: "Editor’s Note: Correlated statistics from respondents whose races are “Indigenous People of the Americas” and “Native Hawaiian or Pacific Islander” have been removed in an effort to protect the complete anonymity of these respondents."
       // 2023!!
   });
 
