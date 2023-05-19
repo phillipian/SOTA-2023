@@ -1947,6 +1947,32 @@ window.onload = () => {
       // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "diversity",
+    dataFile: "assets/data/diversity/secdivideXsec",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Social Divide Due to Socioeconomic Status & Socioeconomic Status",
+    subtitle: "Respondents' opinions on whether there is a social divide at Andover due to socioeconomic status correlated with their socioeconomic status.",
+        // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "diversity",
+    dataFile: "assets/data/diversity/divideXrace",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Social Divide & Race",
+    subtitle: "Respondents' opinions on whether there is a social divide at Andover correlated with their race.",
+        // 2023!!
+  });
+
   // sota.stackedBarChart({
   //   section: "diversity",
   //   dataFile: "assets/data/diversity/social_divideXrace",
@@ -2002,6 +2028,32 @@ window.onload = () => {
       // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "diversity",
+    dataFile: "assets/data/diversity/comfortXrace",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Classroom Comfort & Race",
+    subtitle: "Whether respondents feel race is a factor in whether they are comfortable in a classroom correlated with their race. Editor’s Note: Correlated statistics from respondents whose races are 'Indigenous People of the Americas' and 'Native Hawaiian or Pacific Islander' have been removed in an effort to protect the complete anonymity of these respondents.",
+      // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "diversity",
+    dataFile: "assets/data/diversity/comfortXgender",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Classroom Comfort & Gender Identity",
+    subtitle: "Whether respondents feel gender identity is a factor in whether they are comfortable in a classroom correlated with their gender identity. Editor’s Note: Correlated statistics from respondents who identify as “Agender,” “Genderfluid,” “Genderqueer,” “Nonbinary,” and “Other” gender identities have been removed in an effort to protect the complete anonymity of these respondents.",
+      // 2023!!
+  });
+
   sota.pieChart({
     section: "diversity",
     dataFile: "assets/data/diversity/145-ebi",
@@ -2038,12 +2090,51 @@ window.onload = () => {
       // 2023!!
   });
 
+  sota.stackedBarChart({
+    section: "diversity",
+    dataFile: "assets/data/diversity/leadershipXgender",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Leadership & Gender",
+    subtitle: "Respondents' opinions on whether gender limits their capacity to obtain leadership positions correlated with their gender. Editor's Note: Correlated statistics from respondents who identify as agender, genderfluid, genderqueer, and nonbinary have been removed in an effort to protect the complete anonymity of these respondents.",
+      // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "diversity",
+    dataFile: "assets/data/diversity/leadershipXrace",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Leadership & Race",
+    subtitle: "Respondents' opinions on whether race limits their capacity to obtain leadership positions correlated with their race.",
+      // 2023!!
+  });
+
   sota.pieChart({
     section: "diversity",
     dataFile: "assets/data/diversity/146-day_student",
     title: "Day Students",
     subtitle:
       "Do you think day students are able to integrate enough with boarding students at Andover?",
+      // 2023!!
+  });
+
+  sota.stackedBarChart({
+    section: "diversity",
+    dataFile: "assets/data/diversity/residentialXday",
+    sorted: false,
+    showLegend: true,
+    labelStyle: "onBar",
+    groupLabelStyle: "onBar",
+    displayPercentage: true,
+    title: "Residential Status & Day Student Integration",
+    subtitle: "Respondents' opinions on whether day students integrate into campus correlated with their residential status.",
       // 2023!!
   });
 
